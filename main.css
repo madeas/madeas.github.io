@@ -193,7 +193,7 @@ code {
 		border-radius: 16px;
 	}
 	.card__title {
-		font-size: 90%;
+		font-size: 2em;
 	}
 	.card__copy p:first-of-type {
     		font-size: 1.25em;
