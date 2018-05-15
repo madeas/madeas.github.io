@@ -193,6 +193,7 @@ code {
   		width: 140px;
   		height: 140px;
 		margin-bottom: 2rem;
+     		font-size: 1rem;
 	}
 	.card__caption {
 		font-size: 1.25em;
