@@ -188,7 +188,7 @@ code {
 @media only screen and (max-width: 560px) {
 	.bshadow-logo {
   		flex-direction: column;
-		justify-content: center;
+		text-align: center;
 	}
 	.bshadow-logo svg {
 		width:86px;
@@ -197,7 +197,7 @@ code {
 	}
 	.card__title {
 		font-size: 2rem;
-		margin: 1em auto;
+		margin: 1em auto .5em;
 	}
 	.card__copy p:first-of-type {
     		font-size: 1.25em;
