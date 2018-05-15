@@ -183,7 +183,7 @@ code {
 		padding-left: 20px;
 	}
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 560px) {
 	.bshadow-logo {
   		flex-direction:: column;
 	}
@@ -191,6 +191,12 @@ code {
 		width:86px;
 		height:86px;
 		border-radius: 16px;
+	}
+	.card__title {
+		font-size: 90%;
+	}
+	.card__copy p:first-of-type {
+    		font-size: 1.25em;
 	}
 }
 @media only screen and (max-width: 400px) {
