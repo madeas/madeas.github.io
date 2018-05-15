@@ -86,7 +86,6 @@ code {
   	flex-flow: row wrap;
 	justify-content: flex-start;
   	padding: .5rem 1.5rem;
-	margin: 0;
 }
 .bshadow-logo svg {
   	border-radius: 8px;
@@ -97,7 +96,7 @@ code {
   	color: #47c9e5;
   	font-family: 'Raleway';
 	line-height: 1;
-	margin: 5px auto 0;
+	margin: 5px 0 0 0;
 }
 .card__subtitle {
 	font-size: .95em;
@@ -188,6 +187,7 @@ code {
 	.bshadow-logo {
   		flex-direction: column;
 		justify-content: center;
+		align-items: center;
 		text-align: center;
 		margin: auto;
 	}
