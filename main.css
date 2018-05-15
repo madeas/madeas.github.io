@@ -96,7 +96,7 @@ code {
   	color: #47c9e5;
   	font-family: 'Raleway';
 	line-height: 1;
-	margin: 5px 0 2em 0
+	margin: 5px 0 0 0;
 }
 .card__subtitle {
 	font-size: .95em;
@@ -185,7 +185,7 @@ code {
 }
 @media only screen and (max-width: 560px) {
 	.bshadow-logo {
-  		flex-direction:: column;
+  		flex-direction: column;
 	}
 	.bshadow-logo svg {
 		width:86px;
@@ -194,6 +194,7 @@ code {
 	}
 	.card__title {
 		font-size: 2rem;
+		margin-top: 1.5em;
 	}
 	.card__copy p:first-of-type {
     		font-size: 1.25em;
