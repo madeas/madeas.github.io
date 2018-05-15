@@ -61,6 +61,9 @@ code {
 .flex .block:before {
     content: 'bShadow-' counter(figures) ;
 }
+.text-center {
+	text-align: center;
+}
 .card__content {
 	position: relative;
 	width: 100%;
