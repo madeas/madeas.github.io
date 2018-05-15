@@ -1,4 +1,7 @@
 /* Demos styles */
+body {
+  overflow-x: hidden;
+}
 .blocks,
 .flex {
   padding: 0;
@@ -36,38 +39,105 @@
 .flex .block:before {
     content: 'bShadow-' counter(figures) ;
 }
-.content-wrap {
-  position: relative;
-  overflow: auto;
-  width: 95%;
-  height: auto;
-  max-width: 1366px;
-  margin: 120px auto 60px;
-  padding: 30px 40px 22px;
-  background: #fff;
+.card__content {
+	position: relative;
+	width: 100%;
+	max-width: 800px;
+	height: auto;
+	margin: 120px auto 60px;
+	padding: 30px 40px 22px;
+	background: #fff;
 }
-.header {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 0;
-  background-color: white;
-  height: 80px;
+.card__caption {
+	font-size: 2em;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 35px 30px 0px;
 }
 .bshadow-logo {
   display: flex;
   flex-wrap: wrap;
-  align-content:center;
+  align-content: center;
   padding: .5rem 1.5rem;
 }
 .bshadow-logo svg {
   border-radius: 8px;
   margin-right: 10px;
 }
-.bshadow-logo span {
+.card__title {
   font-size: 3rem;
   color: #47c9e5;
   font-family: 'Raleway';
+	line-height: 1;
+	margin: 5px 0 0 0
+}
+.card__subtitle {
+	font-size: .95em;
+	line-height: 1;
+	margin: 5px 0 0;
+	color: #777778;
+}
+.card__copy {
+	font-size: 1.25em;
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 25px 30px 100px;
+	color: #3b393d;
+}
+.card__copy p:first-of-type {
+	font-size: 1.5em;
+}
+.meta {
+	font-size: .85em;
+	display: -webkit-flex;
+	display: flex;
+	padding: 0 0 35px 0;
+
+	-webkit-align-items: center;
+	align-items: center;
+}
+.meta__avatar {
+	border-radius: 50%;
+  max-width: 100px;
+}
+.meta__author {
+	font-weight: bold;
+	padding: 0 15px;
+}
+.meta__date {
+	margin: 0 0 0 auto;
+}
+@media only screen and (max-width: 980px) {
+	.card {
+		width: 46%;
+		padding-bottom: 32.2%;
+	}
+	.card__content {
+		margin-bottom: 0;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+}
+
+@media only screen and (max-width: 580px) {
+	.card {
+		width: 96%;
+		padding-bottom: 67.2%;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.card__caption {
+		font-size: 1.25em;
+		padding: 35px 0px 0px;
+	}
+	.meta {
+		padding: 0 0 25px 0;
+	}
+	.card__copy {
+		font-size: 90%;
+		padding: 25px 0px 100px;
+	}
 }
 .github-logo:hover .arm {
   animation:octocat-wave 560ms ease-in-out
