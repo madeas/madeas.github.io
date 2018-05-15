@@ -47,9 +47,6 @@ a {
   	font-size: 1.25rem;
   	text-align: center;
   	margin: 0 auto 4rem;
-  	-webkit-border-radius: .25rem;
-  	-moz-border-radius: .25rem;
-	border-radius: .25rem;
 }
 .flex .block {
     counter-increment: figures;
@@ -115,13 +112,18 @@ a {
 	align-items: center;
 }
 .meta__avatar {
-	border-radius: 50%;
   	max-width: 100px;
 }
 .meta__author {
 	font-size: 1.25em;
 	font-weight: bold;
 	padding: 0 15px;
+}
+.meta__avatar,
+.block {
+  	-webkit-border-radius: .25rem;
+  	-moz-border-radius: .25rem;
+	border-radius: .25rem;
 }
 .meta__date {
 	margin: 0 0 0 auto;
