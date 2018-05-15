@@ -54,6 +54,9 @@ code {
   	font-size: 1.25rem;
   	text-align: center;
   	margin: 0 auto 4rem;
+  	-webkit-border-radius: .25rem;
+  	-moz-border-radius: .25rem;
+	border-radius: .25rem;
 }
 .flex .block {
     counter-increment: figures;
@@ -123,41 +126,17 @@ code {
 }
 .meta__avatar {
   	max-width: 100px;
+  	-webkit-border-radius: 12px;
+  	-moz-border-radius: 12px;
+	border-radius: 12px;
 }
 .meta__author {
 	font-size: 1.25em;
-	font-weight: bold;
+	font-weight: 600;
 	padding: 0 15px;
-}
-.meta__avatar,
-.block {
-  	-webkit-border-radius: .25rem;
-  	-moz-border-radius: .25rem;
-	border-radius: .25rem;
 }
 .meta__date {
 	margin: 0 0 0 auto;
-}
-@media only screen and (max-width: 980px) {
-	.card__content {
-		margin-bottom: 0;
-		padding-right: 20px;
-		padding-left: 20px;
-	}
-}
-
-@media only screen and (max-width: 400px) {
-	.card__caption {
-		font-size: 1.25em;
-		padding: 35px 0px 0px;
-	}
-	.meta {
-		padding: 0 0 25px 0;
-	}
-	.card__copy {
-		font-size: 90%;
-		padding: 25px 0px 100px;
-	}
 }
 .github-logo:hover .arm {
   animation:octocat-wave 560ms ease-in-out
@@ -168,9 +147,9 @@ code {
   40%,80%{transform:rotate(10deg)}
 }
 @media (max-width:500px) {
-  .github-logo:hover .arm {
-    animation:none;
-  }
+	.github-logo:hover .arm {
+    		animation:none;
+  	}
 }
 .download {
 	text-align: center;
@@ -197,4 +176,29 @@ code {
     	padding-bottom: 3rem;
 	border-top: 2px solid #47c9e5;
 	margin: auto;
+}
+@media only screen and (max-width: 980px) {
+	.card__content {
+		margin-bottom: 0;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+}
+@media only screen and (max-width: 640px) {
+	.card__title {
+      		font-size:1rem;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.card__caption {
+		font-size: 1.25em;
+		padding: 35px 0px 0px;
+	}
+	.meta {
+		padding: 0 0 25px 0;
+	}
+	.card__copy {
+		font-size: 90%;
+		padding: 25px 0px 100px;
+	}
 }
