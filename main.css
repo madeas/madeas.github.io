@@ -22,21 +22,21 @@ a {
 	text-decoration: none !important;
 }
 a.anchorjs-link {
-    opacity: 0;
-    transition: color .16s linear;
+    	opacity: 0;
+    	transition: color .16s linear;
 }
 .meta__version:hover .anchorjs-link, 
 .meta__version:focus .anchorjs-link {
-    opacity: 1;
-    color: rgba(0,123,255,.5);
-    -webkit-font-smoothing: antialiased;
+    	opacity: 1;
+    	color: rgba(0,123,255,.5);
+    	-webkit-font-smoothing: antialiased;
 }
 code {
-    padding: 0.2em 0.4em;
-    margin: 0;
-    font-size: 85%;
-    background-color: rgba(27,31,35,0.05);
-    border-radius: 3px;
+    	padding: 0.2em 0.4em;
+    	margin: 0;
+    	font-size: 85%;
+    	background-color: rgba(27,31,35,0.05);
+    	border-radius: 3px;
 }
 .blocks,
 .flex {
