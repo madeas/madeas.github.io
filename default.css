@@ -81,6 +81,15 @@ code {
 .text-center {
 	text-align: center;
 }
+.content-wrap input[type=checkbox] {
+  display: none;
+}
+.content-wrap input[type=checkbox] + .numbers {
+  display: none;
+}
+.content-wrap input[type=checkbox]:checked + .numbers {
+  display: flex;
+}
 .card__content {
 	position: relative;
 	width: 100%;
