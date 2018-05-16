@@ -190,6 +190,12 @@ code {
 	position: relative;
 	margin: 0 0 0 auto;
 }
+.share {  
+  	justify-content: flex-end;
+}
+.share strong {
+  	margin-right: .5em;
+}
 .github-logo:hover .arm {
   	animation:octocat-wave 560ms ease-in-out
 }
