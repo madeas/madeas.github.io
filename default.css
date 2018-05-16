@@ -169,6 +169,8 @@ code {
 	align-items: center;
 }
 .meta__author {
+	display: -webkit-flex;
+	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 }
@@ -184,8 +186,8 @@ code {
 	padding: 0 15px;
 }
 .meta__files {
-    	display: -webkit-flex;
-    	display: flex;
+	display: -webkit-flex;
+	display: flex;
     	flex-direction: column;
     	justify-content: space-around;
 }
