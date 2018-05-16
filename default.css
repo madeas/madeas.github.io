@@ -170,6 +170,7 @@ code {
 }
 .meta__author {
 	justify-content: flex-start;
+	align-items: center;
 }
 .meta__avatar {
   	max-width: 100px;
