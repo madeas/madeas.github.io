@@ -24,7 +24,6 @@ a {
 [data-anchorjs-icon]::after {
     content: attr(data-anchorjs-icon);
 }
-
 .anchorjs-link {
     	opacity: 0;
     	font-weight: 400;
@@ -85,13 +84,20 @@ code {
     	content: 'bShadow-' counter(figures) ;
 }
 .content-wrap input[type=checkbox] {
-  display: none;
+  	display: none;
 }
 .content-wrap input[type=checkbox] + .numbers {
-  display: none;
+  	display: none;
 }
 .content-wrap input[type=checkbox]:checked + .numbers {
-  display: flex;
+  	display: flex;
+}
+.content-wrap .sp_button {
+  	display: block;
+  	width: 100%;
+	text-align: center;
+	margin-bottom: 1em;
+	opacity: .7;
 }
 .card__content {
 	position: relative;
@@ -174,10 +180,10 @@ code {
 	padding: 0 15px;
 }
 .meta__files {
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    	display: -webkit-flex;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: space-around;
 }
 .meta__date,
 .meta__version {
@@ -185,12 +191,12 @@ code {
 	margin: 0 0 0 auto;
 }
 .github-logo:hover .arm {
-  animation:octocat-wave 560ms ease-in-out
+  	animation:octocat-wave 560ms ease-in-out
 }
 @keyframes octocat-wave { 
-  0%,100%{transform:rotate(0)}
-  20%,60%{transform:rotate(-25deg)}
-  40%,80%{transform:rotate(10deg)}
+  	0%,100%{transform:rotate(0)}
+  	20%,60%{transform:rotate(-25deg)}
+  	40%,80%{transform:rotate(10deg)}
 }
 @media (max-width:500px) {
 	.github-logo:hover .arm {
