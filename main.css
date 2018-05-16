@@ -129,6 +129,7 @@ code {
 	display: -webkit-flex;
 	display: flex;
 	padding: 0 0 35px 0;
+    	justify-content: space-between;
 
 	-webkit-align-items: center;
 	align-items: center;
