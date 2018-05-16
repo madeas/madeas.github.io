@@ -129,6 +129,17 @@ code {
 .card__copy p:first-of-type {
 	font-size: 1.5em;
 }
+.block-select {
+  outline: none;
+  border: 1px solid #dedede;
+  border-radius: 3px;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: inherit;
+  width: 96%;
+  margin: 1em;
+}
 .meta {
 	font-size: .85em;
 	display: -webkit-flex;
