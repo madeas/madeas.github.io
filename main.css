@@ -21,14 +21,14 @@ a {
 	color: #47c9e5;
 	text-decoration: none !important;
 }
-a.anchorjs-link {
+.anchorjs-link {
     	opacity: 0;
-    	transition: color .16s linear;
+    	transition: all .16s linear;
 }
 .meta__version:hover .anchorjs-link, 
 .meta__version:focus .anchorjs-link {
     	opacity: 1;
-    	color: rgba(0,123,255,.5);
+    	color: rgba(71, 201, 229,.8);
     	-webkit-font-smoothing: antialiased;
 }
 code {
