@@ -21,6 +21,16 @@ a {
 	color: #47c9e5;
 	text-decoration: none !important;
 }
+a.anchorjs-link {
+    opacity: 0;
+    color: rgba(0,123,255,.5);
+    -webkit-font-smoothing: antialiased;
+    transition: color .16s linear;
+}
+:hover > .anchorjs-link, 
+.anchorjs-link:focus {
+    opacity: 1;
+}
 code {
     padding: 0.2em 0.4em;
     margin: 0;
@@ -134,7 +144,9 @@ code {
 	font-weight: 600;
 	padding: 0 15px;
 }
-.meta__date {
+.meta__date,
+.meta__version {
+	position: relative;
 	margin: 0 0 0 auto;
 }
 .github-logo:hover .arm {
