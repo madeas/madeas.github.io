@@ -2,9 +2,9 @@
 *, 
 ::after, 
 ::before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    	-webkit-box-sizing: border-box;
+    	-moz-box-sizing: border-box;
+    	box-sizing: border-box;
 }
 html {
 	font-family: sans-serif;
@@ -22,7 +22,7 @@ a {
 	text-decoration: none !important;
 }
 [data-anchorjs-icon]::after {
-    content: attr(data-anchorjs-icon);
+    	content: attr(data-anchorjs-icon);
 }
 .anchorjs-link {
     	opacity: 0;
@@ -163,18 +163,21 @@ code {
 	display: -webkit-flex;
 	display: flex;
 	padding: 0 0 35px 0;
-    	justify-content: space-between;
+	justify-content: space-between;
 
 	-webkit-align-items: center;
 	align-items: center;
 }
+.meta__author {
+	justify-content: flex-start;
+}
 .meta__avatar {
   	max-width: 100px;
-  	-webkit-border-radius: 12px;
-  	-moz-border-radius: 12px;
-	border-radius: 12px;
+  	-webkit-border-radius: 50%;
+  	-moz-border-radius: 50%;
+	border-radius: 50%;
 }
-.meta__author {
+.meta__author_name {
 	font-size: 1.25em;
 	font-weight: 600;
 	padding: 0 15px;
