@@ -23,13 +23,13 @@ a {
 }
 a.anchorjs-link {
     opacity: 0;
-    color: rgba(0,123,255,.5);
-    -webkit-font-smoothing: antialiased;
     transition: color .16s linear;
 }
-:hover > .anchorjs-link, 
-.anchorjs-link:focus {
+.meta__version:hover .anchorjs-link, 
+.meta__version:focus .anchorjs-link {
     opacity: 1;
+    color: rgba(0,123,255,.5);
+    -webkit-font-smoothing: antialiased;
 }
 code {
     padding: 0.2em 0.4em;
@@ -143,6 +143,12 @@ code {
 	font-size: 1.25em;
 	font-weight: 600;
 	padding: 0 15px;
+}
+.meta__files {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .meta__date,
 .meta__version {
