@@ -109,7 +109,8 @@
     .overlay_close {
         display: block;
     }
-    .info button {
+    .info button,
+    .info h2 {
         display: none;
     }
 }
