@@ -72,9 +72,46 @@
 .info button:hover {
     opacity: 1;
 }
-@media (max-width: 400px) {
-    .info span {
-        width: 150px;
-        height: 150px;
+.overlay_close {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+ }
+.overlay_close:focus {
+    outline: none;
+}
+.close-inner {
+    position: relative;
+}
+.close-inner:after, 
+.close-inner:before {
+    content: '';
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 40px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.close-inner:before {
+    transform: rotate(-45deg);
+}
+.close-inner:after {
+    transform: rotate(45deg);
+}
+@media (max-width: 480px) {
+    .overlay_close {
+        display: block;
+    }
+    .info button {
+        display: none;
     }
 }
