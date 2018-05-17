@@ -73,6 +73,8 @@
     opacity: 1;
 }
 @media (max-width: 400px) {
-    width: 150px;
-    height: 150px;
+    .info span {
+        width: 150px;
+        height: 150px;
+    }
 }
