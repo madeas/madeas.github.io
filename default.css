@@ -57,6 +57,7 @@ code {
 .masthead {
 	text-align: center;
 	min-height: 30rem;
+	height: 100vh;
 	position: relative;
 	display: block;
 	width: 100%;
