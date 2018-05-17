@@ -371,7 +371,7 @@ code {
 	.block {
   		width: 140px;
   		height: 140px;
-		margin-bottom: 2rem;
+		margin-bottom: 2rem !important;
      		font-size: 1rem;
 	}
 	.card__caption {
