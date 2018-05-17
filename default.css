@@ -310,11 +310,6 @@ code {
   	20%,60%{transform:rotate(-25deg)}
   	40%,80%{transform:rotate(10deg)}
 }
-@media (max-width:500px) {
-	.github-logo:hover .arm {
-    		animation:none;
-  	}
-}
 .download {
 	text-align: center;
 }
@@ -341,14 +336,14 @@ code {
 	border-top: 2px solid #47c9e5;
 	margin: auto;
 }
-@media (max-width: 980px) {
+@media (max-width: 991px) {
 	.card__content {
 		margin-bottom: 30px;
 		padding-right: 20px;
 		padding-left: 20px;
 	}
 }
-@media (max-width: 560px) {
+@media (max-width: 768px) {
 	.bshadow-logo {
   		flex-direction: column;
 		justify-content: center;
@@ -369,12 +364,15 @@ code {
     		font-size: 1.25em;
 	}
 }
-@media (max-width: 400px) {
+@media (max-width: 480px) {
+	.github-logo:hover .arm {
+    		animation:none;
+  	}
 	.block {
-  		width: 140px;
-  		height: 140px;
+		width: 140px;
+		height: 140px;
 		margin-bottom: 2rem !important;
-     		font-size: 1rem;
+		font-size: 1rem;
 	}
 	.card__caption {
 		font-size: 1.25em;
@@ -386,5 +384,10 @@ code {
 	.card__copy {
 		font-size: 90%;
 		padding: 25px 0px 100px;
+	}
+}
+@media (max-width: 480px) {
+	.blocks {
+		justify-content: flex-start;
 	}
 }
