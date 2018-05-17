@@ -110,6 +110,7 @@ code {
 	padding-top: 8rem;
 	padding-bottom: 8rem;
 	margin: 0;
+	font-family: 'Playfair Display', serif;
 	background: 
 		linear-gradient(90deg,rgba(255,255,255,.1) 0,rgba(255,255,255,.1) 100%),
 		url(http://demo.madeas.ru/images/git-io_bg3.png), 
