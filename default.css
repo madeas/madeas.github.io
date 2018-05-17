@@ -60,7 +60,11 @@ code {
 	height: auto;
 	padding-top: 8rem;
 	padding-bottom: 8rem;
-	background: linear-gradient(90deg,rgba(255,255,255,.1) 0,rgba(255,255,255,.1) 100%),url(https://img-fotki.yandex.ru/get/6401/163781271.1a/0_77f3f_4b23a61e_M.jpg), url(https://i.pinimg.com/originals/70/56/8b/70568b36019c008746fbc3a9733c0829.png), url(https://img-fotki.yandex.ru/get/9107/134091466.af/0_c6638_c592d50f_S);
+	background: 
+		linear-gradient(90deg,rgba(255,255,255,.1) 0,rgba(255,255,255,.1) 100%),
+		url(http://demo.madeas.ru/images/git-io_bg3.png), 
+		url(http://demo.madeas.ru/images/git-io_bg2.png), 
+		url(http://demo.madeas.ru/images/git-io_bg1.png);
 	background-position: 50% 100%, 0 0,  100% 50%;
 	background-repeat: no-repeat;
 }
