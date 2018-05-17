@@ -29,7 +29,7 @@ body {
 	background: rgb(71, 201, 229);
 }
 ::-webkit-scrollbar-thumb:hover {
-	background: rgb(33, 150, 243);
+	background: rgb(0, 174, 255);
 }
 a {
 	color: #47c9e5;
