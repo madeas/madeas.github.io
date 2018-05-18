@@ -112,7 +112,7 @@ pre[rel]:before {
 	left:0;
 	background-color:#eee;
 	content:attr(rel);
-	color: white;
+	color: #032f62;
 	font: bold 12px/22px Raleway, sans-serif;
 	padding: 0px 10px;
 }
