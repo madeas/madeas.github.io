@@ -8,6 +8,7 @@
 	padding-top: 8rem;
 	padding-bottom: 8rem;
 	margin: 0;
+	color: #7f8080;
 	font-family: 'Raleway', sans-serif;
 	background: url(/img/bg_home.png);
 	background-position: top left;
@@ -92,7 +93,7 @@
 .item h5 {
 	position: absolute;
 	white-space: nowrap;
-	color: #333;
+	color: #7f8080;
 	font-size: 1rem;
 	font-weight: 600;
 	top: -10px;
