@@ -304,6 +304,12 @@ code {
 	font-weight: 600;
 	padding: 0 15px;
 }
+
+.meta__author_name span {
+	display: block;
+	font-weight: normal;
+	font-size: .85em;
+}
 .meta__files {
 	display: -webkit-flex;
 	display: flex;
