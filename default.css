@@ -371,12 +371,13 @@ code {
 @media (min-width: 992px) {
 	.content-arrow-left::after,
 	.content-arrow-right::after {
-		content: '';
 		position: absolute;
+		content: '';
+		display: block;
 		top: 50%;
 		-webkit-transform: translateY(-50%);
 		transform: translateY(-50%);
-		background-image: url(arrow.png);
+		background-image: url(/arrow.png);
 		width: 78px;
 		height: 76px;
 	}
