@@ -352,30 +352,6 @@ code {
     	text-decoration: none;
     	white-space: nowrap;
 }
-.content-arrow-left::after,
-.content-arrow-right::after {
-	background-image: url(https://madeas.ru/img/form__arrow.png);
-	position: absolute;
-	content: '';
-	width: 78px;
-	height: 76px;
-}
-.content-arrow-left::after {
-	top: 20%;
-	left: -100px;
-	-webkit-transform: scale(1, -1) rotate(-75deg);  
-	-moz-transform: scale(1, -1) rotate(-75deg);  
-	-o-transform: scale(1, -1) rotate(-75deg);  
-	transform: scale(1, -1) rotate(-75deg);  
-}
-.content-arrow-right::after {
-	top: 20%;
-	right: -100px;
-	-webkit-transform: scale(-1, -1) rotate(-75deg);
-	-moz-transform: scale(-1, -1) rotate(-75deg);
-	-o-transform: scale(-1, -1) rotate(-75deg);
-	transform: scale(-1, -1) rotate(-75deg);
-}
 .footer {
     	display: block;
 	width: 96%;
@@ -384,6 +360,36 @@ code {
     	padding-bottom: 2rem;
 	border-top: 2px solid #47c9e5;
 	margin: auto;
+}
+.content-arrow-left::after,
+.content-arrow-right::after {
+	display: none;
+}
+@media (min-width: 992px) {
+	.content-arrow-left::after,
+	.content-arrow-right::after {
+		background-image: url(https://madeas.ru/img/form__arrow.png);
+		position: absolute;
+		content: '';
+		width: 78px;
+		height: 76px;
+	}
+	.content-arrow-left::after {
+		top: 20%;
+		left: -100px;
+		-webkit-transform: scale(1, -1) rotate(-75deg); 
+		-moz-transform: scale(1, -1) rotate(-75deg);  
+		-o-transform: scale(1, -1) rotate(-75deg);  
+		transform: scale(1, -1) rotate(-75deg);  
+	}
+	.content-arrow-right::after {
+		top: 20%;
+		right: -100px;
+		-webkit-transform: scale(-1, -1) rotate(-75deg);
+		-moz-transform: scale(-1, -1) rotate(-75deg);
+		-o-transform: scale(-1, -1) rotate(-75deg);
+		transform: scale(-1, -1) rotate(-75deg);
+	}
 }
 @media (max-width: 991px) {
 	.card__content {
