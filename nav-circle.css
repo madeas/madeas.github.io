@@ -4,8 +4,9 @@
   left: 50px;
   bottom: 20px;
   margin-left: -28px;
+  cursor: pointer;
 }
-.nav:hover .nav-buttons {
+.nav-circle:hover .nav-buttons {
   opacity: 1;
   visibility: visible;
 }
