@@ -1,0 +1,131 @@
+.masthead {
+	text-align: center;
+	min-height: 30rem;
+	position: relative;
+	width: 100%;
+  height: auto;
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+	margin: 0;
+	font-family: 'Raleway', Arial, sans-serif;
+	background: linear-gradient(90deg,rgba(255,255,255,.1) 0,rgba(255,255,255,.1) 100%), url(img/bg_home.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+.masthead .title {
+	margin: 0;
+	padding: 0;
+  position:absolute;
+  text-align: left;
+  top: 50%;
+  left: 150px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.title h2 {
+	font-size: 2rem;
+}
+.title h3 {
+  max-width: 30%;
+	font-size: 1rem;
+  padding-bottom: .5rem;
+}
+.navigation {
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: bold;
+}
+.navigation .item {
+  position:absolute;
+}
+/* navigation items */
+.item.bsha {
+  top:125px;
+  left:110px;
+}
+.item.jslay {
+  top:50px;
+  left:360px;
+}
+.item.none {
+  top:90px;
+  left:625px;
+}
+.item.none {
+  top:230px;
+  left:835px;
+}
+.item.none {
+  top:420px;
+  left:950px;
+}
+.item .circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 52px;
+  height: 52px;
+  opacity: 0;
+}
+.item .icon {
+  width: 52px;
+  height: 52px;
+  position:absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+  cursor: pointer;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+.item:first-child .icon {
+  background: transparent url(https://tympanus.net/Tutorials/BubbleNavigation/images/user.png) no-repeat 0 0;
+}
+.item:nth-child(2) .icon {
+  background: transparent url(https://tympanus.net/Tutorials/BubbleNavigation/images/home.png) no-repeat 0 0;
+}
+.navigation .item a.active {
+  background-position:0px -52px;
+}
+.item h5 {
+    position: absolute;
+    white-space: nowrap;
+    color :#3369E7;
+    font-size: 1rem;
+    font-weight: 500;
+    top: 20px;
+    left: 60px;
+    text-transform: uppercase;
+}
+.item h5.active {
+    color: #fff;
+    text-shadow: 0px 1px 2px rgba(62,57,107,0.4);
+}
+.item ul {
+    list-style: none;
+    position: absolute;
+    top: 60px;
+    left: 27px;
+    display: none;
+    text-align: left;
+}
+.item ul li a {
+    font-size: 0.825em;
+    text-transform: uppercase;
+    color: #fafafa;
+    padding: 3px;
+}
+.item ul li a:hover {
+    color: #fff;
+    text-shadow: 0px 1px 2px rgba(62,57,107,0.4);
+}
+.git_octo {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
