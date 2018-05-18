@@ -1,2 +1,2 @@
 # Ooops! 
-## Page Not Found :octocat:
+### Page not found :octocat:
