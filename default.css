@@ -100,21 +100,21 @@ pre {
 	padding: 16px;
 	margin-top: 0;
 	margin-bottom: 16px;
-	overflow: auto;
 }
 pre[rel] {
 	padding-top:32px;
 }
 pre[rel]:before {
-	content:attr(rel);
-	font: bold 12px/22px Raleway, sans-serif;
-	color:white;
-	background-color:#eee;
-	padding:0px 10px;
-	position:fixed;
+	position: absolute;
+	width: 100%;
 	top:0;
 	right:0;
 	left:0;
+	background-color:#eee;
+	content:attr(rel);
+	color: white;
+	font: bold 12px/22px Raleway, sans-serif;
+	padding: 0px 10px;
 }
 code {
 	padding: 0.2em 0.4em;
