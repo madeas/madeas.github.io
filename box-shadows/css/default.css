@@ -211,7 +211,7 @@
 		top: 50%;
 		-webkit-transform: translateY(-50%);
 		transform: translateY(-50%);
-		background-image: url(/arrow.png);
+		background-image: url(/box-shadows/img/arrow.png);
 		width: 78px;
 		height: 76px;
 	}
