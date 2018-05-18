@@ -93,7 +93,7 @@ code,
 }
 pre {
 	position: relative;
-	font: normal 12px/14px Monaco, Monospace;
+	font: normal 12px/1.45 Monaco, Monospace;
 	overflow: auto;
 	font-size: 85%;
 	background-color: #f6f8fa;
