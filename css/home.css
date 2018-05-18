@@ -3,6 +3,7 @@
 	min-height: 30rem;
 	position: relative;
 	width: 100%;
+	min-height: 100vh;
   	height: auto;
 	padding-top: 8rem;
 	padding-bottom: 8rem;
