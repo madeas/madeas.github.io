@@ -8,7 +8,7 @@
 	padding-bottom: 8rem;
 	margin: 0;
 	font-family: 'Raleway', Arial, sans-serif;
-	background: linear-gradient(90deg,rgba(255,255,255,.1) 0,rgba(255,255,255,.1) 100%), url(img/bg_home.png);
+	background: linear-gradient(90deg,rgba(255,255,255,.1) 0,rgba(255,255,255,.1) 100%), url(img/nav_bg-circle.png);
 	background-position: top left;
 	background-repeat: no-repeat;
 	overflow: hidden;
@@ -20,8 +20,6 @@
 	text-align: left;
 	top: 50%;
 	left: 150px;
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
 }
 .title h2 {
 	font-size: 2rem;
@@ -82,10 +80,12 @@
 	border-radius: 50%;
 }
 .item:first-child .icon {
-	background: transparent url(/img/logo-bs.png) no-repeat 0 0;
+	background: #fff url(img/logo-bs.png) no-repeat 70% 100%;
+	background-size: 48px;
 }
 .item:nth-child(2) .icon {
-	background: transparent url(/img/logo-jsfl.png) no-repeat 0 0;
+	background: #fff url(img/logo-jsfl.png) no-repeat 50% 0;
+	background-size: 48px;
 }
 .item h5 {
 	position: absolute;
