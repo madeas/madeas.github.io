@@ -308,7 +308,6 @@ code {
 .meta__author_name span {
 	display: block;
 	font-weight: normal;
-	font-size: .825em;
 }
 .meta__files {
 	display: -webkit-flex;
@@ -334,6 +333,10 @@ code {
   	0%,100%{transform:rotate(0)}
   	20%,60%{transform:rotate(-25deg)}
   	40%,80%{transform:rotate(10deg)}
+}
+.meta__author_name span,
+.more {
+	font-size: .825em;
 }
 .download {
 	text-align: center;
