@@ -373,7 +373,7 @@ code {
 		top: 50%;
 		-webkit-transform: translateY(-50%);
 		transform: translateY(-50%);
-		background-image: url(/img/arrow.png);
+		background-image: url(arrow.png);
 		width: 78px;
 		height: 76px;
 	}
