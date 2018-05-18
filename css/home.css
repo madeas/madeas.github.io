@@ -82,13 +82,10 @@
   border-radius: 50%;
 }
 .item:first-child .icon {
-  background: transparent url(https://tympanus.net/Tutorials/BubbleNavigation/images/user.png) no-repeat 0 0;
+  background: transparent url(/img/logo-bs.png) no-repeat 0 0;
 }
 .item:nth-child(2) .icon {
-  background: transparent url(https://tympanus.net/Tutorials/BubbleNavigation/images/home.png) no-repeat 0 0;
-}
-.navigation .item a.active {
-  background-position:0px -52px;
+  background: transparent url(/img/logo-jsfl.png) no-repeat 0 0;
 }
 .item h5 {
     position: absolute;
