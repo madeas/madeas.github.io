@@ -80,11 +80,11 @@
 	border-radius: 50%;
 }
 .item:first-child .icon {
-	background: #fff url(img/logo-bs.png) no-repeat 70% 100%;
+	background: #fff url(/img/logo-bs.png) no-repeat 70% 100%;
 	background-size: 48px;
 }
 .item:nth-child(2) .icon {
-	background: #fff url(img/logo-jsfl.png) no-repeat 50% 0;
+	background: #fff url(/img/logo-jsfl.png) no-repeat 50% 0;
 	background-size: 48px;
 }
 .item h5 {
