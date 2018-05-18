@@ -5,12 +5,13 @@
   bottom: 20px;
   margin-left: -28px;
   cursor: pointer;
+  z-index: 100;
 }
 .nav-circle:hover .nav-buttons {
   opacity: 1;
   visibility: visible;
 }
-.nav:hover .nav-buttons__link {
+.nav-circle:hover .nav-buttons__link {
   transform: scaleY(1) scaleX(1) translateY(-16px) translateX(0px);
 }
 .nav-action-button:hover + .nav-buttons .nav-buttons__link:before {
@@ -48,8 +49,8 @@
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-	-ms-flex-direction: row;
-	flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 56px;
