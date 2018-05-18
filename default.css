@@ -378,7 +378,6 @@ code {
 		height: 76px;
 	}
 	.content-arrow-left::after {
-		top: 20%;
 		left: -100px;
 		-webkit-transform: scale(1, -1) rotate(-75deg); 
 		-moz-transform: scale(1, -1) rotate(-75deg);  
@@ -386,7 +385,6 @@ code {
 		transform: scale(1, -1) rotate(-75deg);  
 	}
 	.content-arrow-right::after {
-		top: 20%;
 		right: -100px;
 		-webkit-transform: scale(-1, -1) rotate(-75deg);
 		-moz-transform: scale(-1, -1) rotate(-75deg);
