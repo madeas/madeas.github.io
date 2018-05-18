@@ -308,7 +308,7 @@ code {
 .meta__author_name span {
 	display: block;
 	font-weight: normal;
-	font-size: .85em;
+	font-size: .825em;
 }
 .meta__files {
 	display: -webkit-flex;
