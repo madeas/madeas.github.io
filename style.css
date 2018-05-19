@@ -38,6 +38,12 @@ a {
 	color: #47c9e5;
 	text-decoration: none !important;
 }
+a:hover,
+a:focus,
+button:hover,
+button:focus {
+	cursor: pointer;
+}
 .r_link::after, 
 .l_link::before {
  	display: inline-block;
