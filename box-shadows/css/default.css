@@ -30,6 +30,13 @@
 	padding: 30px 20px 10px;
 	background: #fff;
 }
+body,
+#content {
+	background-color: #fff;
+	-webkit-transition: background 2s ease;
+	-moz-transition: background 2s ease;
+	transition: background 2s ease;
+}
 .card__caption {
 	font-size: 2em;
 	max-width: 800px;
