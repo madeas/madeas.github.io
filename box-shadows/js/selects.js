@@ -15,3 +15,5 @@ document.querySelector('select').onchange = function() {
 	var bsh = getComputedStyle(node).boxShadow;
 	node.style.boxShadow = "inset "+bsh;
 });
+document.getElementById('ch_btn-one').onclick = e => document.body.style.backgroundColor = document.getElementById('bg-body').value;
+document.getElementById('ch_btn-two').onclick = e => document.getElementById('content').style.backgroundColor = document.getElementById('bg-card_content').value;
