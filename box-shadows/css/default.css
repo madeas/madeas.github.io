@@ -5,7 +5,7 @@
 .changes h3 {
 	font-weight: 300;
 	font-family: 'Raleway';
-	margin-bottom: 0;
+	margin-bottom: 5px;
 }
 .changes input,
 .changes button {
