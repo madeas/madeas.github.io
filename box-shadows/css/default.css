@@ -1,3 +1,22 @@
+.changes {
+	position: absolute;
+	margin: 1em;
+	color: #e4e7e9;
+}
+.changes input,
+.changes button {
+	background-color: transparent;
+	border: 1px solid #eee;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	background-clip: padding-box;
+	border-radius: 6px;
+}
+.changes input:focus,
+.changes button:focus {
+	outline: none;
+}
 .card__content {
 	position: relative;
 	width: 100%;
