@@ -1,7 +1,10 @@
 .changes {
-	position: absolute;
-	margin: 1em;
+	margin: .5em;
 	color: #e4e7e9;
+}
+.changes h3 {
+	font-weight: 300;
+	font-famiy: 'Raleway';
 }
 .changes input,
 .changes button {
