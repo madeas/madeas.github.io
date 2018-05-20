@@ -128,6 +128,13 @@
 .item ul li a:hover {
 	color: #fff;
 }
+.copy {
+	position: absolute;
+	bottom: 5px;
+	right: 100px;
+	text-align: right;
+	color: #7f8080;
+}
 .git_octo {
 	position: absolute;
 	bottom: 5px;
