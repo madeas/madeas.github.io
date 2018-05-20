@@ -37,6 +37,7 @@
 .title .quote span {
 	font-family: inherit;
 	display: block;
+	padding-top: .25rem;
 	font-size: 1rem;
 }
 .navigation {
