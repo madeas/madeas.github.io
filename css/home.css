@@ -23,17 +23,21 @@
 	top: 50%;
 	left: 150px;
 }
-.title h2 {
+.title h1 {
+	max-width: 30%;
 	font-family: inherit;
-	font-size: 2rem;
+	font-size: 3rem;
+	padding-bottom: .5rem;
+}
+.title .quote {
+	font-family: inherit;
+	font-size: 1.75rem;
 	font-style: italic;
 	font-weight: normal;
 }
-.title h3 {
-	max-width: 30%;
-	font-family: inherit;
+.title .quote span {
+	display: block;
 	font-size: 1rem;
-	padding-bottom: .5rem;
 }
 .navigation {
 	margin: 0 auto;
