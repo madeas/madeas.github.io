@@ -136,3 +136,6 @@
 	transform: translateX(-50%);
 	opacity: .5;
 }
+.git_octo:hover {
+	opacity: 1;
+}
