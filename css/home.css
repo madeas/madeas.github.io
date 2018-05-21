@@ -157,4 +157,9 @@
 	.navigation .item {
 		left: 30px !important;
 	}
+	.masthead .title {
+		left:0 !important;
+		right: 0 !important;
+		margin: 0 2% !important;
+		}
 }
