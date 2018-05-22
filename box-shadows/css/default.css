@@ -109,29 +109,21 @@ input.filename {
 	border: 0;
 	pointer-events: none;
 }
-.result {
+#text-options {
+	margin-top: .6em;
+	margin-bottom: .6em;
+}
+.result-des {
 	position: relative;
-	display: block;
-	border: 1px solid #dedede;
-	font-family: inherit;
-	font-size: 1rem;
-	line-height: inherit;
-	min-width: 200px;
+	padding: 0;
 	width: 96%;
-	min-height: 100px;
-	padding: 5px;
+	display: block;
 	-webkit-border-radius: var(--primary-radius);
 	-moz-border-radius: var(--primary-radius);
 	border-radius: var(--primary-radius);
-
-	-ms-user-select: all; 
- 	 -moz-user-select: all; 
-	-webkit-user-select: all; 
-	user-select: all; 
-	
-	pointer-events: none;
+	border: 1px solid #dedede;
 }
-.result::before {
+.result-des::before {
 	display: block;
 	content:'CSS';
 	position: absolute;
@@ -142,6 +134,23 @@ input.filename {
 	color: #032f62;
 	font: bold 12px/22px Raleway, sans-serif;
 	padding: 0px 10px;
+}
+textarea.result {
+	position: relative;
+	display: block;
+	border: 0;
+	font-family: inherit;
+	font-size: 1rem;
+	line-height: inherit;
+	min-width: 200px;
+	width: 96%;
+	min-height: 115px;
+	padding: 5px;
+
+	-ms-user-select: all; 
+ 	 -moz-user-select: all; 
+	-webkit-user-select: all; 
+	user-select: all;
 }
 .add__content {
 	width: 100%;
