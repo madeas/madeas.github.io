@@ -242,6 +242,9 @@ body,
 .download {
 	text-align: center;
 }
+.version {
+	color: #990000;
+}
 .btn-download {
     	position: relative;
     	display: inline-block;
