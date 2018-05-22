@@ -1,11 +1,13 @@
 .changes {
-	margin: .5em;
 	color: #e4e7e9;
+	margin: .5em;
+	text-align: center;
 }
 .changes h3 {
+	color: #3b393d;
 	font-weight: 300;
 	font-family: 'Raleway';
-	margin-bottom: 5px;
+	margin-bottom: 7px;
 }
 .changes input,
 .changes button {
