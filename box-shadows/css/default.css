@@ -44,44 +44,47 @@ body,
 }
 .blocks,
 .flex {
-  	padding: 0;
-  	margin: 0;
-  	list-style: none;
-  	display: -webkit-box;
-  	display: -moz-box;
-  	display: -ms-flexbox;
-  	display: -webkit-flex;
-  	display: flex;
-  	-webkit-flex-flow: row wrap;
-  	justify-content: space-around;
-  	counter-reset: figures;
+	position: relative;
+	display: block;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
+	counter-reset: figures;
 }
 .block {
-  	background-color: white;
-  	color: rgb(81, 204, 226);
-  	width: 200px;
-  	height: 200px;
-  	line-height: 150px;
-  	color: #47c9e5;
-  	font-weight: bold;
-  	font-size: 1.25rem;
-  	text-align: center;
-  	margin: 0 auto 4rem;
+	position: relative;
+	background-color: white;
+	color: rgb(81, 204, 226);
+	width: 200px;
+	height: 200px;
+	line-height: 150px;
+	color: #47c9e5;
+	font-weight: bold;
+	font-size: 1.25rem;
+	text-align: center;
+	margin: 0 auto 4rem;
 }
 .flex .block {
-    	counter-increment: figures;
+	counter-increment: figures;
 }
 .flex .block:before {
-    	content: 'bShadow-' counter(figures) ;
+	content: 'bShadow-' counter(figures) ;
 }
 .content-wrap input[type=checkbox] {
-  	display: none;
+	display: none;
 }
 .content-wrap input[type=checkbox] + .numbers {
-  	display: none;
+	display: none;
 }
 .content-wrap input[type=checkbox]:checked + .numbers {
-  	display: flex;
+	display: flex;
 }
 .content-wrap .sp_button {
   	display: block;
@@ -89,6 +92,27 @@ body,
 	text-align: center;
 	margin-bottom: 1em;
 	opacity: .7;
+}
+.result {
+	position: relative;
+	display: block;
+	border: 1px solid #dedede;
+	font-family: inherit;
+	font-size: 1rem;
+	line-height: inherit;
+	min-width: 200px;
+	width: 96%;
+	min-height: 100px;
+	padding: 5px;
+
+	-webkit-border-radius: var(--primary-radius);
+	-moz-border-radius: var(--primary-radius);
+	border-radius: var(--primary-radius);
+
+	-ms-user-select: all; 
+ 	 -moz-user-select: all; 
+	-webkit-user-select: all; 
+	user-select: all; 
 }
 .add__content {
 	width: 100%;
