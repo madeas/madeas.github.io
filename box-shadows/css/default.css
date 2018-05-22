@@ -115,7 +115,8 @@ input.filename {
 }
 .changes input:focus,
 .changes button:focus,
-.input.filename:focus {
+ input.filename:focus,
+.btn-save:focus {
 	outline: none;
 }
 #text-options {
