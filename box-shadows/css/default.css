@@ -109,7 +109,7 @@ input.filename {
 	background: transparent;
 	border: 0;
 	pointer-events: none;
-	max-width: 140px !important;
+	max-width: 150px !important;
 	font-size: 1.25rem;
 	font-family: 'Raleway';
 }
