@@ -307,9 +307,9 @@
 	</div>
 </footer>
     <script src="box-shadows/js/selects.js"></script>
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>    
 	<script>
-		// выводим нажатые блоки в поле result
+	// выводим нажатые блоки в поле result
 		window.onload = function(){
 			var items = document.querySelectorAll('.flex div.block');
 			var result = document.querySelector('.result');
@@ -321,12 +321,12 @@
 			function getShadow(e){
 				var styleItem = getComputedStyle(e.target);
 				result.innerHTML += 
-				'<br>.' +e.target.classList[1]+'{<br>' +
-				'-webkit-box-shadow: ' + styleItem.boxShadow + ';<br>' +
-				'-moz-box-shadow: ' + styleItem.boxShadow + ';<br>' +
+				'<br>.' +e.target.classList[1]+' {<br>' +
+				'-webkit-box-shadow: ' + styleItem.boxShadow + '; <br>' +
+				'-moz-box-shadow: ' + styleItem.boxShadow + '; <br>' +
 				'box-shadow: ' + styleItem.boxShadow + ';<br>}';
 			}
-		});
+		}
 	</script>
     <script>
     (function (d, w, c) {
