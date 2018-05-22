@@ -338,10 +338,10 @@
 			function getShadow(e){
 				var styleItem = getComputedStyle(e.target);
 				result.innerHTML += 
-				'.' +e.target.classList[1]+' {' +
-				'-webkit-box-shadow: ' + styleItem.boxShadow + ';' +
-				'-moz-box-shadow: ' + styleItem.boxShadow + ';' +
-				'box-shadow: ' + styleItem.boxShadow + ';}';
+				'\n.' +e.target.classList[1]+' {\n' +
+				'-webkit-box-shadow: ' + styleItem.boxShadow + ';\n' +
+				'-moz-box-shadow: ' + styleItem.boxShadow + ';\n' +
+				'box-shadow: ' + styleItem.boxShadow + ';\n}';
 			}
 		}
 	</script>
