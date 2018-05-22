@@ -157,8 +157,9 @@ textarea.result {
 	font-size: 1rem;
 	line-height: inherit;
 	width: 100%;
-	min-height: 125px;
+	min-height: 200px;
 	padding: 5px;
+	padding-top: 25px;
 	height:auto;
 }
 .add__content {
