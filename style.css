@@ -139,3 +139,12 @@ code {
 .mt-0 {
 	margin-top: 0 !important;
 }
+.alert {
+	display: block;
+	width: 100%;
+	position: relative;
+	padding: .75rem 1.25rem;
+	margin-bottom: 1rem;
+	border: 1px solid transparent;
+	border-radius: .25rem;
+}
