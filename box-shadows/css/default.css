@@ -122,6 +122,7 @@ input.filename {
 	-moz-border-radius: var(--primary-radius);
 	border-radius: var(--primary-radius);
 	border: 1px solid #dedede;
+	overflow-x: hidden;
 }
 .result-des::before {
 	display: block;
@@ -142,10 +143,10 @@ textarea.result {
 	font-family: inherit;
 	font-size: 1rem;
 	line-height: inherit;
-	min-width: 200px;
-	width: 96%;
+	width: 100%;
 	min-height: 115px;
 	padding: 5px;
+	height:auto;
 
 	-ms-user-select: all; 
  	 -moz-user-select: all; 
