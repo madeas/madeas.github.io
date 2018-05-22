@@ -99,15 +99,17 @@ body,
 .btn-save {
 	cursor: pointer;
 }	
-.changes input:focus,
-.changes button:focus,
-.input.filename:focus {
-	outline: none;
-}
 input.filename {
 	text-align: right;
 	border: 0;
 	pointer-events: none;
+	font-size: 1.25rem;
+	font-family: 'Raleway';
+}
+.changes input:focus,
+.changes button:focus,
+.input.filename:focus {
+	outline: none;
 }
 #text-options {
 	margin-top: .6em;
@@ -135,6 +137,7 @@ input.filename {
 	color: #032f62;
 	font: bold 12px/22px Raleway, sans-serif;
 	padding: 0px 10px;
+	z-index: 10;
 }
 textarea.result {
 	position: relative;
