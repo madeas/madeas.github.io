@@ -133,6 +133,9 @@ code {
 .text-right {
 	text-align: right;
 }
+.text-left {
+	text-align: left !important;
+}
 .mb-0 {
 	margin-bottom: 0 !important;
 }
