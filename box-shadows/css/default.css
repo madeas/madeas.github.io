@@ -114,6 +114,18 @@ body,
 	-webkit-user-select: all; 
 	user-select: all; 
 }
+.result::before {
+	display: block;
+	content:'CSS';
+	position: absolute;
+	background-color: #eee;
+	left:0;
+	top:0;
+	right: 0;
+	color: #032f62;
+	font: bold 12px/22px Raleway, sans-serif;
+	padding: 0px 10px;
+}
 .add__content {
 	width: 100%;
 	max-width: 800px;
