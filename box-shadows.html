@@ -262,7 +262,10 @@
           <div class="block bShadow-44"></div>
           <div class="block bShadow-45"></div>
 	<p class="alert text-center">3. You can click on the liked containers ↑ to generate their class and box-shadow in the block below ↓</p>
-	<div class="result"></div>
+	<textarea class="result" placeholder=".bShadow-"></textarea>
+	<form xmlns="http://www.w3.org/1999/xhtml" id="text-options">
+		<label>Filename: <input type="text" class="filename" value="box-shadows" />.css</label>	<input type="submit" class="btn-save" value="Download" />
+        </form>
 	<p>Press "Ctrl + C" and install them into your css file.</p>
         </div>	
 	<div class="download" id="download">    
@@ -310,8 +313,18 @@
 		<div class="text-center">Copyright &copy 2018 · Created by <a href="https://twitter.com/andrejsharapov" itemprop="url">Andrej Sharapov</a></div>
 	</div>
 </footer>
-    <script src="box-shadows/js/selects.js"></script>
-    <script async defer src="https://buttons.github.io/buttons.js"></script>    
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    	<script src="//buttons.github.io/buttons.js"></script>    
+	<script src="/js/FileSaver.min.js"></script>
+    	<script src="/js/selects.js"></script>
+	  <script>
+		  $(".btn-save").click( function() {
+			  var text = $(".result").val();
+			  var filename = $(".filename").val()
+			  var blob = new Blob([text], {type: "text/plain;charset=utf-8"});
+			  saveAs(blob, filename+".css");
+		});
+	</script>
 	<script>
 	// выводим нажатые блоки в поле result
 		window.onload = function(){
