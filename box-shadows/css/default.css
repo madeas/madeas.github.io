@@ -34,6 +34,9 @@ body,
 	justify-content: space-around;
 	counter-reset: figures;
 }
+.flex {
+	border-bottom: 1px solid #e5e5e5;
+}
 .block {
 	position: relative;
 	background-color: white;
