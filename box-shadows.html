@@ -214,51 +214,53 @@
 		<input type="checkbox" id="spoiler" class="all_blocks" />
 		
         <div class="flex numbers">
-          <div class="block bShadow-1"></div>
-          <div class="block bShadow-2"></div>
-          <div class="block bShadow-3"></div>
-          <div class="block bShadow-4"></div>
-          <div class="block bShadow-5"></div>
-          <div class="block bShadow-6"></div>
-          <div class="block bShadow-7"></div>
-          <div class="block bShadow-8"></div>
-          <div class="block bShadow-9"></div>
-          <div class="block bShadow-10"></div>
-          <div class="block bShadow-11"></div>
-          <div class="block bShadow-12"></div>
-          <div class="block bShadow-13"></div>
-          <div class="block bShadow-14"></div>
-          <div class="block bShadow-15"></div>
-          <div class="block bShadow-16"></div>
-          <div class="block bShadow-17"></div>
-          <div class="block bShadow-18"></div>
-          <div class="block bShadow-19"></div>
-          <div class="block bShadow-20"></div>
-          <div class="block bShadow-21"></div>
-          <div class="block bShadow-22"></div>
-          <div class="block bShadow-23"></div>
-          <div class="block bShadow-24"></div>
-          <div class="block bShadow-25"></div>
-          <div class="block bShadow-26"></div>
-          <div class="block bShadow-27"></div>
-          <div class="block bShadow-28"></div>
-          <div class="block bShadow-29"></div>
-          <div class="block bShadow-30"></div>
-          <div class="block bShadow-31"></div>
-          <div class="block bShadow-32"></div>
-          <div class="block bShadow-33"></div>
-          <div class="block bShadow-34"></div>
-          <div class="block bShadow-35"></div>
-          <div class="block bShadow-36"></div>
-          <div class="block bShadow-37"></div>
-          <div class="block bShadow-38"></div>
-          <div class="block bShadow-39"></div>
-          <div class="block bShadow-40"></div>
-          <div class="block bShadow-41"></div>
-          <div class="block bShadow-42"></div>
-          <div class="block bShadow-43"></div>
-          <div class="block bShadow-44"></div>
-          <div class="block bShadow-45"></div>
+          <div type="checkbox" class="block bShadow-1" onclick="this.disabled=true"></div>
+          <input type="checkbox" class="block bShadow-2" onclick="this.disabled=true"></div>
+          <input type="checkbox" class="block bShadow-3" onclick="this.disabled=true"></div>
+          <input type="checkbox" class="block bShadow-4" onclick="this.disabled=true"></div>
+          <input type="checkbox" class="block bShadow-5" onclick="this.disabled=true"></div>
+          <input type="checkbox" class="block bShadow-6" onclick="this.disabled=true"></div>
+          <input type="checkbox" class="block bShadow-7" onclick="this.disabled=true"></div>
+          <input type="checkbox" class="block bShadow-8" onclick="this.disabled=true"></div>
+          <input type="checkbox" class="block bShadow-9" onclick="this.disabled=true"></div>
+          <input type="checkbox" class="block bShadow-10" onclick="this.disabled=true"></div>
+          <input type="checkbox" class="block bShadow-11" onclick="this.disabled=true"></div>
+          <input type="checkbox" class="block bShadow-12" onclick="this.disabled=true"></div>
+          <input type="checkbox" class="block bShadow-13" onclick="this.disabled=true"></div>
+          <input type="checkbox" class="block bShadow-14" onclick="this.disabled=true"></div>
+          <input type="checkbox" class="block bShadow-15" onclick="this.disabled=true"></div>
+          <input type="checkbox" class="block bShadow-16" onclick="this.disabled=true"></div>
+          <input type="checkbox" class="block bShadow-17" onclick="this.disabled=true"></div>
+          <input type="checkbox" class="block bShadow-18"></div>
+          <input type="checkbox" class="block bShadow-19"></div>
+          <input type="checkbox" class="block bShadow-20"></div>
+          <input type="checkbox" class="block bShadow-21"></div>
+          <input type="checkbox" class="block bShadow-22"></div>
+          <input type="checkbox" class="block bShadow-23"></div>
+          <input type="checkbox" class="block bShadow-24"></div>
+          <input type="checkbox" class="block bShadow-25"></div>
+          <input type="checkbox" class="block bShadow-26"></div>
+          <input type="checkbox" class="block bShadow-27"></div>
+          <input type="checkbox" class="block bShadow-28"></div>
+          <input type="checkbox" class="block bShadow-29"></div>
+          <input type="checkbox" class="block bShadow-30"></div>
+          <input type="checkbox" class="block bShadow-31"></div>
+          <input type="checkbox" class="block bShadow-32"></div>
+          <input type="checkbox" class="block bShadow-33"></div>
+          <input type="checkbox" class="block bShadow-34"></div>
+          <input type="checkbox" class="block bShadow-35"></div>
+          <input type="checkbox" class="block bShadow-36"></div>
+          <input type="checkbox" class="block bShadow-37"></div>
+          <input type="checkbox" class="block bShadow-38"></div>
+          <input type="checkbox" class="block bShadow-39"></div>
+          <input type="checkbox" class="block bShadow-40"></div>
+          <input type="checkbox" class="block bShadow-41"></div>
+          <input type="checkbox" class="block bShadow-42"></div>
+          <input type="checkbox" class="block bShadow-43"></div>
+          <input type="checkbox" class="block bShadow-44"></div>
+          <input type="checkbox" class="block bShadow-45"></div>
+
+	<div class="result"></div>
         </div>	
 	<div class="add__content">
 		<p><strong>Basic Usage</strong></p>
@@ -306,7 +308,27 @@
 </footer>
     <script src="box-shadows/js/selects.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
-	  <script>
+	<script>
+		// выводим нажатые блоки в поле result
+		window.onload = function(){
+			var items = document.querySelectorAll('.flex .block');
+			var result = document.querySelector('.result');
+
+			for(var i = 0; i < items.length; i++){
+				items[i].addEventListener("click", getShadow);
+			}
+
+			function getShadow(e){
+				var styleItem = getComputedStyle(e.target);
+				result.innerHTML += 
+				'<br>.' +e.target.classList[1]+'{<br>' +
+				'-webkit-box-shadow: ' + styleItem.boxShadow + ';<br>' +
+				'-moz-box-shadow: ' + styleItem.boxShadow + ';<br>' +
+				'box-shadow: ' + styleItem.boxShadow + ';<br>}';
+			}
+		});
+	</script>
+    <script>
     (function (d, w, c) {
         (w[c] = w[c] || []).push(function() {
             try {
