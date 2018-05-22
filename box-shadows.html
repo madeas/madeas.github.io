@@ -322,6 +322,7 @@
 	<script src="box-shadows/js/FileSaver.min.js"></script>
 	<script src="box-shadows/js/selects.js"></script>
 	  <script>
+	// составляем css файл
 		  $(".btn-save").click( function() {
 			  var text = $(".result").val();
 			  var filename = $(".filename").val()
@@ -330,7 +331,7 @@
 		});
 	</script>
 	<script>
-	// выводим нажатые блоки в поле result
+	// выбираем необходимые блоки
 		window.onload = function(){
 			var items = document.querySelectorAll('.flex div.block');
 			var result = document.querySelector('.result');
@@ -338,7 +339,7 @@
 			for(var i = 0; i < items.length; i++){
 				items[i].addEventListener("click", getShadow);
 			}
-
+	// выводим нажатые блоки в поле result
 			function getShadow(e){
 				var styleItem = getComputedStyle(e.target);
 				result.innerHTML += 
