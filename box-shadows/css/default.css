@@ -99,6 +99,9 @@ body,
 .btn-save {
 	cursor: pointer;
 }	
+.btn-save {
+	margin-left: .25em;
+}
 input.filename {
 	text-align: right;
 	border: 0;
