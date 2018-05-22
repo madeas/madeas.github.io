@@ -100,12 +100,15 @@ body,
 	cursor: pointer;
 }	
 .btn-save {
+	border-color: #dedede;
+	color: #dedede;
 	margin-left: .25em;
 }
 input.filename {
 	text-align: right;
 	border: 0;
 	pointer-events: none;
+	max-width: 120px !important;
 	font-size: 1.25rem;
 	font-family: 'Raleway';
 }
