@@ -34,9 +34,6 @@ body,
 	justify-content: space-around;
 	counter-reset: figures;
 }
-.numbers {
-	border-bottom: 1px solid #e5e5e5;
-}
 .content-wrap input[id^="spoiler"] {
 	display: none;
 }
@@ -54,7 +51,7 @@ body,
 }
 .content-wrap input[id^="spoiler"]:checked ~ .numbers {
 	height: 100%;
-	opacity: 1;
+	border-bottom: 1px solid #e5e5e5;
 	overflow-y: visible;
 }
 .block {
