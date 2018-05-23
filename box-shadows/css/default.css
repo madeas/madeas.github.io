@@ -103,8 +103,8 @@ body,
 	cursor: pointer;
 }	
 .btn-save {
-	border-color: #dedede;
-	color: #dedede;
+	border-color: #ddd;
+	color: #ddd;
 	margin-left: .25em;
 }
 input.filename {
