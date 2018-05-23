@@ -36,8 +36,6 @@ body,
 }
 .content-wrap .sp_button {
 	display: inline-block;
-	text-align: center;
-	margin-bottom: 1em;
 	opacity: .7;
 }
 .block {
