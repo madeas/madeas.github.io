@@ -45,9 +45,6 @@
     -webkit-border-radius: 6px;    
     -moz-border-radius: 6px;
     border-radius: 6px;
-    
-    -webkit-box-shadow: 0 16px 32px 0 rgba(62,57,107,0.2);
-    box-shadow: 0 16px 32px 0 rgba(62,57,107,0.2);
 }
 .info span .info-svg {
     margin-top: 1em;  
