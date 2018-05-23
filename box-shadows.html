@@ -229,8 +229,9 @@
 		<summary class="text-left en" lang="en"><a href="#preview" class="sp_button">show in blocks</a></summary>
 		<summary class="text-left ru" lang="ru"><a href="#preview" class="sp_button">посмотреть в блоках</a></summary>		
         <div class="flex numbers">
-	<p id="preview" class="alert text-left"><strong>Setting preview</strong> <a class="anchorjs-link" title="Setting preview and generate min.css" href="#preview" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></p>
+	<p id="preview_en" class="alert text-left en" lang="en"><strong>Setting preview</strong> <a class="anchorjs-link" title="Setting preview and generate min.css" href="#preview_en" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></p>
 	<p class="alert en" lang="en">1. Change the background of the site and container to your own.</p>
+	<p id="preview_ru" class="alert text-left ru" lang="ru"><strong>Настройки и предпросмотр</strong> <a class="anchorjs-link" title="Настройка предварительного просмотра и генератор min.css" href="#preview_ru" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></p>
 	<p class="alert ru" lang="ru">1. Воспользуйтесь формой ниже и измените фон сайта и контейнера на свои собственные.</p>
 	<div class="changes">
 		<input type="text" value="#f3f5f6" id="bg-body">
@@ -240,7 +241,7 @@
 		<button id="ch_btn-two" class="en" lang="en">change</button>
 		<button id="ch_btn-two" class="ru" lang="ru">сменить</button>
 	</div>
-	<p class="alert en" lang="en">2. Hover on the block to see the result.</p>
+	<p class="alert en" lang="en">2. Hover on the block to see them in action. The result of displaying in blocks and as a shadow of the main container.</p>
         <p class="alert ru" lang="ru">2. Наводите на блоки, чтобы увидеть их в действии. Результат отображается в блоках и в виде тени основного контейнера сайта.</p>
           <div class="block bShadow-1"></div>
           <div class="block bShadow-2"></div>
@@ -301,24 +302,24 @@
 			result.innerHTML+= '/*!\n'+' * box-shadows.min.css v1.0.1'+'g' + day+''+month+''+hours+''+minutes+' - https://github.com/madeas/box-shadows.css\n'+' * \n'+' * Copyright (c) 2018 Andrej Sharapov\n'+' * Licensed under MIT (https://github.com/madeas/box-shadows.css/blob/master/LICENSE)\n'+' */\n'+'\n';
 	</script>
 	</div>
-	<p class="text-center en" lang="en">4. Click "Download" and install the downloaded file according to the "Basic Usage".</p>
+	<p class="text-center en" lang="en">4. Click "Download" and install the downloaded file according to the "<a href="#usage_en" title="">Basic Usage</a>".</p>
 	<p class="text-center ru" lang="ru">4. Нажмите «Загрузить» и установите скаченный файл в соответствии с инструкцией, указанной ниже.</p>
 	<form xmlns="http://www.w3.org/1999/xhtml" id="text-options">
-		<label><span class="pl-ent">Generate:</span> <input type="text" class="filename" value="box-shadows.min" />.css</label>	<input type="submit" class="btn-save en" lang="en" value="Download" /> <input type="submit" class="btn-save ru" lang="ru" value="Скачать" />
+		<label><span class="pl-ent en" lang="en">Generate</span> <span class="pl-ent ru" lang="ru">Генератор файла</span> <input type="text" class="filename" value="box-shadows.min" />.css</label>	<input type="submit" class="btn-save en" lang="en" value="Download" /> <input type="submit" class="btn-save ru" lang="ru" value="Скачать" />
         </form>
         </div><!--/ flex numbers -->
 	</details>	
 	<div class="download" id="download">
-		<p id="load" class="alert text-left en" lang="en"><strong>Download <sup class="version pl-ent">v1.0.1</sup></strong> <a class="anchorjs-link" title="Download now it's free" href="#load" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></p>
+		<p id="load_en" class="alert text-left en" lang="en"><strong>Download <sup class="version pl-ent">v1.0.1</sup></strong> <a class="anchorjs-link" title="Download now it's free" href="#load_en" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></p>
 		<p class="text-center en" lang="en">Did you like the collection? Download now it's free </p>
-		<p id="load" class="alert text-left ru" lang="ru"><strong>Загрузка файлов <sup class="version pl-ent">v1.0.1</sup></strong> <a class="anchorjs-link" title="Download now it's free" href="#load" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></p>
+		<p id="load_ru" class="alert text-left ru" lang="ru"><strong>Загрузка файлов <sup class="version pl-ent">v1.0.1</sup></strong> <a class="anchorjs-link" title="Download now it's free" href="#load_ru" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></p>
 		<p class="text-center ru" lang="ru">Нравится коллекция? Скачайте ее прямо сейчас</p>
 		<p class="text-center"><a class="btn-download" itemprop="url" href="https://madeas.github.io/box-shadows.css"><strong>box-shadows</strong>.css</a> <a class="btn-download" itemprop="url" href="https://madeas.github.io/box-shadows.min.css"><strong>box-shadows</strong>.min.css</a></p>
  	</div>
 	<div class="add__content">
-		<p id="usage" class="alert text-left en" lang="en"><strong>Basic Usage</strong> <a class="anchorjs-link" title="Basic Usage" href="#usage" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></p>
+		<p id="usage_en" class="alert text-left en" lang="en"><strong>Basic Usage</strong> <a class="anchorjs-link" title="Basic Usage" href="#usage_en" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></p>
 		<p class="en" lang="en">1. Include the stylesheet on your document's <code>&lt;head&gt;</code>:</p>
-		<p id="usage" class="alert text-left ru" lang="ru"><strong>Использование</strong> <a class="anchorjs-link" title="Basic Usage" href="#usage" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></p>
+		<p id="usage_ru" class="alert text-left ru" lang="ru"><strong>Использование</strong> <a class="anchorjs-link" title="Basic Usage" href="#usage_ru" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></p>
 		<p class="ru" lang="ru">1. Подключите таблицу стилей на своем сайте, после открывающего тега <code>&lt;head&gt;</code>, таким образом:</p>
 <pre rel="Code">
 &lt;<span class="pl-ent">head</span>&gt;
@@ -355,7 +356,7 @@
 		<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
 		<script src="//yastatic.net/share2/share.js"></script>
 		<div class="flex share">
-		<strong>Share</strong> <div class="ya-share2" data-services="vkontakte,facebook,gplus,twitter,blogger,reddit,linkedin,tumblr,telegram" data-counter=""></div>
+		<strong class="en" lang="en">Share</strong> <strong class="ru" lang="ru">Поделиться</strong> <div class="ya-share2" data-services="vkontakte,facebook,gplus,twitter,blogger,reddit,linkedin,tumblr,telegram" data-counter=""></div>
 		</div>
 	</div><!--/ content-wrap -->
     </div>
