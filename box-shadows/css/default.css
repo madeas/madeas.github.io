@@ -18,6 +18,15 @@ body,
 	margin: 0 auto;
 	padding: 35px 30px 0px;
 }
+summary {
+	width: 50%;
+	border-bottom: 1px dotted #e1e4e8;
+	cursor: pointer;
+}
+.content-wrap .sp_button {
+	display: inline-block;
+	color: #3b393d;
+}
 .blocks,
 .flex {
 	position: relative;
@@ -33,10 +42,6 @@ body,
 	-webkit-flex-flow: row wrap;
 	justify-content: space-around;
 	counter-reset: figures;
-}
-.content-wrap .sp_button {
-	display: inline-block;
-	color: #3b393d;
 }
 .block {
 	position: relative;
