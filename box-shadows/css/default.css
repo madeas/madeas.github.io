@@ -34,25 +34,12 @@ body,
 	justify-content: space-around;
 	counter-reset: figures;
 }
-.content-wrap input[id^="spoiler"] {
-	display: none;
-}
-.content-wrap label {
+.content-wrap .sp_button {
   	display: block;
   	width: 100%;
 	text-align: center;
 	margin-bottom: 1em;
 	opacity: .7;
-}
-.content-wrap input[id^="spoiler"] ~ .numbers {
-	height: 0;
-	border: 0;
-	overflow-y: hidden;
-}
-.content-wrap input[id^="spoiler"]:checked ~ .numbers {
-	height: 100%;
-	border-bottom: 1px solid #e5e5e5;
-	overflow-y: visible;
 }
 .block {
 	position: relative;
