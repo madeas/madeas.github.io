@@ -70,7 +70,7 @@ summary {
 .changes h3 {
 	color: #3b393d;
 	font-weight: 300;
-	font-family: 'Raleway';
+	font-family: 'Raleway', 'Exo 2', sans-serif;
 	margin-bottom: 7px;
 }
 .changes input,
@@ -102,7 +102,7 @@ input.filename {
 	border: 0;
 	pointer-events: none;
 	font-size: 1.25rem;
-	font-family: 'Raleway';
+	font-family: 'Raleway', 'Exo 2', sans-serif;
 }
 .changes input:focus,
 .changes button:focus,
@@ -135,7 +135,7 @@ input.filename {
 	top:0;
 	right: 0;
 	color: #032f62;
-	font: bold 12px/23px 'Raleway', sans-serif;
+	font: bold 12px/23px 'Raleway', 'Exo 2', sans-serif;
 	padding: 0px 10px;
 	z-index: 10;
 }
@@ -172,7 +172,7 @@ textarea.result {
 .card__title {
   	font-size: 3rem;
   	color: #47c9e5;
-  	font-family: 'Raleway';
+  	font-family: 'Raleway', 'Exo 2', sans-serif;
 	line-height: 1;
 	margin: 5px 0 0 0;
 }
