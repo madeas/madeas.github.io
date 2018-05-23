@@ -37,6 +37,26 @@ body,
 .numbers {
 	border-bottom: 1px solid #e5e5e5;
 }
+.content-wrap input[id^="spoiler"] {
+	display: none;
+}
+.content-wrap label {
+  	display: block;
+  	width: 100%;
+	text-align: center;
+	margin-bottom: 1em;
+	opacity: .7;
+}
+.content-wrap input[id^="spoiler"] ~ .numbers {
+	height: 0;
+	border: 0;
+	overflow: hidden;
+}
+.content-wrap input[id^="spoiler"]:checked ~ .numbers {
+	height: 100%;
+	opacity: 1;
+	overflow: none;
+}
 .block {
 	position: relative;
 	background-color: white;
@@ -56,22 +76,6 @@ body,
 }
 .flex .block:before {
 	content: 'bShadow-' counter(figures) ;
-}
-.content-wrap input[type=checkbox] {
-	display: none;
-}
-.content-wrap input[type=checkbox] + .numbers {
-	display: none;
-}
-.content-wrap input[type=checkbox]:checked + .numbers {
-	display: flex;
-}
-.content-wrap .sp_button {
-  	display: block;
-  	width: 100%;
-	text-align: center;
-	margin-bottom: 1em;
-	opacity: .7;
 }
 .changes {
 	color: #e4e7e9;
