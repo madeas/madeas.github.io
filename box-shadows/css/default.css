@@ -196,7 +196,7 @@ textarea.result {
 	padding: 25px 30px 100px;
 	color: #3b393d;
 }
-.card__copy p:first-of-type {
+.card__copy p.first {
 	font-size: 1.5em;
 }
 .block-select {
