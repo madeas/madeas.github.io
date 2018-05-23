@@ -204,11 +204,10 @@
           <option>bShadow-45</option>
         </select>
         </div>		
-		<label class="sp_button" for="spoiler">show in blocks</label>
-		<input type="checkbox" id="spoiler" />
-		
+	<details>
+		<summary class="text-center"><a href="#preview" class="sp_button">show in blocks</a></summary>		
         <div class="flex numbers">
-	<p class="alert text-left"><strong>Setting preview</strong></p>
+	<p id="preview" class="alert text-left"><a class="anchorjs-link" title="Setting preview and generate min.css" href="#preview" aria-label="Anchor" data-anchorjs-icon="#" style="padding-right: 0.375em;"></a> <strong>Setting preview</strong></p>
 	<p class="alert">1. Change the background of the site and container to your own.</p>
 	<div class="changes">
 		<input type="text" value="#f3f5f6" id="bg-body">
@@ -264,7 +263,7 @@
           <div class="block bShadow-45"></div>
 	<p class="alert text-center">3. You can click on the liked containers ↑ to generate their class and box-shadow in the block below ↓</p>
 	<div class="alert result-des">
-<textarea class="result" id="result"></textarea>
+	<textarea class="result" id="result"></textarea>
 	<script>
 		var d=new Date();
 		var day=d.getDate();
@@ -279,14 +278,15 @@
 	<form xmlns="http://www.w3.org/1999/xhtml" id="text-options">
 		<label><span class="pl-ent">Filename:</span> <input type="text" class="filename" value="box-shadows.min" />.css</label>	<input type="submit" class="btn-save" value="Download" />
         </form>
-        </div><!--/ .flex -->	
+        </div><!--/ flex numbers -->
+	</details>	
 	<div class="download" id="download">    
 		<p>Did you like the collection? Download now it's free</p>
 		<h2>Download <sup class="version pl-ent">v1.0.1</sup></h2>
 		<a class="btn-download" itemprop="url" href="https://madeas.github.io/box-shadows.css"><strong>box-shadows</strong>.css</a> <a class="btn-download" itemprop="url" href="https://madeas.github.io/box-shadows.min.css"><strong>box-shadows</strong>.min.css</a>
  	</div>
 	<div class="add__content">
-		<p><strong>Basic Usage</strong></p>
+		<p id="usage"><a class="anchorjs-link" title="Basic Usage" href="#usage" aria-label="Anchor" data-anchorjs-icon="#" style="padding-right: 0.375em;"></a> <strong>Basic Usage</strong></p>
 		<p>1. Include the stylesheet on your document's <code>&lt;head&gt;</code>:</p>
 <pre rel="Code">
 &lt;<span class="pl-ent">head</span>&gt;
