@@ -151,6 +151,7 @@ textarea.result {
 	padding: 5px;
 	padding-top: 25px;
 	height:auto;
+	resize: vertical;
 }
 .add__content {
 	width: 100%;
