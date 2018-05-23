@@ -50,12 +50,12 @@ body,
 .content-wrap input[id^="spoiler"] ~ .numbers {
 	height: 0;
 	border: 0;
-	overflow: hidden;
+	overflow-y: hidden;
 }
 .content-wrap input[id^="spoiler"]:checked ~ .numbers {
 	height: 100%;
 	opacity: 1;
-	overflow: none;
+	overflow-y: visible;
 }
 .block {
 	position: relative;
