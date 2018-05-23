@@ -36,6 +36,7 @@ body,
 }
 .content-wrap .sp_button {
 	display: inline-block;
+	color: #3b393d;
 	opacity: .7;
 }
 .block {
