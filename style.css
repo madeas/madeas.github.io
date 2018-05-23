@@ -19,7 +19,7 @@ body {
 	margin:0;
   	overflow-x: hidden !important;
 	font-size: 16px;
-	font-family: 'Raleway', 'Exo 2', Arial, Helvetica Neue, sans-serif;
+	font-family: 'Raleway', Arial, Helvetica Neue, sans-serif;
 }
 ::-webkit-scrollbar {
 	width: 6px;
@@ -118,7 +118,7 @@ pre[rel]:before {
 	background-color:#eee;
 	content:attr(rel);
 	color: #032f62;
-	font: bold 12px/22px Raleway, 'Exo 2', sans-serif;
+	font: bold 12px/22px Raleway, sans-serif;
 	padding: 0px 10px;
 }
 code {
