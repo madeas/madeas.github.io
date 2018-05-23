@@ -5,13 +5,6 @@
  * Licensed under MIT (https://github.com/madeas/box-shadows.css/blob/master/LICENSE)
  */
 
-/*!
- * box-shadows.min.css v1.0.1 - https://github.com/madeas/box-shadows.css
- *
- * Copyright (c) 2018 Andrej Sharapov
- * Licensed under MIT (https://github.com/madeas/box-shadows.css/blob/master/LICENSE)
- */
-
 .bShadow{
 	-webkit-box-shadow:
 		0 10px 40px 0 rgba(62,57,107,0.07),
