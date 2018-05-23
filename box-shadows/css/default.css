@@ -2,6 +2,12 @@
 .ru :lang(en) {
 	display: none;
 }
+.en {
+	font-family: 'Raleway', sans-serif;
+}
+.ru {
+	font-family: 'Comfortaa', sans-serif;
+}
 .lang-switcher img {
 	cursor: pointer;
 }
