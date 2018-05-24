@@ -29,7 +29,7 @@
     font-size: 1.5em;
     margin-bottom: 1em;
 }
-.info span {
+.info . {
     display: inline-block;
     width: 180px;
     height: 180px;
@@ -46,8 +46,8 @@
     -moz-border-radius: 6px;
     border-radius: 6px;
 }
-.info .info-svg {
-    margin-top: 1em;  
+.info .over--i {
+    padding-top: .5em;  
 }
 .info button {
     border: 2px solid #fff;
