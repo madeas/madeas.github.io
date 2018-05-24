@@ -304,6 +304,12 @@ textarea.result {
 .content-arrow-right::after {
 	display: none;
 }
+.pr-3 {
+	padding-right:1rem!important;
+}
+.pl-3 {
+	padding-left:1rem!important;
+}
 @media (min-width: 992px) {
 	.content-arrow-left::after,
 	.content-arrow-right::after {
