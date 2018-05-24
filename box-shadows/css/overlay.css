@@ -46,7 +46,7 @@
     -moz-border-radius: 6px;
     border-radius: 6px;
 }
-.info span .info-svg {
+.info .info-svg {
     margin-top: 1em;  
 }
 .info button {
