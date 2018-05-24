@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="en" itemscope itemtype="http://schema.org/WebPage" prefix="og: http://ogp.me/ns#">
+<html itemscope itemtype="http://schema.org/WebPage" prefix="og: http://ogp.me/ns#">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
@@ -59,7 +59,7 @@
 	</script>
   </head>
 
-  <body itemscope itemtype="http://schema.org/WebPage" class="home">
+  <body itemscope itemtype="http://schema.org/WebPage" class="en">
 	  
 <div id="overlay">
 	<button type="button" onclick="getElementById('overlay').style.display='none';" class="overlay_close"><div class="close-inner"></div></button>
@@ -413,7 +413,7 @@
 	</script>	  
 <script>
   (function(){
-    var html = document.getElementsByTagName('html')[0];
+    var html = document.getElementsByTagName('body')[0];
 
     var switcherEN = document.getElementById('switcher-en');
     var switcherRU = document.getElementById('switcher-ru');
@@ -436,7 +436,7 @@
       lang = lang.replace('switcher-', '');
 
       // Меняем класс для BODY
-      html.className = lang;
+      body.className = lang;
 
       // Записываем куки
       document.cookie = [
