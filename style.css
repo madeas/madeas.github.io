@@ -1,6 +1,11 @@
 :root {
     --primary-radius: 6px;	
 }
+* {
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+}
 *, 
 ::after, 
 ::before {
