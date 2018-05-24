@@ -47,6 +47,7 @@
     border-radius: 6px;
 }
 .info .over--i {
+    display: block;
     padding-top: .5em;  
 }
 .info button {
