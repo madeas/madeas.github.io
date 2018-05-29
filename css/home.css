@@ -30,7 +30,7 @@
 	text-shadow: -1px 4px 10px rgba(0,0,0,0.1);
 }
 .title .quote {
-	color: #F2F2F2; /* #7f8080 */
+	color: #7f8080;
 	font: italic normal 2vw/1em 'Raleray', sans-serif;
 }
 .title .quote span {
@@ -160,6 +160,9 @@
 @media (max-width: 480px) {
 	.navigation .item {
 		left: 30px !important;
+	}
+	.navigation .item:nth-child(3) .icon {
+		top: 70px;
 	}
 	.masthead .title {
 		left:0 !important;
