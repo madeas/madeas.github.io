@@ -51,7 +51,7 @@
 }
 /* navigation items */
 .item.bsha {
-	top:125px;
+	top:135px;
 	left:110px;
 }
 .item.jslay {
@@ -160,9 +160,6 @@
 @media (max-width: 480px) {
 	.navigation .item {
 		left: 30px !important;
-	}
-	.navigation .item:nth-child(3) .icon {
-		top: 70px;
 	}
 	.masthead .title {
 		left:0 !important;
