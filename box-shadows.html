@@ -58,7 +58,7 @@
 	</script>
   </head>
 
-  <body itemscope itemtype="http://schema.org/WebPage" class="en">
+  <body itemscope itemtype="http://schema.org/WebPage" class="overlay en">
 	  
 <div id="overlay">
 	<button type="button" onclick="getElementById('overlay').style.display='none';" class="overlay_close"><span class="close-inner"></span></button>
@@ -468,7 +468,15 @@
     switcherRU.onclick = switchLang;
   })();
 </script>
-    <script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+         document.querySelector('.info button').addEventListener("click",
+         function() {
+            document.body.classList.remove("overlay")
+         } );
+     });
+</script>
+<script>
     (function (d, w, c) {
         (w[c] = w[c] || []).push(function() {
             try {
