@@ -39,7 +39,7 @@ body.overlay #overlay{
     text-transform: lowercase;
 }
 .info h2,
-.info h2 {
+.info h3 {
     letter-spacing: 1px;
     font-family: 'Raleway', sans-serif;
 }
