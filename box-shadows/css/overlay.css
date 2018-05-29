@@ -127,7 +127,8 @@ body.overlay #overlay{
         display: block;
     }
     .info button,
-    .info h2 {
+    .info h2,
+    .info h3 {
         display: none;
     }
 }
