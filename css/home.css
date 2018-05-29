@@ -31,7 +31,7 @@
 }
 .title .quote {
 	color: #F2F2F2; /* #7f8080 */
-	font: italic normal 3.75vw/1em 'Raleray', sans-serif;
+	font: italic normal 2vw/1em 'Raleray', sans-serif;
 }
 .title .quote span {
 	font-family: inherit;
