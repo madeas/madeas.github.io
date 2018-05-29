@@ -30,9 +30,17 @@ body.overlay #overlay{
 }
 .info h2 {
     text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+.info h3 {
     font-size: 1.5em;
     margin-bottom: 1em;
+}
+.info h2,
+.info h2 {
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
 }
 .info .over--i {
     display: inline-block;
