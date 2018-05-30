@@ -319,7 +319,7 @@ textarea.result {
 	width: 100%;
 	position: relative;
 	margin:0 auto;
-	min-height: 300px;
+	min-height: 500px;
 	overflow:hidden;
 }
 .drag_obj {
@@ -366,7 +366,6 @@ textarea#g_result {
 	-moz-user-select: all;
 	-webkit-user-select: all;
 	user-select: all;
-	cursor: pointer;
 }
 .gen_container input[type=range] {
 	margin: 0;
