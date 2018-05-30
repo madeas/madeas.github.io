@@ -504,6 +504,9 @@ textarea#g_result {
 	}
 }
 @media (max-width: 420px) {
+	.gen_table td:nth-child(2) {
+		display: none;
+	}
 	.blocks {
 		justify-content: flex-start;
 	}
