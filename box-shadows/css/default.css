@@ -339,6 +339,7 @@ textarea.result {
 	cursor: -moz-grab;
 	cursor: -webkit-grab;
 	border: 2px dashed transparent;
+	padding: 10px 15px;
 }
 .drag_obj:hover {
 	border: 2px dashed gray;
@@ -353,7 +354,7 @@ textarea.result {
 	left: 50%;
 }
 textarea#g_result {
-	min-width: 300px;
+	min-width: 140px;
 	position: relative;
 	display: block;
 	font-family: inherit;
