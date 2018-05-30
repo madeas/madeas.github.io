@@ -324,6 +324,7 @@ textarea.result {
 	display: block;
 	width: 100%;
 	position: relative;
+	text-align: center;
 	margin: 0 auto;
 	min-height: 300px;
 	overflow-x: hidden;
