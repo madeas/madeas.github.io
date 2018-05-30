@@ -331,7 +331,7 @@ textarea.result {
 	display: -webkit-flex;
 	flex-direction: column;
 	-webkit-flex-direction: column;
-	justify-content: space-around;
+	justify-content: center;
 }
 .drag_obj {
 	position: absolute;
