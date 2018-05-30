@@ -313,24 +313,25 @@ textarea.result {
 	text-align: center;
 }
 .gen_selector {
-	min-width: 360px;
+	width: 100%;
 	display: flex;
 	display: -webkit-flex;
 	flex-flow: row wrap;
 	-webkit-flex-flow: row wrap;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 .gen_result {
 	display: block;
 	width: 100%;
 	position: relative;
 	margin: 0 auto;
-	min-height: 500px;
+	min-height: 300px;
 	overflow-x: hidden;
 	display: flex;
 	display: -webkit-flex;
-	flex-flow: row nowrap;
-	justify-content: flex-start;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	justify-content: space-around;
 }
 .drag_obj {
 	position: absolute;
@@ -503,10 +504,10 @@ textarea#g_result {
 	}
 }
 @media (max-width: 420px) {
-	.gen_table td:nth-child(2) {
-		display: none;
-	}
 	.blocks {
 		justify-content: flex-start;
+	}
+	.gen_table td:nth-child(2) {
+		display: none;
 	}
 }
