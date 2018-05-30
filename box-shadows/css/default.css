@@ -354,13 +354,13 @@ textarea.result {
 	left: 50%;
 }
 textarea#g_result {
-	min-width: 300px;
 	position: relative;
 	display: block;
 	font-family: inherit;
 	font-size: 1rem;
 	line-height: inherit;
-	height: auto;
+	min-width: 300px;
+	height: 190px;
 	padding: 5px;
 	border: 0;
 	margin: 90px 10px 20px;
