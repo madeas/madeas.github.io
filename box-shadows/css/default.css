@@ -314,6 +314,29 @@ textarea.result {
 	min-width: 360px;
 	display: flex;
 }
+.gen_result {
+	display: block;
+	width: 100%;
+	position: relative;
+	min-height: 300px;
+}
+.drag_obj {
+	position: absolute;
+	cursor: move;
+	cursor: grab;
+	cursor: -moz-grab;
+	cursor: -webkit-grab;
+	border: 2px dashed transparent;
+	padding-right: 3px;
+}
+.drag_obj:hover {
+	border: 2px dashed gray;
+}
+.drag_obj:active {
+	cursor: grabbing;
+	cursor: -moz-grabbing;
+	cursor: -webkit-grabbing;
+}
 textarea#g_result {
 	min-width: 300px;
 	position: relative;
