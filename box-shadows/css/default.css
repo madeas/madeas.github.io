@@ -318,7 +318,9 @@ textarea.result {
 	display: block;
 	width: 100%;
 	position: relative;
+	margin:0 auto;
 	min-height: 300px;
+	overflow:hidden;
 }
 .drag_obj {
 	position: absolute;
