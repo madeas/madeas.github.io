@@ -332,6 +332,28 @@ textarea.result {
 	flex-direction: column;
 	-webkit-flex-direction: column;
 	justify-content: center;
+	-webkit-justify-content: center;
+}
+textarea#g_result {
+	position: relative;
+	display: block;
+	font-family: inherit;
+	font-size: 1rem;
+	line-height: inherit;
+	min-width: 300px;
+	height: 190px;
+	padding: 5px;
+	border: 0;
+	margin: 90px auto 20px;
+	
+	-webkit-border-radius: .25rem;
+	-moz-border-radius: .25rem;
+	border-radius: .25rem;
+	
+	-ms-user-select: all;
+	-moz-user-select: all;
+	-webkit-user-select: all;
+	user-select: all;
 }
 .drag_obj {
 	position: absolute;
@@ -353,27 +375,6 @@ textarea.result {
 .drag_obj:nth-of-type(1) {
 	top: 150px;
 	left: 50%;
-}
-textarea#g_result {
-	position: relative;
-	display: block;
-	font-family: inherit;
-	font-size: 1rem;
-	line-height: inherit;
-	min-width: 300px;
-	height: 190px;
-	padding: 5px;
-	border: 0;
-	margin: 90px 10px 20px;
-	
-	-webkit-border-radius: .25rem;
-	-moz-border-radius: .25rem;
-	border-radius: .25rem;
-	
-	-ms-user-select: all;
-	-moz-user-select: all;
-	-webkit-user-select: all;
-	user-select: all;
 }
 .gen_container input[type=range] {
 	margin: 0;
