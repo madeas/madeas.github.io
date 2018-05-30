@@ -318,7 +318,7 @@ textarea.result {
 	display: -webkit-flex;
 	flex-flow: row wrap;
 	-webkit-flex-flow: row wrap;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 .gen_result {
 	display: block;
@@ -358,12 +358,16 @@ textarea#g_result {
 }
 .drag_obj {
 	position: absolute;
+	top: 0;
+	left: 50%;
 	cursor: move;
 	cursor: grab;
 	cursor: -moz-grab;
 	cursor: -webkit-grab;
 	border: 2px dashed transparent;
 	padding: 10px 15px;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
 }
 .drag_obj:hover {
 	border: 2px dashed gray;
