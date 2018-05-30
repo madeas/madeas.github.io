@@ -326,7 +326,7 @@ textarea.result {
 	position: relative;
 	text-align: center;
 	margin: 0 auto;
-	min-height: 300px;
+	min-height: 500px;
 	overflow-x: hidden;
 	display: flex;
 	display: -webkit-flex;
