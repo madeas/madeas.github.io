@@ -121,7 +121,8 @@ input.filename {
 .changes button:focus,
  input.filename:focus,
 .btn-save:focus,
- summary:focus {
+ summary:focus,
+.gen_container input[type=range]:focus {
 	outline: none;
 }
 #text-options {
@@ -291,6 +292,68 @@ textarea.result {
     	text-decoration: none;
     	white-space: nowrap;
 }
+.gen_container {
+	padding: 10px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	font-size: 16px !important;
+}
+.gen_table {
+	min-width: 30%;
+}
+.gen {
+	display: inline-block;
+	font-weight: bold;
+	color: #47c9e5;
+	min-width: 30px;
+	text-align: center;
+}
+.gen_selector {
+	min-width: 360px;
+	display: flex;
+}
+textarea#g_result {
+	min-width: 300px;
+	position: relative;
+	display: block;
+	font-family: inherit;
+	font-size: 1rem;
+	line-height: inherit;
+	height: auto;
+	min-height: 205px;
+	padding: 5px;
+	border: 0;
+	margin: 30px 10px;
+	-webkit-border-radius: .25rem;
+	-moz-border-radius: .25rem;
+	border-radius: .25rem;
+	-ms-user-select: all;
+	-moz-user-select: all;
+	-webkit-user-select: all;
+	user-select: all;
+	cursor: pointer;
+}
+.gen_container input[type=range] {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	-webkit-appearance: none;
+	background: transparent;
+	border: 3px dashed #eee;
+	height: 0;
+	margin-bottom: 15px;
+}
+.gen_container input[type=range]::-webkit-slider-thumb {
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	background: #47c9e5;
+	cursor: pointer;
+	z-index: 20;
+	-webkit-appearance: none;
+	position: relative;
+}
 .footer {
     	display: block;
 	width: 96%;
@@ -309,6 +372,9 @@ textarea.result {
 }
 .pl-3 {
 	padding-left:1rem!important;
+}
+.op0 {
+	opacity: 0;
 }
 @media (min-width: 992px) {
 	.content-arrow-left::after,
