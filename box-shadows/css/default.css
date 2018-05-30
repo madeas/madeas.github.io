@@ -296,7 +296,9 @@ textarea.result {
 .gen_container {
 	padding: 10px;
 	display: flex;
+	display: -webkit-flex;
 	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
 	justify-content: flex-start;
 }
 .gen_table {
@@ -313,6 +315,10 @@ textarea.result {
 .gen_selector {
 	min-width: 360px;
 	display: flex;
+	display: -webkit-flex;
+	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+	overflow-x: hidden;
 }
 .gen_result {
 	display: block;
@@ -468,6 +474,7 @@ textarea#g_result {
 	}
 	.gen_selector {
 		flex-direction: column;
+		-webkit-flex-direction: column;
 	}
 }
 @media (max-width: 480px) {
