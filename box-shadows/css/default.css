@@ -349,11 +349,8 @@ textarea.result {
 	cursor: -webkit-grabbing;
 }
 .drag_obj:nth-of-type(1) {
-	top: 50px;
+	top: 150px;
 	left: 50%;
-}
-.drag_obj:nth-of-type(2) {
-	top: 100px;
 }
 textarea#g_result {
 	min-width: 300px;
@@ -366,10 +363,12 @@ textarea#g_result {
 	min-height: 205px;
 	padding: 5px;
 	border: 0;
-	margin: 30px 10px;
+	margin: 90px 10px 20px;
+	
 	-webkit-border-radius: .25rem;
 	-moz-border-radius: .25rem;
 	border-radius: .25rem;
+	
 	-ms-user-select: all;
 	-moz-user-select: all;
 	-webkit-user-select: all;
