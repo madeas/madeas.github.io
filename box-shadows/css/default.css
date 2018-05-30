@@ -341,7 +341,7 @@ textarea.result {
 	right: 30px;
 }
 .drag_obj:nth-of-type(2) {
-	top: 50%;
+	top: 100px;
 	left: 20px;
 }
 textarea#g_result {
