@@ -320,7 +320,7 @@ textarea.result {
 	position: relative;
 	margin:0 auto;
 	min-height: 500px;
-	overflow:hidden;
+	overflow-x:hidden;
 }
 .drag_obj {
 	position: absolute;
