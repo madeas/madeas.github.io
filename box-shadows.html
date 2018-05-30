@@ -390,8 +390,8 @@
   </div>
 
   <div class="gen_result">
-    <textarea class="g_result" id="g_result"></textarea>
-    <button class="save">save and add the next</button>
+    <span class="drag_obj" onmousedown="drag_object(event, this)"><textarea class="g_result" id="g_result"></textarea></span>
+    <span class="drag_obj" onmousedown="drag_object(event, this)"><button class="save">save and add the next</button></span>
   </div>
 
 </div><!--/ gen_container -->
@@ -506,6 +506,43 @@
         }
       })
   });
+</script>
+<script>
+  function drag_object(evt, obj) {
+    evt = evt || window.event;
+    // готовность к перетаскиванию
+    obj.clicked = true;
+    // устанавливаем первоначальные значения координат объекта 
+    obj.mousePosX = evt.clientX;
+    obj.mousePosY = evt.clientY;
+    // отключаем обработку событий по умолчанию 
+    if (evt.preventDefault) evt.preventDefault();
+    else evt.returnValue = false;
+    // когда мы отпускаем кнопку мыши, убираем «проверочный флаг» 
+    document.onmouseup = function() {
+      obj.clicked = false
+    }
+    // обработка координат указателя
+    document.onmousemove = function(evt) {
+      evt = evt || window.event;
+      if (obj.clicked) {
+        posLeft = !obj.style.left ? obj.offsetLeft : parseInt(obj.style.left);
+        posTop = !obj.style.top ? obj.offsetTop : parseInt(obj.style.top);
+        mousePosX = evt.clientX;
+        mousePosY = evt.clientY;
+        obj.style.left = posLeft + mousePosX - obj.mousePosX + 'px';
+        obj.style.top = posTop + mousePosY - obj.mousePosY + 'px';
+        obj.mousePosX = mousePosX;
+        obj.mousePosY = mousePosY;
+      }
+    }
+  }
+
+  function setcookie(name, value, timeout) {
+    timeout = timeout || 1000 * 60 * 60 * 24;
+    expires = (new Date((new Date).getTime() + timeout)).toUTCString();
+    document.cookie = name + '=' + value + ';expires=' + expires;
+  }
 
 </script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
