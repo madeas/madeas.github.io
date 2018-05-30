@@ -297,10 +297,10 @@ textarea.result {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-start;
-	font-size: 16px !important;
 }
 .gen_table {
 	min-width: 30%;
+	font-size: 16px !important;
 }
 .gen {
 	display: inline-block;
