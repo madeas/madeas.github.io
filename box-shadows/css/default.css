@@ -329,7 +329,6 @@ textarea.result {
 	cursor: -moz-grab;
 	cursor: -webkit-grab;
 	border: 2px dashed transparent;
-	padding-right: 3px;
 }
 .drag_obj:hover {
 	border: 2px dashed gray;
@@ -341,11 +340,10 @@ textarea.result {
 }
 .drag_obj:nth-of-type(1) {
 	top: 50px;
-	right: 30px;
+	left: 50%;
 }
 .drag_obj:nth-of-type(2) {
 	top: 100px;
-	left: 20px;
 }
 textarea#g_result {
 	min-width: 300px;
@@ -467,6 +465,9 @@ textarea#g_result {
 	.content-arrow-left::after
 	.content-arrow-right::after {
 		display: none;
+	}
+	.gen_selector {
+		flex-direction: column;
 	}
 }
 @media (max-width: 480px) {
