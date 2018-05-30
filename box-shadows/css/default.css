@@ -88,7 +88,8 @@ summary {
 }
 .changes input,
 .changes button,
-.btn-save {
+.btn-save,
+.save {
 	color: #ccc;
 	background-color: transparent;
 	border: 1px solid #eee;
