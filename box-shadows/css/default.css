@@ -420,6 +420,22 @@ textarea#g_result {
 .op0 {
 	opacity: 0;
 }
+/* uSocial share icons */
+.uscl-up-arrow {
+	border-radius:var(--primary-radius)!important;
+	background:rgb(71, 201, 229)!important;
+	z-index: 99!important;
+}
+.uscl-up-arrow:hover{
+	background: rgb(0, 174, 255)!important;
+}
+.uscl-list .uscl-item .ico_uscl_soc {
+	transition: all .25s ease;
+}
+.uscl-list .uscl-item .ico_uscl_soc:hover {
+	transform: translateY(-6px);
+}
+
 @media (min-width: 992px) {
 	.content-arrow-left::after,
 	.content-arrow-right::after {
