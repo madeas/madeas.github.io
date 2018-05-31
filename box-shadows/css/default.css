@@ -431,6 +431,7 @@ textarea#g_result {
 }
 .uscl-list .uscl-item .ico_uscl_soc {
 	transition: all .25s ease;
+	will-change: transform;
 }
 .uscl-list .uscl-item .ico_uscl_soc:hover {
 	transform: translateY(-6px);
