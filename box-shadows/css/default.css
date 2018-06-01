@@ -447,6 +447,7 @@ textarea#g_result {
 	}
 	.uSocial-Share .uscl-bar.uscl-size24.uscl-absolute .uscl-list .uscl-item.uscl-slide {
 		left: -60px !important;
+		right: auto !important;
 	}
 }
 @media (min-width: 992px) {
