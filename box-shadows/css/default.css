@@ -436,20 +436,6 @@ textarea#g_result {
 .uscl-list .uscl-item .ico_uscl_soc:hover {
 	transform: translateY(-6px);
 }
-@media only screen and (max-width: 760px), only screen and (max-device-width: 760px) {
-	.uSocial-Share .uscl-bar.uscl-absolute .uscl-slide-open {
-		right: auto !important;
-		left: 20px !important;
-	}
-	.uSocial-Share .uscl-bar.uscl-size24.uscl-absolute .uscl-list {
-		right: auto !important;
-		left: 80px !important;
-	}
-	.uSocial-Share .uscl-bar.uscl-size24.uscl-absolute .uscl-list .uscl-item.uscl-slide {
-		left: -60px !important;
-		right: auto !important;
-	}
-}
 @media (min-width: 992px) {
 	.content-arrow-left::after,
 	.content-arrow-right::after {
