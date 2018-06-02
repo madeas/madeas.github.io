@@ -207,6 +207,7 @@ textarea.result {
 	margin: 0 auto;
 	padding: 15px 30px 100px;
 	color: #3b393d;
+	background-color: #fff;
 }
 .card__copy p.first {
 	font-size: 19px; /*  1.5em */
