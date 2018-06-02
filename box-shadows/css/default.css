@@ -198,14 +198,14 @@ textarea.result {
 	color: #777778;
 }
 .card__copy {
-	font-size: 1.25em;
+	font-size: 16px; /* 1.25em */
 	max-width: 900px;
 	margin: 0 auto;
 	padding: 25px 30px 100px;
 	color: #3b393d;
 }
 .card__copy p.first {
-	font-size: 1.5em;
+	font-size: 19px; /*  1.5em */
 }
 .block-select {
   	outline: none;
