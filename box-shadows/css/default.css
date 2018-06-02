@@ -264,6 +264,7 @@ textarea.result {
 	display: flex;
     	flex-direction: column;
     	justify-content: space-around;
+	color: rgba(75,79,81,0.64);
 }
 .meta__date,
 .meta__version {
