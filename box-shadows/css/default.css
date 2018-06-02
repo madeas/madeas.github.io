@@ -355,6 +355,9 @@ textarea.result {
 	-webkit-flex-direction: column;
 	justify-content: center;
 	-webkit-justify-content: center;
+	background-image: url(/img/designer.png);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
 }
 textarea#g_result {
 	position: relative;
@@ -380,7 +383,7 @@ textarea#g_result {
 }
 .drag_obj {
 	position: absolute;
-	top: 30px;
+	top: 50px;
 	left: 50%;
 	transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
