@@ -235,10 +235,11 @@ textarea.result {
 	align-items: center;
 }
 .meta__avatar {
-  	max-width: 100px;
+  	max-width: 62px;
   	-webkit-border-radius: 50%;
   	-moz-border-radius: 50%;
 	border-radius: 50%;
+	padding-right: 15px;
 }
 .meta__author_name {
 	color: #1395ba;
@@ -248,7 +249,6 @@ textarea.result {
 	letter-spacing: 1.3px;
 	line-height: 1.5;
 	text-transform: uppercase;
-	padding-left: 30px;
 }
 
 .meta__author_name span {
