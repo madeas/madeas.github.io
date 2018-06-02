@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="62px" viewBox="0 0 80 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="73.3793466%" y1="11.8063871%" x2="-61.1666094%" y2="198.437771%" id="linearGradient-1">
+            <stop stop-color="#FAD961" offset="0%"></stop>
+            <stop stop-color="#F76B1C" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="19.4229209" cy="20.2316807" r="19.3450655"></circle>
+        <linearGradient x1="60.042054%" y1="-8.50411195%" x2="13.3208376%" y2="227.759867%" id="linearGradient-4">
+            <stop stop-color="#FAD961" offset="0%"></stop>
+            <stop stop-color="#F76B1C" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="50%" cy="51.0390878%" fx="50%" fy="51.0390878%" r="54.1979689%" id="radialGradient-5">
+            <stop stop-color="#2684FF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#1D7DFF" stop-opacity="0.0724637681" offset="32.9491059%"></stop>
+            <stop stop-color="#0065FF" stop-opacity="0.688405797" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="50%" cy="51.0390878%" fx="50%" fy="51.0390878%" r="54.1979689%" id="radialGradient-6">
+            <stop stop-color="#2684FF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#0065FF" stop-opacity="0.688405797" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="How-it-works" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Howitworks_desktop1440" transform="translate(-806.000000, -4823.000000)">
+            <g id="Culture" transform="translate(758.000000, 4759.000000)">
+                <g id="Group-6" transform="translate(48.000000, 64.000000)">
+                    <g id="Group-17-Copy-4" transform="translate(59.893199, 37.396719) rotate(-8.000000) translate(-59.893199, -37.396719) translate(40.393199, 17.396719)">
+                        <g id="Group-2" transform="translate(-0.000000, 0.000000)">
+                            <mask id="mask-3" fill="white">
+                                <use xlink:href="#path-2"></use>
+                            </mask>
+                            <use id="Oval-3" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                            <circle id="Oval-2" fill="#FFE380" style="mix-blend-mode: multiply;" mask="url(#mask-3)" cx="-10.6341941" cy="6.18435295" r="23.375"></circle>
+                        </g>
+                        <path d="M12.0693695,16.0059011 C12.6225514,17.0380709 12.2341239,18.3244644 11.2019541,18.8776463 C10.1697842,19.4319194 8.88339074,19.0424007 8.33020881,18.0102309 C7.77593579,16.978061 8.16545443,15.6927587 9.19762426,15.1384856 C10.2297941,14.5853037 11.5150965,14.9737313 12.0693695,16.0059011" id="Fill-3" fill="#FF991F"></path>
+                        <path d="M24.9029049,23.9506117 C26.3176646,26.5903804 25.3242633,29.8803246 22.6844947,31.2950844 C20.044726,32.7126345 16.7547818,31.7164428 15.340022,29.0766741 C13.9224718,26.4369055 14.9186636,23.1497517 17.5584323,21.7322015 C20.1982009,20.3174418 23.4853547,21.3108431 24.9029049,23.9506117" id="Fill-3-Copy" fill="#FF991F"></path>
+                        <path d="M31.1371686,16.3856694 C31.6903506,17.4178392 31.301923,18.7042327 30.2697532,19.2574146 C29.2375833,19.8116876 27.9511899,19.4232601 27.3980079,18.3910903 C26.8437349,17.3589204 27.2332535,16.0725269 28.2654234,15.5182539 C29.2975932,14.965072 30.5828956,15.3534995 31.1371686,16.3856694" id="Fill-5" fill="#FF991F"></path>
+                    </g>
+                    <g id="Group-17-Copy-3" transform="translate(0.000000, 2.000000)">
+                        <circle id="Oval-3" fill="url(#linearGradient-4)" cx="23.8737531" cy="23.8737531" r="23.8737531"></circle>
+                        <path d="M15.3647984,19.127389 C16.0474805,20.4011902 15.5681219,21.9887289 14.2943207,22.671411 C13.0205195,23.3554395 11.4329807,22.8747344 10.7502987,21.6009332 C10.0662701,20.327132 10.5469752,18.7409398 11.8207765,18.0569112 C13.0945777,17.3742292 14.6807699,17.8535878 15.3647984,19.127389" id="Fill-3" fill="#FF991F"></path>
+                        <path d="M38.3303109,19.127389 C39.012993,20.4011902 38.5336344,21.9887289 37.2598332,22.671411 C35.9860319,23.3554395 34.3984932,22.8760809 33.7158112,21.6022797 C33.0317826,20.3284785 33.5124877,18.7409398 34.7862889,18.0569112 C36.0600902,17.3742292 37.6462824,17.8535878 38.3303109,19.127389" id="Fill-5" fill="#FF991F"></path>
+                        <path d="M14.1565645,36.198347 C18.2486172,37.5327412 22.8483053,37.2876759 26.9417045,35.0928599 C31.0351038,32.8980438 33.7846831,29.2032124 34.9386447,25.0559527 L14.1565645,36.198347 Z" id="Fill-7" fill="#FF991F" transform="translate(24.547605, 31.036896) rotate(28.000000) translate(-24.547605, -31.036896) "></path>
+                    </g>
+                    <circle id="Oval" fill="url(#radialGradient-5)" fill-rule="nonzero" cx="31.25" cy="57.25" r="4.25"></circle>
+                    <circle id="Oval-Copy-4" fill="url(#radialGradient-6)" fill-rule="nonzero" cx="52.25" cy="6.25" r="4.25"></circle>
+                    <circle id="Oval-Copy-5" fill="url(#radialGradient-6)" fill-rule="nonzero" cx="61.125" cy="2.125" r="2.125"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
