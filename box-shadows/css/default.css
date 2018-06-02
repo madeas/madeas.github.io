@@ -21,6 +21,11 @@ body,
 	background: transparent url(/img/bg-svg.svg) left top no-repeat;
 	background-size: contain;
 }
+.human {
+	background-image: url(/img/bg_human.svg);
+	background-repeat: no-repeat;
+	background-position: 95% 0;
+}
 .card__content {
 	position: relative;
 	width: 100%;
