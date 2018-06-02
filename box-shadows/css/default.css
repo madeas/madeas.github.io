@@ -18,8 +18,8 @@ body,
 	transition: background 2s ease;
 }
 .bg_svg {
-	background: transparent url(/img/bg-svg.svg) center center no-repeat;
-	background-size: 100%;
+	background: transparent url(/img/bg-svg.svg) left top no-repeat;
+	background-size: contain;
 }
 .card__content {
 	position: relative;
