@@ -19,7 +19,7 @@ body,
 }
 .bg_svg {
 	background: transparent url(/img/bg-svg.svg) center center no-repeat;
-	background-size: cover;
+	background-size: 100%;
 }
 .card__content {
 	position: relative;
