@@ -241,14 +241,21 @@ textarea.result {
 	border-radius: 50%;
 }
 .meta__author_name {
-	font-size: 1.25em;
+	color: #1395ba;
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 19px;
 	font-weight: 600;
-	padding: 0 15px;
+	letter-spacing: 1.3px;
+	line-height: 1.5;
+	text-transform: uppercase;
 }
 
 .meta__author_name span {
 	display: block;
-	font-weight: normal;
+	color: rgba(75,79,81,0.64);
+	font-size: 13px;
+	line-height: 1.3em;
+	font-weight: 400;
 }
 .meta__files {
 	display: -webkit-flex;
