@@ -60,6 +60,9 @@ summary {
 	justify-content: space-around;
 	counter-reset: figures;
 }
+.between {
+	justify-content: space-between;
+}
 .block {
 	position: relative;
 	background-color: white;
