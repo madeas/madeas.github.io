@@ -2,9 +2,9 @@
     --primary-radius: 6px;	
 }
 * {
-	-webkit-hyphens: auto;
-	-moz-hyphens: auto;
-	-ms-hyphens: auto;
+	-webkit-hyphens: manual;
+	-moz-hyphens: manual;
+	-ms-hyphens: manual;
 }
 *, 
 ::after, 
