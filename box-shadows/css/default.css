@@ -270,6 +270,9 @@ textarea.result {
 	position: relative;
 	margin: 0 0 0 auto;
 }
+.see__example {
+	padding-bottom: 20px;
+}
 .share {  
   	justify-content: flex-end;
 }
