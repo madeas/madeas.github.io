@@ -256,6 +256,7 @@ textarea.result {
 	font-size: 13px;
 	line-height: 1.3em;
 	font-weight: 400;
+	text-transform: none;
 }
 .meta__files {
 	display: -webkit-flex;
