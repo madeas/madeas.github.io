@@ -357,7 +357,7 @@ textarea.result {
 	-webkit-justify-content: center;
 	background-image: url(/img/designer.png);
 	background-repeat: no-repeat;
-	background-position: 0 50%;
+	background-position: 0 90%;
 }
 textarea#g_result {
 	position: relative;
