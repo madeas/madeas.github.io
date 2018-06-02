@@ -17,6 +17,10 @@ body,
 	-moz-transition: background 2s ease;
 	transition: background 2s ease;
 }
+.bg_svg {
+	background: transparent url(/img/bg-svg.svg) center center no-repeat;
+	background-size: cover;
+}
 .card__content {
 	position: relative;
 	width: 100%;
