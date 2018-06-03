@@ -319,6 +319,10 @@ textarea.result {
     	text-align: center;
     	text-decoration: none;
     	white-space: nowrap;
+	transition: all .3s ease-out;
+}
+.btn-download:hover {
+	transform: scale(1.2);
 }
 .gen_container {
 	padding: 10px;
