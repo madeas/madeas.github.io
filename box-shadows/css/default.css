@@ -18,7 +18,6 @@ body,
   transition: background 2s ease;
 }
 .card__content,
-.btn-download,
 .changes input,
 .changes button,
 .btn-save,
@@ -324,7 +323,10 @@ textarea.result {
 .btn-download {
   position: relative;
   display: inline-block;
-  padding: 0.25em 0.5em;
+  padding: 0.75em 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em;
   margin: 0 15px 10px;
   color: #fff;
   background: linear-gradient(73deg, #8ec5fc, #47c9e5);
@@ -342,6 +344,15 @@ textarea.result {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
+}
+.logos::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .logos img {
   -webkit-filter: grayscale(100%);
