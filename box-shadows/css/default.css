@@ -112,23 +112,24 @@ summary {
 .changes button,
 .btn-save,
 .save {
-  color: #c4c2c2;
   background-color: transparent;
+  background-clip: padding-box;
   border: 1px solid #c4c2c2;
-  padding: .375rem .75rem;
-  margin-top: .2em;
-  margin-bottom: .2em;
+  color: #c4c2c2;
   font-size: 1rem;
   line-height: 1.5;
-  background-clip: padding-box;
+  margin-top: .2em;
+  margin-bottom: .2em;
+  padding: .375rem .75rem;
 }
 .changes button,
 .btn-save {
   cursor: pointer;
 }
 .btn-save {
-  border-color: #c4c2c2;
-  color: #c4c2c2;
+  background: linear-gradient(73deg, #8ec5fc, #47c9e5);
+  border-color: transparent;
+  color: #fff;
   margin-left: .25em;
 }
 input.filename {
