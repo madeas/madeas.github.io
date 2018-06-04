@@ -323,7 +323,7 @@ textarea.result {
 .btn-download {
   position: relative;
   display: inline-block;
-  padding: 0.75em 2em;
+  padding: 0.75em 1.752em;
   -webkit-border-radius: 2em;
   -moz-border-radius: 2em;
   border-radius: 2em;
