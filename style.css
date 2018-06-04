@@ -147,6 +147,9 @@ code {
 .mt-0 {
 	margin-top: 0 !important;
 }
+.normal {
+    font-weight: normal;
+}
 .alert {
 	display: block;
 	width: 100%;
