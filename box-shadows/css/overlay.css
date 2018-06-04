@@ -5,7 +5,7 @@ body.overlay #overlay{
     display: block;
 }
 #overlay {
-    display: none;
+    display: block;
     position: fixed;
     top:0;
     right:0;
