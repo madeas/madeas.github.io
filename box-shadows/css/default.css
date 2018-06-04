@@ -17,6 +17,15 @@ body,
 	-moz-transition: background 2s ease;
 	transition: background 2s ease;
 }
+.card__content,
+.changes input,
+.changes button,
+.btn-save,
+.save {
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
 .bg_svg {
 	background: transparent url(/img/bg-svg.svg) left top no-repeat;
 	background-size: contain;
@@ -112,7 +121,6 @@ summary {
 	font-size: 1rem;
 	line-height: 1.5;
 	background-clip: padding-box;
-	border-radius: 6px;
 }
 .changes button,
 .btn-save {
