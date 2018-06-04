@@ -113,9 +113,9 @@ summary {
 .changes button,
 .btn-save,
 .save {
-  color: #777;
+  color: #c4c2c2;
   background-color: transparent;
-  border: 1px solid #777;
+  border: 1px solid #c4c2c2;
   padding: .375rem .75rem;
   margin-top: .2em;
   margin-bottom: .2em;
@@ -128,8 +128,8 @@ summary {
   cursor: pointer;
 }
 .btn-save {
-  border-color: #777;
-  color: #777;
+  border-color: #c4c2c2;
+  color: #c4c2c2;
   margin-left: .25em;
 }
 input.filename {
