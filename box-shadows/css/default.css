@@ -340,6 +340,8 @@ textarea.result {
 .logos {
   position: relative;
   display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 .logos img {
   -webkit-filter: grayscale(100%);
