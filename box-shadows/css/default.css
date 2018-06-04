@@ -128,8 +128,8 @@ summary {
   cursor: pointer;
 }
 .btn-save {
-  border-color: #ddd;
-  color: #ddd;
+  border-color: #555;
+  color: #555;
   margin-left: .25em;
 }
 input.filename {
