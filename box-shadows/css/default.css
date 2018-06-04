@@ -494,6 +494,12 @@ textarea#g_result {
 .op0 {
   opacity: 0;
 }
+.alg {
+  color: #3a416f;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1;
+}
 /* uSocial share icons */
 .uscl-up-arrow {
   border-radius: var(--primary-radius) !important;
