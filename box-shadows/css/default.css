@@ -157,10 +157,10 @@ summary {
   top: 5px;
   transform: rotate(-90deg);
 }
-details #details[open] + .dclose {
+details[open] #details[open] + .dclose {
   color: #3b393d;
 }
-details #details[open] + .dclose span:before {
+details[open] #details[open] + .dclose:before {
   transform: rotate(0deg);
 }
 input.filename {
