@@ -300,7 +300,7 @@
 
             </div><!--/ see_example -->
 
-            <details open>
+            <details open id="details">
                 <summary class="text-left toani tooltip sp_button" data-tool="click here to open the container with samples">show in blocks and create a <b>min.css</b> file</summary>
               <div class="flex numbers"><p class="alert en" lang="en">1. Change the background of the site and container to your own.</p>
                 <p class="alert ru" lang="ru">1. Воспользуйтесь формой ниже и измените фон сайта и контейнера на свои собственные.</p>
@@ -389,6 +389,12 @@
                 </form>
               </div><!--/ flex numbers -->
             </details>
+		<p class="text-right"><button class="text-right" onclick="closeDetails()"><span class="en" lang="en">Close details</span><span class="en" lang="en">Скрыть блоки</span></button></p>
+		<script>
+		  function closeDetails() {
+		    document.getElementById("details").open = false;
+		  }
+		</script>
 
             <div class="add__content" style="display:none">
               <div class="logos">
