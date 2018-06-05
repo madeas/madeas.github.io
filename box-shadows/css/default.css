@@ -50,6 +50,54 @@ body,
   background-repeat: no-repeat;
   background-position: 95% 0;
 }
+.vnavbar {
+  position: absolute;
+  right: 0;
+}
+.vnavbar nav {
+  width: 100px;
+  height: 200px;
+  padding: 0 0px;
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translate(0, -50%);
+  z-index: 99;
+  text-align: right;
+}
+.vnavbar nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.vnavbar .dot {
+  display: inline-block;
+  width: 20px;
+  height: 5px;
+  background-color: #47c9e5;
+  content: '';
+  color: transparent;
+  vertical-align: middle;
+  margin: 5px 0;
+  font-weight: 300;
+  line-height: 1.5;
+  transition: all .3s ease-in-out;
+}
+.vnavbar .dot:hover {
+  background-color: #3369E7;
+  color: #3369E7;
+  width: 30px;
+}
+.vnavbar .dot span {
+  position: relative;
+  display: block;
+  width: 150px;
+  margin: 0;
+  text-align: right;
+  top: 0;
+  left: -170px;
+  white-space: nowrap;
+}
 .card__content {
   position: relative;
   width: 100%;
