@@ -614,6 +614,16 @@
     <script src="box-shadows/js/FileSaver.min.js"></script>
     <script src="box-shadows/js/selects.js"></script>
     <script>
+	function closeDetails() {
+		document.getElementById("details").open = false;
+	}
+	function closeResize() {
+		document.documentElement.scrollWidth < 768 && closeDetails()
+	}
+	    window.addEventListener('load', closeResize);
+	    window.addEventListener('resize', closeResize);
+    </script>
+    <script>
       // составляем css файл
       $(".btn-save").click(function() {
         var text = $(".result").val();
