@@ -111,6 +111,7 @@ summary {
 .changes input,
 .changes button,
 .btn-save,
+.dclose,
 .save {
   background-color: transparent;
   background-clip: padding-box;
@@ -123,14 +124,18 @@ summary {
   padding: .375rem .75rem;
 }
 .changes button,
-.btn-save {
+.btn-save,
+.dclose {
   cursor: pointer;
 }
 .btn-save {
   background: linear-gradient(73deg, #8ec5fc, #47c9e5);
-  border-color: transparent;
   color: #fff;
   margin-left: .25em;
+}
+.btn-save,
+.dclose {
+  border-color: transparent;
 }
 input.filename {
   text-align: right;
