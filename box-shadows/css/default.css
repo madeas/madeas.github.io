@@ -8,8 +8,23 @@
 .ru {
   font-family: 'Comfortaa', sans-serif;
 }
-.lang-switcher img {
+.gen_container input[type=range]::-webkit-slider-thumb,
+.lang-switcher img,
+.changes button,
+.flex .block,
+.btn-save,
+.dclose,
+ summary {
   cursor: pointer;
+}
+.changes input:focus,
+.changes button:focus,
+input.filename:focus,
+.btn-save:focus,
+summary:focus,
+.gen_container input[type=range]:focus,
+.dclose:focus {
+  outline: none;
 }
 body,
 #content {
@@ -52,7 +67,6 @@ body,
 }
 summary {
   border-bottom: 1px dotted #e1e4e8;
-  cursor: pointer;
 }
 .content-wrap .sp_button {
   display: inline-block;
@@ -92,7 +106,6 @@ summary {
 }
 .flex .block {
   counter-increment: figures;
-  cursor: pointer;
 }
 .flex .block:before {
   content: 'bShadow-' counter(figures);
@@ -123,11 +136,6 @@ summary {
   margin-bottom: .2em;
   padding: .375rem .75rem;
 }
-.changes button,
-.btn-save,
-.dclose {
-  cursor: pointer;
-}
 .btn-save {
   background: linear-gradient(73deg, #8ec5fc, #47c9e5);
   color: #fff;
@@ -137,6 +145,9 @@ summary {
 .dclose {
   border-color: transparent;
 }
+.dclose {
+  color: #3b393d;
+}
 input.filename {
   text-align: right;
   background: transparent;
@@ -144,14 +155,6 @@ input.filename {
   pointer-events: none;
   font-size: 1.25rem;
   font-family: 'Raleway', 'Exo 2', sans-serif;
-}
-.changes input:focus,
-.changes button:focus,
-input.filename:focus,
-.btn-save:focus,
-summary:focus,
-.gen_container input[type=range]:focus {
-  outline: none;
 }
 #text-options {
   margin-top: .6em;
@@ -473,7 +476,6 @@ textarea#g_result {
   width: 15px;
   border-radius: 50%;
   background: #47c9e5;
-  cursor: pointer;
   z-index: 20;
   -webkit-appearance: none;
   position: relative;
