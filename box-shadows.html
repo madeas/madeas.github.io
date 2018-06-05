@@ -300,18 +300,23 @@
 
             </div><!--/ see_example -->
 
-            <details open id="details">
-                <summary class="text-left toani tooltip sp_button" data-tool="click here to open the container with samples">show in blocks and create a <b>min.css</b> file</summary>
-              <div class="flex numbers"><p class="alert en" lang="en">1. Change the background of the site and container to your own.</p>
+            <details open>
+                <summary class="text-left toani tooltip sp_button" data-tool="click here to open the container with samples">Show in blocks and create a <b>min.css</b> file</summary>
+                <p class="alert en" lang="en">1. Change the background of the site and container to your own.</p>
                 <p class="alert ru" lang="ru">1. Воспользуйтесь формой ниже и измените фон сайта и контейнера на свои собственные.</p>
+
                 <div class="changes">
                   <input type="text" value="#f3f5f6" id="bg-body">
                   <button id="ch_btn-one">change</button>
                   <input type="text" value="#fff" id="bg-card_content">
                   <button id="ch_btn-two">change</button>
                 </div>
+
+                <details open id="details" class="alert">
+                <summary class="alert"> Open blocks</summary>
                 <p class="alert en" lang="en">2. Hover on the block to see them in action. The result of displaying in blocks and as a shadow of the main container.</p>
                 <p class="alert ru" lang="ru">2. Наводите на блоки, чтобы увидеть их в действии. Результат отображается в блоках и в виде тени основного контейнера сайта.</p>
+		<div class="flex numbers">
                 <div class="block bShadow-1"></div>
                 <div class="block bShadow-2"></div>
                 <div class="block bShadow-3"></div>
@@ -365,7 +370,9 @@
                 <div class="block bShadow-51"></div>
                 <div class="block bShadow-52"></div>
                 <div class="block bShadow-53"></div>
-                <div class="block bShadow-54"></div>
+                <div class="block bShadow-54"></div>			
+                </div>
+		</details>
 
 		<p class="alert text-right">
 		  <button class="text-right dclose" onclick="closeDetails()"><span class="en" lang="en">Close details</span><span class="ru" lang="ru">Скрыть блоки</span></button>
@@ -391,7 +398,7 @@
                     result.innerHTML += '/*!\n' + ' * box-shadows.min.css v1.0.3' + 'g' + day + '' + month + '' + hours + '' + minutes + ' - https://github.com/madeas/box-shadows.css\n' + ' * \n' + ' * Copyright (c) 2018 Andrej Sharapov\n' + ' * Licensed under MIT (https://github.com/madeas/box-shadows.css/blob/master/LICENSE)\n' + ' */\n' + '\n';
 
                   </script>
-                </div>
+
                 <p class="text-left en" lang="en">4. Click "Download" and install the downloaded file according to the "<a href="#usage_en" title="">Basic Usage</a>".</p>
                 <p class="text-left ru" lang="ru">4. Нажмите кнопку «Скачать» и подключите скаченный файл к своему сайту согласно <a href="#usage_ru" title="">инструкции</a>.</p>
                 <form xmlns="http://www.w3.org/1999/xhtml" id="text-options">
