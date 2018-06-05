@@ -583,6 +583,7 @@ textarea#g_result {
     display: block;
     width: 150px;
     margin: 0;
+    margin-top: -7px;
     text-align: right;
     top: 0;
     left: -170px;
