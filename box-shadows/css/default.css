@@ -149,7 +149,7 @@ summary {
   position: relative;
   padding-left: 20px;
 }
-.dclose:before {
+.dclose span:before {
   content: "▲";
   display: block;
   position: absolute;
@@ -157,10 +157,10 @@ summary {
   top: 5px;
   transform: rotate(-90deg);
 }
-[open]+.dclose {
+details #details[open] + .dclose {
   color: #3b393d;
 }
-[open]+.dclose:before {
+details #details[open] + .dclose span:before {
   transform: rotate(0deg);
 }
 input.filename {
