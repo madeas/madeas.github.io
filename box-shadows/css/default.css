@@ -514,6 +514,8 @@ textarea#g_result {
 .issues_container {
   display: flex;
   align-items: center;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 #add_issue {
   width: 32px;
