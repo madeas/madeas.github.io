@@ -709,11 +709,19 @@
 
       menuItems.click(function(e) {
         var href = $(this).attr("href"),
-          offsetTop = href === "#" ? 0 : $(href).offset().top - navHeight + 1;
-        $('html, body').stop().animate({
-          scrollTop: offsetTop
-        }, 300);
-        e.preventDefault();
+          offsetTop = href === "#" ? 0 : $(href).offset().top - navHeight + 1;        
+
+        // плавный скролл
+        $(document).ready(function() {
+          $("a[href*=#]").on("click", function(e) {
+            var anchor = $(this);
+            $('html, body').stop().animate({
+              scrollTop: $(anchor.attr('href')).offset().top
+            }, 777);
+            e.preventDefault();
+            return false;
+          });
+        });
       });
 
       $(window).scroll(function() {
