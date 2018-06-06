@@ -575,19 +575,22 @@ textarea#g_result {
   }
   .vnavbar .dot:hover {
     background-color: #3369E7;
-    color: #3369E7;
     width: 30px;
   }
   .vnavbar .dot span {
     position: relative;
+    top: 0;
+    left: -170px;
     display: block;
     width: 150px;
     margin: 0;
     margin-top: -7px;
     text-align: right;
-    top: 0;
-    left: -170px;
+    color: #eaeaea;
     white-space: nowrap;
+  }
+  .vnavbar .dot:hover span {
+    color: #3369E7;
   }
 }
 @media (min-width: 992px) {
