@@ -553,10 +553,14 @@ textarea#g_result {
   font-weight: 600;
   line-height: 1;
 }
+.vnavbar {
+  display: none;
+}
 @media (min-width: 1199px) {
   .vnavbar {
     position: absolute;
     right: 0;
+    display: block;
   }
   .vnavbar nav {
     width: 100px;
