@@ -510,11 +510,16 @@ textarea#g_result {
 .uscl-list .uscl-item .ico_uscl_soc:hover {
   transform: translateY(-6px);
 }
+.issues_container {
+  display: flex;
+  align-items: center;
+}
 #add_issue {
   width: 32px;
   height: 32px;
   cursor: pointer;
-  fill: #ddd;
+  fill: #ddd;  
+  margin-left: 5px;
 }
 #add_issue:hover {
   fill: #999;
