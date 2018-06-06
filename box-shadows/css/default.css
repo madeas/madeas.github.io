@@ -586,7 +586,8 @@ textarea#g_result {
     line-height: 1.5;
     transition: all .3s ease-in-out;
   }
-  .vnavbar .dot:hover {
+  .vnavbar .dot:hover,
+  .vnavbar .dot.active {
     background-color: #3369E7;
     width: 30px;
   }
@@ -602,7 +603,8 @@ textarea#g_result {
     color: #eaeaea;
     white-space: nowrap;
   }
-  .vnavbar .dot:hover span {
+  .vnavbar .dot:hover span,
+  .vnavbar .dot.active span {
     color: #3369E7;
   }
 }
