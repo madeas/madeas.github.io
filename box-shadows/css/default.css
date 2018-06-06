@@ -36,7 +36,8 @@ body,
 .changes input,
 .changes button,
 .btn-save,
-.save {
+.save,
+.vnavbar .dot {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -118,7 +119,7 @@ summary {
 .changes h3 {
   color: #3b393d;
   font-weight: 300;
-  font-family: 'Raleway', 'Exo 2', sans-serif;
+  font-family: 'Raleway', 'Comfortaa', sans-serif;
   margin-bottom: 7px;
 }
 .changes input,
@@ -169,7 +170,7 @@ input.filename {
   border: 0;
   pointer-events: none;
   font-size: 1.25rem;
-  font-family: 'Raleway', 'Exo 2', sans-serif;
+  font-family: 'Raleway', 'Comfortaa', sans-serif;
 }
 #text-options {
   margin-top: .6em;
@@ -195,7 +196,7 @@ input.filename {
   top: 0;
   right: 0;
   color: #032f62;
-  font: bold 12px/23px 'Raleway', 'Exo 2', sans-serif;
+  font: bold 12px/23px 'Raleway', 'Comfortaa', sans-serif;
   padding: 0px 10px;
   z-index: 10;
 }
@@ -232,7 +233,7 @@ textarea.result {
 .card__title {
   font-size: 3rem;
   color: #47c9e5;
-  font-family: 'Raleway', 'Exo 2', sans-serif;
+  font-family: 'Raleway', 'Comfortaa', sans-serif;
   line-height: 1;
   margin: 5px 0 0 0;
 }
@@ -286,7 +287,7 @@ textarea.result {
 }
 .meta__author_name {
   color: #1395ba;
-  font-family: 'Comfortaa', sans-serif;
+  font-family: 'Raleway', 'Comfortaa', sans-serif;
   font-size: 19px;
   font-weight: 600;
   letter-spacing: 1.3px;
@@ -575,8 +576,8 @@ textarea#g_result {
   }
   .vnavbar .dot {
     display: inline-block;
-    width: 20px;
-    height: 5px;
+    width: 30px;
+    height: 8px;
     background-color: #47c9e5;
     content: '';
     color: transparent;
@@ -589,7 +590,7 @@ textarea#g_result {
   .vnavbar .dot:hover,
   .vnavbar .dot.active {
     background-color: #3369E7;
-    width: 30px;
+    width: 40px;
   }
   .vnavbar .dot span {
     position: relative;
