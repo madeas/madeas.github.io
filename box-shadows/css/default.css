@@ -591,7 +591,7 @@ textarea#g_result {
     line-height: 1.5;
     transition: all .3s ease-in-out;
   }
-  .vnavbar .dot:hover
+  .vnavbar .dot:hover {
     width: 35px;
   }
   .vnavbar .dot.active {
