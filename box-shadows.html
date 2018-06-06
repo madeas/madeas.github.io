@@ -572,7 +572,7 @@
     <script>
       function drag_object(evt, obj) {
         evt = evt || window.event;
-        // готовность к перетаскиванию
+	// готовность к перетаскиванию
         obj.clicked = true;
         // устанавливаем первоначальные значения координат объекта 
         obj.mousePosX = evt.clientX;
@@ -609,6 +609,7 @@
     </script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>
+	// плавный скролл
       $(document).ready(function() {
         $("a[href*=#]").on("click", function(e) {
           var anchor = $(this);
@@ -624,6 +625,7 @@
     <script src="box-shadows/js/FileSaver.min.js"></script>
     <script src="box-shadows/js/selects.js"></script>
     <script>
+    //скрытие блоков <768
 	function closeDetails() {
 		document.getElementById("details").open = false;
 	}
@@ -634,7 +636,7 @@
 	    window.addEventListener('resize', closeResize);
     </script>
     <script>
-      // составляем css файл
+    // составляем css файл
       $(".btn-save").click(function() {
         var text = $(".result").val();
         var filename = $(".filename").val()
@@ -646,7 +648,7 @@
 
     </script>
     <script>
-      // выбираем необходимые блоки
+    // выбираем необходимые блоки
       window.onload = function() {
         var items = document.querySelectorAll('.flex div.block');
         var result = document.querySelector('.result');
@@ -707,7 +709,18 @@
       })();
 
     </script>
+	  
+    <script>
+    // добавляем активный пункт навигации
+      $(".vertical a").click(function() {
+        $(".active").removeClass("active");
+        $(this).addClass("active");
+      });
+
+    </script>
     <!-- <script>
+    // убираем скролл на демо 
+	// не работает на SG s7, Xiaomi Mi6, 
       document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.info button').addEventListener("click",
           function() {
