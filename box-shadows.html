@@ -695,11 +695,7 @@
     </script>
 
     <script>
-    // добавляем активный пункт навигации
-      $(".vertical a").click(function() {
-        $(".active").removeClass("active");
-        $(this).addClass("active");
-      });
+    // добавляем активный пункт навигации при скролле страницы
       var lastId,
         nav = $("#navigation"),
         navHeight = nav.outerHeight() + 15,
