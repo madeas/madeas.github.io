@@ -592,16 +592,12 @@ textarea#g_result {
     transition: all .3s ease-in-out;
   }
   .vnavbar .dot:hover {
+    background-color: #1395ba;
     width: 35px;
   }
   .vnavbar .dot.active {
-    width: 40px;
-  }
-  .vnavbar .dot:hover {
-    background-color: #1395ba;
-  }
-  .vnavbar .dot.active {
     background-color: #3369E7;
+    width: 40px;
   }
   .vnavbar .dot span {
     position: relative;
