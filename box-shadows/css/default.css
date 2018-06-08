@@ -227,6 +227,7 @@ textarea.result {
   padding: .5rem 1.5rem;
 }
 .bshadow-logo svg {
+  background: white;
   border-radius: 8px;
   margin-right: 10px;
 }
