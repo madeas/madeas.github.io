@@ -1,3 +1,6 @@
+:root {
+  --primary-color: #47c9e5;
+}
 .en :lang(ru),
 .ru :lang(en) {
   display: none;
@@ -99,7 +102,7 @@ summary {
   width: 180px;
   height: 180px;
   line-height: 150px;
-  color: #47c9e5;
+  color: var(--primary-color);
   font-weight: bold;
   font-size: 1.25rem;
   text-align: center;
@@ -138,7 +141,7 @@ summary {
   padding: .375rem .75rem;
 }
 .btn-save {
-  background: linear-gradient(73deg, #8ec5fc, #47c9e5);
+  background: linear-gradient(73deg, #8ec5fc, var(--primary-color));
   color: #fff;
   margin-left: .25em;
 }
@@ -233,7 +236,7 @@ textarea.result {
 }
 .card__title {
   font-size: 3rem;
-  color: #47c9e5;
+  color: var(--primary-color);
   font-family: 'Raleway', 'Comfortaa', sans-serif;
   line-height: 1;
   margin: 5px 0 0 0;
@@ -355,7 +358,7 @@ textarea.result {
   border-radius: 2em;
   margin: 0 15px 10px;
   color: #fff;
-  background: linear-gradient(73deg, #8ec5fc, #47c9e5);
+  background: linear-gradient(73deg, #8ec5fc, var(--primary-color));
   font-size: 1.5em;
   text-align: center;
   text-decoration: none;
@@ -407,7 +410,7 @@ textarea.result {
 .gen {
   display: inline-block;
   font-weight: bold;
-  color: #47c9e5;
+  color: var(--primary-color);
   min-width: 30px;
   text-align: center;
 }
@@ -492,7 +495,7 @@ textarea#g_result {
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  background: #47c9e5;
+  background: var(--primary-color);
   z-index: 20;
   -webkit-appearance: none;
   position: relative;
@@ -534,7 +537,7 @@ textarea#g_result {
   max-width: 720px;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  border-top: 2px solid #47c9e5;
+  border-top: 2px solid var(--primary-color);
   margin: auto;
 }
 .content-arrow-left::after,
@@ -585,7 +588,7 @@ textarea#g_result {
     display: inline-block;
     width: 30px;
     height: 8px;
-    background-color: #47c9e5;
+    background-color: var(--primary-color);
     content: '';
     color: transparent;
     vertical-align: middle;
