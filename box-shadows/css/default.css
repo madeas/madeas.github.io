@@ -38,9 +38,9 @@ body,
 .btn-save,
 .save,
 .vnavbar .dot {
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
+  -webkit-border-radius: var(--primary-radius);
+  -moz-border-radius: var(--primary-radius);
+  border-radius: var(--primary-radius);
 }
 .bg_svg {
   background: transparent url(/img/bg-svg.svg) left top no-repeat;
