@@ -161,12 +161,11 @@
         <span class="content-arrow-right"></span>
         <div class="flex between">
           <div class="switch">
-            <span class="lang-switcher lang-switcher--ru" id="switcher-ru"><img width="30" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8BAMAAADI0sRBAAAALVBMVEUAAADU1d7DQzfg4OL/PAA+ULXf4eH/PADEyNrKQjPf4uL/PQA/UbXg4eL/PQCA2eEDAAAADHRSTlMAz8+/v4CAgHR0YGBk1e17AAAARklEQVQ4y2MYBbQAi41xAiugdO5dnODaqDSZ0o2COIEEUDrmDE5wdFSaNtKTlHACTaB03Tuc4PmoNJnSW1xwAm+GUUADAAA0cjjQYLRUuAAAAABJRU5ErkJggg=="></span>
-            <span class="lang-switcher lang-switcher--en" id="switcher-en"><img width="30" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAAhFBMVEUAAADvjYbwfHSKYpnt7/GKYpp4hcrr7/HwkYnvq6WAd7Xvx8aHaqShaJDLsMOic5vykYzyj4r0Qzbs7/E/UbXvmJPybmTuxMJ7h8zBp77///+HktFvfMfb3/FLW7nz9Pu3vuNjccNsTZSrs99qeMSTndXn6fbP1O3O0+xrXKbNrr9rbbgEiDpcAAAAEnRSTlMAcMDgfuDAgbCgzI7Y2J6UPDtbvABhAAAAz0lEQVRIx+2TSxKCMBBEBQEB/zBgTEIUERS9//1UilUkMRW0KKy8Re/epqdnYjD8L+upiKUtwWpkF0ScIgn2V2QCwAelSnKYZ4cjcFFWVQn3nYR5I3uQYQRcMIwZnGMJTisjRIELRoiiLEBFdqGzMVYqtn3BV8YFfdamJhe44KKpTUFevI5K3oKgvE4l+P0L8wQLU5NFC1ORQ+HC6kRC0LYtWFivl/y5vNqLuH1+yVmshTOwbEda2APLfqqFP+ZTBYkWwZjvvLG02E4MBkMXD5MAkJrGRHOLAAAAAElFTkSuQmCC"></span>
+            <span class="lang-switcher lang-switcher--ru" id="switcher-ru"><img width="32" alt="" src="/img/ru.svg"></span>
+            <span class="lang-switcher lang-switcher--en" id="switcher-en"><img width="32" alt="" src="/img/us.svg"></span>
           </div>
           <div class="btn-git text-right">
-            <a class="github-button" href="https://github.com/madeas/box-shadows.css" data-show-count="true" aria-label="Star madeas/box-shadows.css on GitHub">Star</a> <a class="github-button" href="https://github.com/madeas/box-shadows.css/fork" data-icon="octicon-repo-forked"
-              data-show-count="true" aria-label="Fork madeas/box-shadows.css on GitHub">Fork</a>
+            <a class="github-button" href="https://github.com/madeas/box-shadows.css" data-show-count="true" aria-label="Star madeas/box-shadows.css on GitHub">Star</a> <a class="github-button" href="https://github.com/madeas/box-shadows.css/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork madeas/box-shadows.css on GitHub">Fork</a>
           </div>
         </div><!--/ flex between -->
         <div class="card__caption">
@@ -663,41 +662,19 @@
     </script>
     <script>
       (function() {
-        var body = document.getElementsByTagName('body')[0];
-
-        var switcherEN = document.getElementById('switcher-en');
-        var switcherRU = document.getElementById('switcher-ru');
-
-        // Заранее считаем срок хранения кук
-        var expires = new Date();
-        expires.setDate(expires.getDate() + 366);
-        expires.toUTCString();
-
-        // Русский и английский заголовки
-        var titleEN = document.getElementById('title-en');
-        var titleRU = document.getElementById('title-ru');
-        var title = {
-          en: titleEN.getAttribute('content'),
-          ru: titleRU.getAttribute('content')
-        }
-
-        var switchLang = function() {
-          var lang = this.id
-          lang = lang.replace('switcher-', '');
-
-          // Меняем класс для BODY
-          body.className = lang;
-
-          // Записываем куки
-          document.cookie = [
-            'aplang=' + lang, '; expires=' + expires // используем expires, max-age не поддерживается в ИЕ
-            , '; path=/', '; domain=' + document.location.host
-          ].join('');
-          document.title = title[lang];
-        }
-
-        switcherEN.onclick = switchLang;
-        switcherRU.onclick = switchLang;
+        var langSave = localStorage.getItem("lang") || "en",
+          title = {};
+        ["en", "ru"].forEach(function(lang) {
+          var elem = document.getElementById("title-" + lang);
+          title[lang] = elem.getAttribute("content");
+          elem = document.getElementById("switcher-" + lang);
+          elem.addEventListener("click", function() {
+            document.body.className = lang;
+            document.title = title[lang];
+            localStorage.setItem("lang", lang)
+          });
+          langSave == lang && elem.click()
+        })
       })();
 
     </script>
