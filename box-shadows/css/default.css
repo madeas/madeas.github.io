@@ -44,7 +44,7 @@ body,
 }
 .bg_svg {
   background: transparent url(/img/bg-svg.svg) left top no-repeat;
-  background-size: contain;
+  background-size: 120%;
 }
 .human {
   background-image: url(/img/bg_human.svg);
