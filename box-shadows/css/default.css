@@ -111,6 +111,9 @@ summary {
 .flex .block:before {
   content: 'bShadow-' counter(figures);
 }
+.flex .block:last-child:before {
+  content: 'bSnone';
+}
 .changes {
   color: #e4e7e9;
   margin: .5em;
