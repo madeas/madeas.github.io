@@ -331,7 +331,7 @@
                 </div>
 
                 <details open id="details" class="alert">
-                <summary class="alert"> Open blocks</summary>
+                <summary class="alert" id="sum">Open blocks</summary>
                 <p class="alert en" lang="en">2. Hover on the block to see them in action. The result of displaying in blocks and as a shadow of the main container.</p>
                 <p class="alert ru" lang="ru">2. Наводите на блоки, чтобы увидеть их в действии. Результат отображается в блоках и в виде тени основного контейнера сайта.</p>
 		<div class="flex numbers">
@@ -393,7 +393,7 @@
 		</details>
 
 		<p class="alert text-right">
-		  <button class="text-right dclose" onclick="closeDetails()"><span class="en" lang="en">Close details</span><span class="ru" lang="ru">Скрыть блоки</span></button>
+		  <button class="text-right dclose" onclick="closeDetails()"><a href="#sum"><span class="en" lang="en">Close details</span><span class="ru" lang="ru">Скрыть блоки</span></a></button>
 		</p>
 		<script>
 		  function closeDetails() {
