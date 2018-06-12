@@ -43,12 +43,11 @@ body,
   border-radius: var(--primary-radius);
 }
 .bg_svg {
-  /*background: transparent url(/img/bg-svg.svg) left top no-repeat;*/
   background-color: transparent;
   background-image:
-    url(https://madeas.ru/images/background-images/card-background-left.svg), 
-    url(https://madeas.ru/images/background-images/card-background-right.svg);
-  background-position: left top, bottom right;
+    url(/img/bg-left.svg), 
+    url(/img/bg-right.svg);
+  background-position: 0% 5%, 95% 100%;
   background-repeat: no-repeat;
   background-size: 100%;
 }
