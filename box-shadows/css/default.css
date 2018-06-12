@@ -49,7 +49,7 @@ body,
     url(/img/bg-right.svg);
   background-position: 0% 5%, 95% 100%;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 80%;
 }
 .human {
   background-image: url(/img/bg_human.svg);
