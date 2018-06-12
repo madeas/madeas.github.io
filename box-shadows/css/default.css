@@ -45,11 +45,12 @@ body,
 .bg_svg {
   background-color: transparent;
   background-image:
-    url(/img/bg-left.svg), 
-    url(/img/bg-right.svg);
-  background-position: 0% 5%, 100% 95%;
+    url(/img/bg-svg.svg), 
+    url(/img/bg-right.svg),
+    url(/img/bg-left.svg);
+  background-position: 0 0, 100% 50%, 0% 98%;
   background-repeat: no-repeat;
-  background-size: 80%, 75%;
+  background-size: 120%, 55%, 55%;
 }
 .human {
   background-image: url(/img/bg_human.svg);
