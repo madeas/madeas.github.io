@@ -1,3 +1,5 @@
+Options +FollowSymLinks
+
 DirectoryIndex index.html
 AddDefaultCharset utf-8
 
@@ -6,7 +8,7 @@ AddDefaultCharset utf-8
     RewriteBase /
     RewriteCond %{HTTP:X-HTTPS} !1
   # RewriteCond %{REQUEST_URI} !^/robots.txt$
-    RewriteCond %{HTTP_HOST} ^www\.madeas.github.\.io [NC]
+    RewriteCond %{HTTP_HOST} ^www.madeas.github\.io$ [NC]
     RewriteRule ^(.*)$ https://madeas.github.io/$1 [R=301,L]
 </IfModule>
 
