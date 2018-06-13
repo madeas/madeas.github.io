@@ -156,6 +156,22 @@ code {
   background-color: rgba(27, 31, 35, 0.05);
 }
 
+kbd {
+  border: 1px solid #e6e6e6;
+  border-radius: 2px;
+  color: inherit;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 0.8em;
+  padding: 0.25em 0.75em;
+  position: relative;
+  user-select: none;
+  
+  -webkit-box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
+  -moz-box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
+  box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
+}
+
 .text-center {
   text-align: center !important;
 }
