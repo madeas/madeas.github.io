@@ -48,9 +48,9 @@ body,
     url(/img/bg-svg.svg), 
     url(/img/bg-right.svg),
     url(/img/bg-left.svg);
-  background-position: 0 0, 100% 80%, 0% 98%;
+  background-position: 0 0, 105% 80%, 0% 98%;
   background-repeat: no-repeat;
-  background-size: 120%, 20%, 25%;
+  background-size: 120%, 25%, 25%;
 }
 .human {
   background-image: url(/img/bg_human.svg);
