@@ -666,6 +666,9 @@ textarea#g_result {
   }
 }
 @media (max-width: 768px) {
+  .bg_svg {
+    background: none;
+  }
   .bshadow-logo {
     flex-direction: column;
     justify-content: center;
