@@ -102,21 +102,16 @@ body.overlay #overlay {
   padding: 1em 2em;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin: 1.25em auto;
+  margin: 1em auto;
   -webkit-border-radius: .375rem;
   -moz-border-radius: .375rem;
   border-radius: .375rem;
   -webkit-appearance: button;
   cursor: pointer;
-  opacity: 0.7;
 }
 
 .info button:focus {
   outline: none;
-}
-
-.info button:hover {
-  opacity: 1;
 }
 
 .overlay_close {
