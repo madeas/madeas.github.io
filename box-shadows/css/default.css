@@ -3,7 +3,7 @@
   display: none;
 }
 .en {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 .ru {
   font-family: 'Comfortaa', sans-serif;
@@ -128,7 +128,6 @@ summary {
 .changes h3 {
   color: #3b393d;
   font-weight: 300;
-  font-family: 'Raleway', 'Comfortaa', sans-serif;
   margin-bottom: 7px;
 }
 .changes input,
@@ -183,7 +182,7 @@ input.filename {
   border: 0;
   pointer-events: none;
   font-size: 1.25rem;
-  font-family: 'Raleway', 'Comfortaa', sans-serif;
+  font-family: 'Nunito', 'Comfortaa', sans-serif;
 }
 #text-options {
   margin-top: .6em;
@@ -209,7 +208,7 @@ input.filename {
   top: 0;
   right: 0;
   color: #032f62;
-  font: bold 12px/23px 'Raleway', 'Comfortaa', sans-serif;
+  font: bold 12px/23px 'Nunito', 'Comfortaa', sans-serif;
   padding: 0px 10px;
   z-index: 10;
 }
@@ -247,7 +246,7 @@ textarea.result {
 .card__title {
   font-size: 3rem;
   color: var(--primary-color);
-  font-family: 'Raleway', 'Comfortaa', sans-serif;
+  font-family: 'Raleway', sans-serif;
   line-height: 1;
   margin: 5px 0 0 0;
 }
@@ -301,7 +300,6 @@ textarea.result {
 }
 .meta__author_name {
   color: #1395ba;
-  font-family: 'Raleway', 'Comfortaa', sans-serif;
   font-size: 19px;
   font-weight: 600;
   letter-spacing: 1.3px;
