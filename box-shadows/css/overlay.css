@@ -116,12 +116,6 @@ body.overlay #overlay {
   cursor: pointer;
 }
 
-.info button:hover {
-    background: hsla(0,0%,100%,.8);
-    border: 2px solid hsla(0,0%,100%,.8);
-    color: #3b393d;
-}
-
 .info button:focus {
   outline: none;
 }
