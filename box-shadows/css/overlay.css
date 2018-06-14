@@ -80,7 +80,8 @@ body.overlay #overlay {
   vertical-align: top;
   background-size: 75%;
   background-color: rgba(255, 255, 255, 0.2);
-  font-size: 0.825em;
+  font-size: 0.825em;  
+  font-family: 'Nunito', sans-serif;
   margin-bottom: 1em;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
