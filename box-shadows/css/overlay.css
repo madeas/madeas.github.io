@@ -66,8 +66,8 @@ body.overlay #overlay {
 .info h2,
 .info h3 {
   letter-spacing: 1px;
-  font-family: 'Raleway', sans-serif;
-  text-shadow: -1px 4px 10px rgba(0, 0, 0, 0.21);
+  font-family: 'Nunito', 'Raleway', sans-serif;
+  text-shadow: -1px 4px 10px rgba(0, 0, 0, 0.01);
 }
 
 .info .over--i {
