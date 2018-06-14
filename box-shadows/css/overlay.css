@@ -112,8 +112,18 @@ body.overlay #overlay {
   cursor: pointer;
 }
 
+.info button:hover {
+    background-color: hsla(0,0%,100%,.8);
+    color: #3b393d;
+}
+
 .info button:focus {
   outline: none;
+}
+
+.info button:active {
+  transition: transform .2s, background .2s,color .2s, box-shadow .2s;
+  transform: scale(.9);
 }
 
 .overlay_close {
