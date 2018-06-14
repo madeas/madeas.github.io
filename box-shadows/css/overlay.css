@@ -93,6 +93,10 @@ body.overlay #overlay {
   padding-top: .5em;
 }
 
+.btn-row {
+    margin: -10px;
+}
+
 .info button {
   display: block;
   background: #fff;
