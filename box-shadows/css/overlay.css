@@ -109,6 +109,10 @@ body.overlay #overlay {
   -moz-border-radius: .375rem;
   border-radius: .375rem;
   -webkit-appearance: button;
+  transition: 
+    transform .2s, 
+    background .2s,color .2s, 
+    box-shadow .2s;
   cursor: pointer;
 }
 
@@ -122,7 +126,6 @@ body.overlay #overlay {
 }
 
 .info button:active {
-  transition: transform .2s, background .2s,color .2s, box-shadow .2s;
   transform: scale(.9);
 }
 
