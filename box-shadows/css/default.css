@@ -2,10 +2,7 @@
 .ru :lang(en) {
   display: none;
 }
-.en {
-  font-family: 'Nunito', sans-serif;
-}
-.ru {
+body {
   font-family: 'Comfortaa', sans-serif;
 }
 .gen_container input[type=range]::-webkit-slider-thumb,
@@ -208,7 +205,7 @@ input.filename {
   top: 0;
   right: 0;
   color: #032f62;
-  font: bold 12px/23px 'Nunito', 'Comfortaa', sans-serif;
+  font: bold 12px/23px 'Nunito', sans-serif;
   padding: 0px 10px;
   z-index: 10;
 }
@@ -668,6 +665,9 @@ textarea#g_result {
   }
 }
 @media (max-width: 768px) {
+body {
+  font-family: 'Nunito', sans-serif;
+}
   .bg_svg {
     background: none;
   }
