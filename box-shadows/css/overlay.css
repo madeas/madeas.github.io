@@ -83,9 +83,9 @@ body.overlay #overlay {
   font-size: 0.825em;  
   font-family: 'Nunito', sans-serif;
   margin-bottom: 1em;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
+  -webkit-border-radius: var(--primary-radius);
+  -moz-border-radius: var(--primary-radius);
+  border-radius: var(--primary-radius);
 }
 
 .info .svg-icon {
@@ -94,19 +94,25 @@ body.overlay #overlay {
 }
 
 .info button {
+  display: block;
+  background: #fff;
   border: 2px solid #fff;
-  background: transparent;
-  color: #fff;
+  color: var(--primary-color);
   font-weight: bold;
   padding: 1em 2em;
   letter-spacing: 1px;
   text-transform: uppercase;
-  display: block;
-  margin: 1em auto;
-  opacity: 0.7;
-  outline: none;
+  margin: 1.25em auto;
+  -webkit-border-radius: .375rem;
+  -moz-border-radius: .375rem;
+  border-radius: .375rem;
   -webkit-appearance: button;
   cursor: pointer;
+  opacity: 0.7;
+}
+
+.info button:focus {
+  outline: none;
 }
 
 .info button:hover {
