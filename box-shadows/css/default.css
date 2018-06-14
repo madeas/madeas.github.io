@@ -147,10 +147,14 @@ summary {
   padding: .375rem .75rem;
 }
 .btn-save {
-  background: linear-gradient(73deg, #8ec5fc, var(--primary-color));
-  color: #fff;
   margin-left: .25em;
 }
+.save,
+.btn-save {
+  background: linear-gradient(73deg, #8ec5fc, var(--primary-color));
+  color: #fff;
+}
+.save,
 .btn-save,
 .dclose {
   border-color: transparent;
