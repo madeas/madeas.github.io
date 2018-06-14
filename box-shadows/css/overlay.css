@@ -98,9 +98,11 @@ body.overlay #overlay {
   background: #fff;
   border: 2px solid #fff;
   color: var(--primary-color);
-  font-weight: bold;
-  padding: 1em 2em;
+  font-size: .875rem;
+  font-weight: 600;
   letter-spacing: 1px;
+  line-height: 1.6;
+  padding: .75rem 1.5rem;
   text-transform: uppercase;
   margin: 1em auto;
   -webkit-border-radius: .375rem;
