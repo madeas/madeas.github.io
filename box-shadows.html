@@ -668,6 +668,16 @@
 	    window.addEventListener('resize', closeResize);
     </script>
     <script>
+    // убираем скролл на превью
+    // не работает на SG s7, Xiaomi Mi6
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('.info button').addEventListener("click",
+          function() {
+            document.body.classList.remove("overlay")
+          });
+      });
+    </script>
+    <script>
     // составляем css файл
       $(".btn-save").click(function() {
         var text = $(".result").val();
@@ -782,16 +792,6 @@
         "url": "https://madeas.github.io/box-shadows"
       }
 
-    </script>
-    <script>
-    // убираем скролл на превью
-    // не работает на SG s7, Xiaomi Mi6
-      document.addEventListener('DOMContentLoaded', function() {
-        document.querySelector('.info button').addEventListener("click",
-          function() {
-            document.body.classList.remove("overlay")
-          });
-      });
     </script>
     <script>
       (function(d, w, c) {
