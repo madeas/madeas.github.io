@@ -721,13 +721,14 @@
     </script>
     <script>
     // убираем скролл на превью
-    // не работает на SG s7, Xiaomi Mi6
-    document.body.classList.add("overlay"); // добавляем класс 
+      document.body.classList.add("overlay"); // добавляем класс
       document.addEventListener('DOMContentLoaded', function() {
-        document.querySelector('.info button').addEventListener("click", // используем клик по кнопке
-          function() {
-            document.body.classList.remove("overlay") // убираем класс
-          });
+        function rem() {
+          document.body.classList.remove("overlay") // убираем класс
+        }
+
+        document.querySelector('.info button').addEventListener("click", rem) // кнопка > 420px
+        document.querySelector('.overlay_close').addEventListener("click", rem) // кнопка < 420px
       });
     </script>
     <script>
