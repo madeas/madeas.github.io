@@ -99,14 +99,14 @@ summary {
   position: relative;
   background-color: white;
   color: rgb(81, 204, 226);
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   line-height: 150px;
   color: var(--primary-color);
   font-weight: bold;
   font-size: 1.25rem;
   text-align: center;
-  margin: 0 auto 4rem;
+  margin: 20px auto 20px;
 }
 .flex .block {
   counter-increment: figures;
