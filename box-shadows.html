@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html itemscope itemtype="http://schema.org/WebPage" prefix="og: http://ogp.me/ns#">
+<html itemscope itemtype="http://schema.org/WebPage" prefix="og: http://ogp.me/ns#" class="overlay">
 
   <head>
     <meta charset="utf-8">
@@ -68,10 +68,10 @@
     </script>
   </head>
 
-  <body class="en overlay">
+  <body class="en">
 
     <div id="overlay">
-    <!--<div class="over_img"></div>-->
+    <div class="over_img"></div>
     <a href="//github.com/madeas/box-shadows.css" class="github-ribbon" title="">
       <div class="ribbon">
         <span>Fork me on GitHub</span>
@@ -668,16 +668,6 @@
 	    window.addEventListener('resize', closeResize);
     </script>
     <script>
-    // убираем скролл на превью
-    // не работает на SG s7, Xiaomi Mi6
-      document.addEventListener('DOMContentLoaded', function() {
-        document.querySelector('.info button').addEventListener("click",
-          function() {
-            document.body.classList.remove("overlay")
-          });
-      });
-    </script>
-    <script>
     // составляем css файл
       $(".btn-save").click(function() {
         var text = $(".result").val();
@@ -729,7 +719,17 @@
       })();
 
     </script>
-
+    <script>
+    // убираем скролл на превью
+    // не работает на SG s7, Xiaomi Mi6
+    document.body.classList.add("overlay"); // добавляем класс 
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('.info button').addEventListener("click", // используем клик по кнопке
+          function() {
+            document.body.classList.remove("overlay") // убираем класс
+          });
+      });
+    </script>
     <script>
     // добавляем активный пункт навигации при скролле страницы
       var lastId,
