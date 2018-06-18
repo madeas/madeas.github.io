@@ -241,10 +241,8 @@
             <!--/ add_content -->
 
             <div class="see__example">
-              <p class="first en" lang="en">Now the collection has more than 50 shadows with the number, as well as three additional classes <b>.bShadow</b>, <b>.bShadow-light</b> and <b>.bShadow-inset</b>. Click on the selector below and see them in action. You can switch the shadows
-                using the arrows on the keyboard. The result is displayed as a shadow in the main container of the site.</p>
-              <p class="ru" lang="ru">Сейчас коллекция насчитывает более 50 вариантов теней с номером, а так же три дополнительных класса <b>.bShadow</b>, <b>.bShadow-light</b> и <b>.bShadow-inset</b>. Нажмите на селектор ниже и посмотрите их в действии. Вы можете переключать
-                тени используя стрелки на клавиатуре. Результат отображается в виде тени в основном контейнере сайта.</p>
+              <p class="first en" lang="en">Now the collection has more than 50 shadows with the number, as well as four additional classes <b>.bShadow</b>, <b>.bShadow-light</b>, <b>.bShadow-inset</b> and <b>.bSnone</b>. Click on the selector below and see them in action. You can switch the shadows using the arrows on the keyboard. The result is displayed as a shadow in the main container of the site.</p>
+              <p class="ru" lang="ru">Сейчас коллекция насчитывает более 50 вариантов теней с номером, а так же четыре дополнительных класса <b>.bShadow</b>, <b>.bShadow-light</b>, <b>.bShadow-inset</b> и <b>.bSnone</b>. Нажмите на селектор ниже и посмотрите их в действии. Вы можете переключать тени используя стрелки на клавиатуре. Результат отображается в виде тени в основном контейнере сайта.</p>
 
         <select class="block-select" multiple>
           <option disabled>bShadow</option>
@@ -303,6 +301,17 @@
           <option>bShadow-51</option>
           <option>bShadow-52</option>
           <option>bShadow-53</option>
+          <option>bShadow-54</option>
+          <option>bShadow-55</option>
+          <option>bShadow-56</option>
+          <option>bShadow-57</option>
+          <option>bShadow-58</option>
+          <option>bShadow-59</option>
+          <option>bShadow-60</option>
+          <option>bShadow-61</option>
+          <option>bShadow-62</option>
+          <option>bShadow-63</option>
+          <option>bShadow-64</option>
         </select>
 
               <div class="blocks">
@@ -386,7 +395,18 @@
                 <div class="block bShadow-51"></div>
                 <div class="block bShadow-52"></div>
                 <div class="block bShadow-53"></div>
-                <div class="block bShadow-54"></div>			
+                <div class="block bShadow-54"></div>	
+                <div class="block bShadow-54"></div>
+                <div class="block bShadow-55"></div>
+                <div class="block bShadow-56"></div>
+                <div class="block bShadow-57"></div>
+                <div class="block bShadow-58"></div>
+                <div class="block bShadow-59"></div>
+                <div class="block bShadow-60"></div>
+                <div class="block bShadow-61"></div>
+                <div class="block bShadow-62"></div>
+                <div class="block bShadow-63"></div>
+                <div class="block bShadow-64"></div>		
                 </div><!--/ flex numbers -->
 		</details>
 
@@ -545,7 +565,8 @@
           }
         });
         var out = [],
-          n = 55,
+	    // создаем новые классы, начиная с 65
+          n = 65,
           result = document.querySelector('.g_result'),
           test = "";
 
