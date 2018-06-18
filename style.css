@@ -184,6 +184,10 @@ kbd {
   text-align: left !important;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .mb-0 {
   margin-bottom: 0 !important;
 }
