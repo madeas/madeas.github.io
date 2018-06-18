@@ -697,8 +697,8 @@ body {
     animation: none;
   }
   .block {
-    width: 140px;
-    height: 140px;
+    width: 130px;
+    height: 130px;
     margin: auto;
     margin-bottom: 2rem !important;
     font-size: 1rem;
@@ -716,7 +716,7 @@ body {
   }
 }
 @media (max-width: 420px) {
-  .blocks {
+  .blocks,.flex {
     justify-content: flex-start;
   }
   .gen_table td:nth-child(2) {
