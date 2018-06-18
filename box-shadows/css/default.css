@@ -699,6 +699,7 @@ body {
   .block {
     width: 140px;
     height: 140px;
+    margin: auto;
     margin-bottom: 2rem !important;
     font-size: 1rem;
   }
