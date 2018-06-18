@@ -81,7 +81,7 @@ summary {
   position: relative;
   display: block;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   list-style: none;
   display: -webkit-box;
   display: -moz-box;
