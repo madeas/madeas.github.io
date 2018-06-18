@@ -21,6 +21,11 @@ body {
   cursor: -moz-grab;
   cursor: -webkit-grab;
 }
+
+.flex .block:active {
+  cursor: pointer;
+}
+
 .changes input:focus,
 .changes button:focus,
 input.filename:focus,
