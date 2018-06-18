@@ -9,6 +9,7 @@ body {
 .lang-switcher img,
 .changes button,
 .btn-save,
+.block,
 .dclose,
  summary {
   cursor: pointer;
