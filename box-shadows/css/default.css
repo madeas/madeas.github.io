@@ -637,25 +637,25 @@ textarea#g_result {
 @media (min-width: 992px) {
   .content-arrow-left::after,
   .content-arrow-right::after {
-    position: absolute;
+    position: fixed;
     content: '';
     display: block;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    top: 75%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     background-image: url(/box-shadows/img/arrow.png);
     width: 78px;
     height: 76px;
   }
   .content-arrow-left::after {
-    left: -100px;
+    left: 100px;
     -webkit-transform: scale(1, -1) rotate(-75deg);
     -moz-transform: scale(1, -1) rotate(-75deg);
     -o-transform: scale(1, -1) rotate(-75deg);
     transform: scale(1, -1) rotate(-75deg);
   }
   .content-arrow-right::after {
-    right: -100px;
+    right: 100px;
     -webkit-transform: scale(-1, -1) rotate(-75deg);
     -moz-transform: scale(-1, -1) rotate(-75deg);
     -o-transform: scale(-1, -1) rotate(-75deg);
