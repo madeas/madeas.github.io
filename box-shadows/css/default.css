@@ -100,7 +100,7 @@ summary {
   counter-reset: figures;
 }
 .between {
-  justify-content: space-between;
+  justify-content: space-between !important;
 }
 .block {
   position: relative;
