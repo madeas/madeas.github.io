@@ -1,11 +1,3 @@
-body.overlay {
-  overflow: hidden;
-}
-
-body.overlay #overlay {
-  display: block;
-}
-
 #overlay {
   display: none;
   position: fixed;
@@ -15,6 +7,14 @@ body.overlay #overlay {
   left: 0;
   background-image: linear-gradient(73deg, #3369E7, #47c9e5);
   z-index: 100;
+}
+
+body.overlay {
+  overflow: hidden;
+}
+
+body.overlay #overlay {
+  display: block;
 }
 
 .over_img {
