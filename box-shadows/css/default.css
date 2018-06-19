@@ -669,6 +669,12 @@ textarea#g_result {
     padding-left: 20px;
   }
 }
+@media (max-width: 800px) {
+  .block-select,
+  .m800n {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
 body {
   font-family: 'Nunito', sans-serif;
