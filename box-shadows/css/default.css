@@ -739,4 +739,7 @@ body {
   .gen_table td:nth-child(2) {
     display: none;
   }
+  .btn-download {
+    padding: 0.25em 1em;
+  }
 }
