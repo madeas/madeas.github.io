@@ -683,7 +683,6 @@ body {
     background: none;
   }
   .block {
-    justify-content: flex-start;
     margin: 40px;
   }
   .bshadow-logo {
