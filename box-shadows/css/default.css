@@ -682,8 +682,9 @@ body {
   .bg_svg {
     background: none;
   }
-  .blocks,.flex {
+  .block {
     justify-content: flex-start;
+    margin: 40px;
   }
   .bshadow-logo {
     flex-direction: column;
