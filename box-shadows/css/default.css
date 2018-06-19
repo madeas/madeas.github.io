@@ -722,6 +722,9 @@ body {
     font-size: 90%;
     padding: 25px 0px 100px;
   }
+  .ribbon {
+    display: none;
+  }
 }
 @media (max-width: 420px) {
   .blocks,.flex {
