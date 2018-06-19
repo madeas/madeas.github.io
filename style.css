@@ -142,10 +142,10 @@ pre[rel] {
 }
 
 pre[rel]:before {
-  position: fixed;
-  top: 5px;
-  right: 8px;
-  left: 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   background-color: #eee;
