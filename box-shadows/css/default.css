@@ -678,9 +678,12 @@ textarea#g_result {
 @media (max-width: 768px) {
 body {
   font-family: 'Nunito', sans-serif;
-}
+  }
   .bg_svg {
     background: none;
+  }
+  .blocks,.flex {
+    justify-content: flex-start;
   }
   .bshadow-logo {
     flex-direction: column;
@@ -734,9 +737,6 @@ body {
   }
 }
 @media (max-width: 420px) {
-  .blocks,.flex {
-    justify-content: flex-start;
-  }
   .gen_table td:nth-child(2) {
     display: none;
   }
