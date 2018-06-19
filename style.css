@@ -137,10 +137,11 @@ pre {
 }
 
 pre[rel] {
+  position: relative;
   padding-top: 32px;
 }
 
-pre[rel]:before 
+pre[rel]:before {
   position: fixed;
   top: 5px;
   right: 8px;
