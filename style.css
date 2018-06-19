@@ -140,12 +140,13 @@ pre[rel] {
   padding-top: 32px;
 }
 
-pre[rel]:before {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  right: 0;
-  left: 0;
+pre[rel]:before 
+  position: fixed;
+  top: 5px;
+  right: 8px;
+  left: 8px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
   background-color: #eee;
   content: attr(rel);
   color: #032f62;
