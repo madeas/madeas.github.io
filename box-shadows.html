@@ -595,7 +595,7 @@
           var color = `rgba(${data[0]}, ${data[1]}, ${data[2]}, ${data[3]})`,
             shadow = `${data[4]}px ${data[5]}px ${data[6]}px ${data[7]}px`;
           result.style.boxShadow = `${shadow} ${color}`;
-          test = `.bShadow-${n},.bShadow-${n}h:hover{-webkit-box-shadow: ${shadow} ${color};-moz-box-shadow: ${shadow} ${color};box-shadow:${shadow} ${color};
+          test = `.bShadow-${n},.bShadow-${n}h:hover{box-shadow:${shadow} ${color}; // -webkit-box-shadow: ${shadow} ${color};-moz-box-shadow: ${shadow} ${color};
 }
 `;
           result.value = out.reduce((a, b) => a + b, "") + test;
