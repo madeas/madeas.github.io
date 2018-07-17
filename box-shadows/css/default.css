@@ -660,9 +660,9 @@ textarea#g_result {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  bottom: 1.5%;
+  bottom: 30px;
   height: 38px;
-  left: 5px;
+  left: 30px;
   width: 38px;
   transition: 0.5s;
   -webkit-transition: 0.5s;
