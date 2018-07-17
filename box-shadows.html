@@ -535,8 +535,10 @@
             <p class="text-center en" lang="en">Try, experiment, use whatever you want and how you want!</p>
             <p class="text-center ru" lang="ru">Пробуйте, экспериментируйте, используйте тени как хотите и где хотите!</p>
             <div class="flex share">
-              <script async src="https://usocial.pro/usocial/usocial.js?v=6.1.4" data-script="usocial"></script> 
-		    <div class="uSocial-Share" data-pid="df9fe7231f3142bcd59ca779aa47975c" data-type="share" data-options="round-rect,style1,default,absolute,horizontal,size24,eachCounter1,counter0,upArrow-left,nomobile" data-social="twi,lin,fb,lj,gPlus,pinterest,vk,tumblr,telegram"></div>
+              <!-- uSocial -->
+		    <script async src="https://usocial.pro/usocial/usocial.js?v=6.1.4" data-script="usocial" charset="utf-8"></script>
+		    <div class="uSocial-Share" data-pid="df9fe7231f3142bcd59ca779aa47975c" data-type="share" data-options="round-rect,style1,default,absolute,horizontal,size24,eachCounter1,counter0,nomobile" data-social="twi,lin,fb,lj,gPlus,pinterest,vk,tumblr,telegram"></div>
+	      <!-- /uSocial -->
             </div>
           </div>
           <!--/ content-wrap -->
@@ -680,8 +682,6 @@
         saveAs(blob, filename + ".css");
       });
 
-    </script>
-    <script>
     // выбираем необходимые блоки
       window.onload = function() {
         var items = document.querySelectorAll('.flex div.block');
@@ -732,8 +732,7 @@
         document.querySelector('.info button').addEventListener("click", rem) // кнопка > 420px
         document.querySelector('.overlay_close').addEventListener("click", rem) // кнопка < 420px
       });
-    </script>
-    <script>
+	    
     // добавляем активный пункт навигации при скролле страницы
       var lastId,
         nav = $("#navigation"),
@@ -770,8 +769,6 @@
         }
       });
 
-    </script>
-    <script>
         // плавный скролл
         $(document).ready(function() {
           $("a[href*=#]").on("click", function(e) {
@@ -784,6 +781,7 @@
           });
         });
     </script>
+	  
     <script type='application/ld+json'>
       {
         "@context": "http://www.schema.org",
@@ -796,6 +794,7 @@
       }
 
     </script>
+	  
     <script>
       (function(d, w, c) {
         (w[c] = w[c] || []).push(function() {
