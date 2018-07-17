@@ -669,7 +669,7 @@ textarea#g_result {
 }
 
 .ScrollUp.button--show {
-  right: 5px;
+  left: 30px;
 }
 
 .percent {
