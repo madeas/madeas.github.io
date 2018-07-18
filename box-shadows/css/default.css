@@ -133,10 +133,11 @@ summary {
 }
 
 .block i {
+  display: block;
   position: absolute;
   bottom: 15px;
   left: 15px;
-  width: 20%;
+  width: auto;
 }
 
 .flex .block {
