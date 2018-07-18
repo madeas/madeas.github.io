@@ -139,6 +139,8 @@ summary {
   left: 15px;
   width: 100px;
   height: 24px;
+  line-height: 1;
+  text-align: left;
   overflow: hidden;
 }
 
