@@ -135,7 +135,7 @@ summary {
 .block i {
   display: block;
   position: absolute;
-  bottom: 15px;
+  top: 15px;
   left: 15px;
   width: 100px;
   height: 24px;
