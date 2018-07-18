@@ -132,6 +132,13 @@ summary {
   margin: 40px 60px;
 }
 
+.block i {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  width: 20%;
+}
+
 .flex .block {
   counter-increment: figures;
 }
