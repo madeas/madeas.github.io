@@ -137,7 +137,9 @@ summary {
   position: absolute;
   bottom: 15px;
   left: 15px;
-  width: auto;
+  width: 100px;
+  height: 24px;
+  overflow: hidden;
 }
 
 .flex .block {
