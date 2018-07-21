@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="287" height="540" viewBox="0 0 287.0003 540"><defs>
+<style>
+.cbs-1{fill:url(#cbs)}
+.cbs-2{fill:#fafafa}
+</style>
+<linearGradient id="cbs" y1="270" x2="240" y2="270" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#3369E7" stop-opacity=".2"/>
+<stop offset="1" stop-color="#47c9e5" stop-opacity="0"/>
+</linearGradient>
+</defs>
+<g id="fe98ca5a-32ee-4456-9726-3d8d2101e47b">
+<path class="cbs-1" d="M0 0h240v540H0z"/>
+<path class="cbs-2" d="M416-160L215.817 40.183A354.453 354.453 0 0 0 112 290.82a354.453 354.453 0 0 1-87.7 233.41L-168 744h-344v-880z"/>
+</g>
+</svg>
