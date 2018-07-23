@@ -377,19 +377,22 @@
 
       #bg_choose {
         position: absolute;
-        top: 7px;
+        top: 5px;
         left: 8px;
-        width: 34px;
-        height: 34px;
+        width: 36px;
+        height: 36px;
         display: block !important;
         border: 0;
         background-color: transparent;
         outline: none;
         padding: 0;
         border-radius: 50%;
-        overflow: hidden;
         cursor: pointer;
       }
+
+      #bg_choose:focus {
+		 outline: none; 
+	  }
 
       #bg_choose:before {
         position: absolute;
@@ -398,7 +401,7 @@
         border: 12px solid #fff;
         width: 48px;
         height: 48px;
-        top: -7px;
+        top: -5px;
         left: -8px;
       }
 
@@ -572,6 +575,7 @@
     <script src="//buttons.github.io/buttons.js"></script>
     <script>
       $('.btn').click(function() {
+        $('#bSm').val();
         $('#bSm').css($(this).data('cls'));
 
         var newStyles = $('#bSm').attr('style').replace(/; /g, ';\n');
