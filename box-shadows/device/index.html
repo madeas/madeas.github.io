@@ -503,6 +503,7 @@
                         <textarea class='f1rem custom-textarea' id='form_code'></textarea>
                         <script>
                           form_code.innerHTML += '<div id="bSd">' + '\n' + '<div class="display">' + '</div>' + '\n' + '</div>' + '\n' + '<style>' + '\n' + '#bSd {' + '\n' + '}' + '\n' + '.display {' + '\n' + 'background: linear-gradient(45deg, #e5ebf2, #f2f6fa);' + '\n' + 'border-radius: 8px;' + '\n' + 'min-height: 200px;' + '\n' + 'height: 100%;' + '\n' + 'padding: 15px;' + '\n' + '}' + '\n' + '</style>';
+
                         </script>
                       </div>
                       <div class="modal-footer border-top-0 d-flex justify-content-center">
@@ -570,13 +571,14 @@
     <script src="/box-shadows/js/bootstrap.min.js"></script>
     <script src="//buttons.github.io/buttons.js"></script>
     <script>
-      $('.btn').click(function() {
-        $('#bSd').css($(this).data('cls'));
-
-        var newStyles = $('#bSd').attr('style').replace(/; /g, ';\n');
-        var val = $('#form_code').val();
-
-        $('#form_code').val(val.replace(/#bSd \{([\s\S]*?)\}/, `#bSd {\n${newStyles}\n}`));
+      $(function() {
+        var b = $('.btn'),
+          cls = {},
+          str = '';
+        b.click(function() {
+          cls = $(this).data("cls");
+          $('#bSm').css(cls);
+        });
       });
 
       $(function() {
