@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en-EN" itemscope itemtype="http://schema.org/WebPage" prefix="og: http://ogp.me/ns#">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <meta name="description" content="Box-shadows Device (BSD) is a tool for creating simple and beautiful devices on your website" />
+    <meta name="keywords" content="css, box-shadow, bsd, stylesheet, box-shadow css, device, box-shadows.css">
+    <meta name="author" content="Andrej Sharapov">
+    <title>Box-shadows Device (BSD)</title>
+    <meta name="title" content="Box-shadows.css · a cross-browser library of CSS box-shadows" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="image_src" href="/box-shadows/img/og_image1200х630.png" />
+
+    <!-- Google Web fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800|Roboto:400,500,700">
+
+    <!-- General Style -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/box-shadows.min.css">
+
+    <!-- Social meta tegs -->
+    <meta property="og:title" content="Box-shadows Device (BSD)">
+    <meta property="og:description" content="Box-shadows Device (BSD) is a tool for creating simple and beautiful devices on your website">
+    <meta property="og:image" content="https://madeas.github.io/box-shadows/img/og_image1200х630.png">
+    <meta property="og:image:secure_url" content="/box-shadows/img/og_image1200х630.png">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="Box-shadows Device (BSD)">
+    <meta property="og:locale" content="en_EN">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:site" content="@andrejsharapov">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="Box-shadows Device (BSD)">
+    <meta name="twitter:description" content="Box-shadows Device (BSD) is a tool for creating simple and beautiful devices on your website">
+    <meta name="twitter:image" content="https://madeas.github.io/box-shadows/img/tw_image400х400.jpg">
+    <!-- 1x1 min 120x120 -->
+  </head>
+
+  <body>
+    <style>
+      :root {
+        --primary-color: #47c9e5;
+        --primary-radius: 6px;
+      }
+
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      body,
+      html {
+        height: 100%;
+        overflow-x: hidden;
+      }
+
+      body {
+        color: #1F2667;
+        background: linear-gradient(to top right, #fff, var(--primary-color));
+        font-family: Nunito, Arial, sans-serif;
+        font-size: 62.5%;
+        font-weight: 400;
+        font-style: normal;
+        position: relative;
+        -webkit-text-size-adjust: 100%;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+      }
+
+      ::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+
+      a:focus {
+        outline: none;
+      }
+
+      .f1rem {
+        font-size: 1rem;
+      }
+
+      .masthead {
+        padding: 1em;
+        margin-bottom: 2rem;
+        z-index: 1;
+      }
+
+      h1 {
+        color: white;
+        font-size: 4vw;
+      }
+
+      .masthead-brand {
+        margin-bottom: 0;
+        display: flex;
+      }
+
+      .masthead-brand svg {
+        width: 56px;
+        height: 56px;
+        border-radius: 9px;
+        margin-right: 1rem;
+        background-color: #fff;
+      }
+
+      .nav-masthead .nav-link {
+        padding: .25rem 0;
+        font-size: 1rem;
+        font-weight: 700;
+        color: rgba(255, 255, 255, .8);
+        background-color: transparent;
+        border-bottom: .25rem solid transparent;
+      }
+
+      .nav-masthead .nav-link:hover,
+      .nav-masthead .nav-link:focus {
+        border-bottom-color: rgba(255, 255, 255, 1);
+        color: rgba(255, 255, 255, 1);
+      }
+
+      .nav-masthead .nav-link+.nav-link {
+        margin-left: 1rem;
+      }
+
+      .nav-masthead .active {
+        color: rgba(255, 255, 255, 1);
+        border-bottom-color: rgba(255, 255, 255, 1);
+      }
+
+      .main {
+        background: linear-gradient(to top, #f2f6fc 0, #fefeff 100%);
+        border-radius: 2em;
+        max-width: 1280px;
+        margin: auto;
+      }
+
+      .sidebar {
+        padding-top: 3rem;
+      }
+
+      .sidebar ul {
+        list-style: none;
+      }
+
+      .sidebar ul li {
+        position: relative;
+      }
+
+      .sidebar ul.nav li {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+
+      .sidebar ul li label {
+        color: #1F2667;
+        cursor: pointer;
+        font-size: 1rem;
+        white-space: nowrap;
+        padding: 0.75em 1em;
+        border-radius: var(--primary-radius);
+        box-shadow: rgba(0, 0, 0, 0.05) 0 8px 16px 0;
+        background-color: white;
+        min-width: 170px;
+        text-align: right;
+      }
+
+      .sidebar ul.text-left li label {
+        text-align: left;
+      }
+
+      .sidebar ul li label input {
+        display: none;
+      }
+
+      .github-logo:hover .arm {
+        animation: octocat-wave 560ms ease-in-out
+      }
+
+      @keyframes octocat-wave {
+        0%,
+        100% {
+          transform: rotate(0)
+        }
+        20%,
+        60% {
+          transform: rotate(-25deg)
+        }
+        40%,
+        80% {
+          transform: rotate(10deg)
+        }
+      }
+
+      @media (max-width:500px) {
+        .github-logo:hover .arm {
+          animation: none;
+        }
+      }
+
+      #bSm {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        min-width: 200px;
+        min-height: 200px;
+        position: relative;
+        border-radius: 8px;
+      }
+
+      .display {
+        background: linear-gradient(45deg, #e5ebf2, #f2f6fa);
+        border-radius: 8px;
+        min-height: 200px;
+        height: 100%;
+        padding: 15px;
+      }
+
+      #bSm.utilOne:before,
+      #bSm.utilFore:before {
+        position: absolute;
+        content: '';
+        left: 50%;
+        transform: translateX(-50%);
+        top: 13px;
+        width: 6px;
+        height: 6px;
+        background: linear-gradient(45deg, #e5ebf2, #f2f6fa);
+        border-radius: 50%;
+        box-shadow: inset 2px 1px 0 rgba(51, 51, 51, 0.1);
+      }
+
+      #bSm.utilFore:before {
+        width: 50px;
+        border-radius: var(--primary-radius);
+      }
+
+      #bSm.utilOne:after,
+      #bSm.utilFore:after {
+        position: absolute;
+        content: '';
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 12px;
+        width: 50px;
+        height: 20px;
+        background: linear-gradient(45deg, #e5ebf2, #f2f6fa);
+        border-radius: var(--primary-radius);
+        box-shadow: inset 2px 1px 0 rgba(51, 51, 51, 0.1);
+      }
+
+      #bSm.utilTwo:before {
+        position: absolute;
+        content: '';
+        left: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 6px;
+        height: 50px;
+        background: linear-gradient(45deg, #e5ebf2, #f2f6fa);
+        border-radius: var(--primary-radius);
+        box-shadow: inset 2px 1px 0 rgba(51, 51, 51, 0.1);
+      }
+
+      #bSm.utilTwo:after {
+        position: absolute;
+        content: '';
+        left: auto;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 50px;
+        background: linear-gradient(45deg, #e5ebf2, #f2f6fa);
+        border-radius: var(--primary-radius);
+        box-shadow: inset 2px 1px 0 rgba(51, 51, 51, 0.1);
+      }
+
+      #bSm.utilThree .display {
+        background: inherit;
+      }
+
+      #bSm.utilThree:before {
+        position: absolute;
+        content: '';
+        left: 50%;
+        top: 50%;
+        margin: 0;
+        transform: translate(-50%, -50%);
+        width: 150px;
+        height: 150px;
+        border: 40px solid rgba(254, 254, 254, 0.9);
+        background: inherit;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+      }
+
+      footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+
+      footer p,
+      footer a {
+        color: #1F2667;
+      }
+
+      #choiseFuncOne+span:after,
+      #choiseFuncTwo+span:after,
+      #choiseFuncThree+span:after,
+      #choiseFuncFore+span:after {
+        margin-left: 8px;
+        content: '+ button';
+        font-weight: bold;
+      }
+
+      #choiseFuncOne:checked+span:after,
+      #choiseFuncTwo:checked+span:after,
+      #choiseFuncThree:checked+span:after,
+      #choiseFuncFore:checked+span:after {
+        content: "- button";
+      }
+
+      button.gen {
+        color: #fff;
+        cursor: pointer;
+        background: #8ec5fc;
+        background-image: linear-gradient(73deg, #8ec5fc, #47c9e5);
+        border: 0;
+        -webkit-border-radius: 2em;
+        -moz-border-radius: 2em;
+        border-radius: 2em;
+        font-size: 1.2rem;
+        padding: 0.75em 1.752em;
+        transition: all .3s ease-out;
+      }
+
+      button.gen:hover {
+        transform: scale(1.2);
+      }
+
+      button.gen:focus {
+        outline: none;
+      }
+
+      .choose {
+        font-weight: bold;
+        cursor: default !important;
+      }
+
+      #form_code {
+        border: 2px solid #f5f5f5;
+        background-color: #fff;
+        border-radius: 6px;
+        margin: 0;
+        padding: 16px 19px;
+        overflow: hidden;
+        color: #5d5d5d;
+        width: 100%;
+        -webkit-user-select: all;
+        -moz-user-select: all;
+        -ms-user-select: all;
+        user-select: all;
+        outline: none;
+      }
+
+      #bg_choose {
+        position: absolute;
+        top: 7px;
+        left: 8px;
+        width: 34px;
+        height: 34px;
+        display: block !important;
+        border: 0;
+        background-color: transparent;
+        outline: none;
+        padding: 0;
+        border-radius: 50%;
+        overflow: hidden;
+        cursor: pointer;
+      }
+
+      #bg_choose:before {
+        position: absolute;
+        content: '';
+        border-radius: 50%;
+        border: 12px solid #fff;
+        width: 48px;
+        height: 48px;
+        top: -7px;
+        left: -8px;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      .custom-textarea {
+        min-height: 170px;
+        height: auto;
+      }
+
+    </style>
+
+    <div class="d-flex w-100 h-100 mx-auto flex-column">
+      <a href="https://github.com/madeas/box-shadows.css" class="github-logo" aria-label="View source on Github" target="blank">
+		<svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#47c9e5; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+			<path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+			<path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="#47c9e5" style="transform-origin: 130px 106px;" class="arm"></path>
+			<path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="#47c9e5"></path>
+		</svg>
+	  </a>
+      <header itemscope itemtype="http://schema.org/WPHeader" id="masthead" role="banner" class="masthead container py-3">
+        <div class="row">
+          <div class="masthead-brand col-md-12 col-lg-9">
+            <svg itemprop="logo" class="bShadow-inset" width="56" height="56" viewBox="0 0 612 612" xmlns="http://www.w3.org/2000/svg" focusable="false">
+			<title>Box-shadows.css</title>
+				<path fill="#fff" d="M510 8a94.3 94.3 0 0 1 94 94v408a94.3 94.3 0 0 1-94 94H102a94.3 94.3 0 0 1-94-94V102a94.3 94.3 0 0 1 94-94h408m0-8H102C45.9 0 0 45.9 0 102v408c0 56.1 45.9 102 102 102h408c56.1 0 102-45.9 102-102V102C612 45.9 566.1 0 510 0z"></path>
+				<path fill="#47c9e5" d="M196.77 471.5V154.43h124.15c54.27 0 91 31.64 91 79.1 0 33-24.17 63.72-54.71 69.21v1.76c43.07 5.49 70.75 35.82 70.75 78 0 55.81-40 89-107.45 89zm39.55-180.4h63.28c46.8 0 72.29-18.68 72.29-53 0-31.42-21.53-48.78-60-48.78h-75.57zm78.22 145.46c47.68 0 72.73-19.34 72.73-56s-25.93-55.37-76.46-55.37h-74.49v111.4z"></path>
+			</svg>
+            <h1 itemprop="headline">Box-shadows Device</h1>
+          </div>
+          <nav itemscope itemtype="http://www.schema.org/SiteNavigationElement" class="nav nav-masthead col-md-12 col-lg-3">
+            <a itemprop="url" class="nav-link active" href='/' title='Box-shadows Device'>BSD</a>
+            <a itemprop="url" class="nav-link" href='https://github.com/madeas/box-shadows.css' title='GitHub repository' target='_blank'>GitHub</a>
+            <a itemprop="url" class="nav-link" href='https://github.com/madeas/box-shadows.css/blob/master/LICENSE' title='License' target='_blank'>License</a>
+          </nav>
+        </div>
+      </header>
+      <main itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/WebPageElement" role="main" class="px-3 py-5 bShadow-7 main">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="text-right"><a class="github-button" href="https://github.com/madeas/box-shadows.css" data-show-count="true" aria-label="Star madeas/box-shadows.css on GitHub">Star</a> <a class="github-button" href="https://github.com/madeas/box-shadows.css/fork" data-icon="octicon-repo-forked"
+                  data-show-count="true" aria-label="Fork madeas/box-shadows.css on GitHub">Fork</a></p>
+              <p class="lead mb-3" itemprop="description">Box-shadows Device (BSD) is a tool for creating simple and beautiful devices on your website. Created your device, edit the colors, background and add to it buttons. You can use the created devices to demonstrate your code, templates, pictures,
+                adaptive design and much more.</p>
+            </div>
+            <div class="sidebar sidebar-left col-md-12 col-lg-3">
+              <h2>Device</h2>
+              <ul class="f1rem nav">
+                <li class="nav-item"><label class="text-left"><input type='radio' class='btn' name='left' data-cls='{
+    "width": "225px",
+    "height": "467px",
+    "padding": "30px 7px 38px",
+    "border-radius": "18px"
+    }'>phone-small</label></li>
+                <li class="nav-item"><label class="text-left"><input type='radio' class='btn' name='left' data-cls='{
+    "width": "267px",
+    "height": "553px",
+    "padding": "30px 7px 38px",
+    "border-radius": "18px"
+    }'>phone-big</label></li>
+                <li class="nav-item"><label><input type='checkbox' class='btn_cls' name='left' data-cls='utilOne' id='choiseFuncOne'><span></span></label></li>
+                <li class="nav-item mt-4"><label class="text-left"><input type='radio' class='btn' name='left' data-cls='{
+    "width": "450px",
+    "height": "675px",
+    "padding": "35px 15px 40px",
+    "border-radius": "28px"
+    }'>tablet-portrait</label></li>
+                <li class="nav-item"><label><input type='checkbox' class='btn_cls' name='left' data-cls='utilFore' id='choiseFuncFore'><span></span></label></li>
+                <li class="nav-item mt-4"><label class="text-left"><input type='radio' class='btn' name='left' data-cls='{
+    "width": "512px",
+    "height": "352px",
+    "padding": "11px 35px 11px 35px",
+    "border-radius": "38px"
+    }'>tablet-landscape</label></li>
+                <li class="nav-item"><label><input type='checkbox' class='btn_cls' name='left' data-cls='utilTwo' id='choiseFuncTwo'><span></span></label></li>
+                <li class="nav-item mt-4"><label class="text-left"><input type='radio' class='btn' name='left' data-cls='{
+    "width": "200px",
+    "height": "200px",
+    "padding": "15px",
+    "border-radius": "8px"
+    }'>ipod</label></li>
+                <li class="nav-item"><label><input type='checkbox' class='btn_cls' name='left' data-cls='utilThree' id='choiseFuncThree'><span></span></label></li>
+              </ul>
+            </div>
+            <div class="col-md-12 col-lg-6 pb-5 text-center d-flex flex-column align-items-center">
+              <div class="mb-5 gen_code">
+                <div class="modal fade bd-example-modal-lg" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header border-bottom-0 d-flex flex-column">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+				        </button>
+                        <h3 class="modal-title" id="ModalCenterTitle">Device code</h3>
+                        <p class='f1rem mb-0'>Copy the code and paste it on the page where you want to use this project.</p>
+                        <p class='f1rem'>The form will be displayed in the place where you place the code.</p>
+                      </div>
+                      <div class='modal-body'>
+                        <textarea class='f1rem custom-textarea' id='form_code'></textarea>
+                        <script>
+                          form_code.innerHTML += '<div id="bSd">' + '\n' + '<div class="display">' + '</div>' + '\n' + '</div>' + '\n' + '<style>' + '\n' + '#bSd {' + '\n' + 'width:' + '' + ';' + '\n' + 'height:' + '' + ';' + '\n' + 'background-color:' + '' + ';' + '\n' + 'border-radius:' + '' + ';' + '\n' + 'box-shadow:' + '' + ';' + '\n' + '}' + '\n' + '.display {' + '\n' + 'background: linear-gradient(45deg, #e5ebf2, #f2f6fa);' + '\n' + 'border-radius: 8px;' + '\n' + 'min-height: 200px;' + '\n' + 'height: 100%;' + '\n' + 'padding: 15px;' + '\n' + '}' + '\n' + '</style>';
+
+                        </script>
+                      </div>
+                      <div class="modal-footer border-top-0 d-flex justify-content-center">
+                        <button type="button" class="btn gen copy_code mx-2">Copy code</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="bSm" class="bSd">
+                <div class="display"></div>
+              </div>
+            </div>
+            <div class="sidebar sidebar-right col-md-12 col-lg-3">
+              <h2>Background</h2>
+              <ul class="f1rem nav">
+                <li class="nav-item"><label><input type='radio' class='btn' name='bg' data-cls='{
+				"background-color": "black",
+				"color": "white"
+				}'>bg_black</label></li>
+                <li class="nav-item"><label><input type='radio' class='btn' name='bg' data-cls='{
+				"background-color": "white",
+				"color": "black"
+				}'>bg_white</label></li>
+                <li class="nav-item"><input type="color" id="bg_choose" name='bg' value="#fe9216"><label id="choose" class="choose">← Choose</label></li>
+                <li class="nav-item"><label class="bold text-danger"><input type='radio' class='btn' name='bg' data-cls='{
+				"background-color": "transparent",
+				"color": "inherit"
+				}'>bg_none</label></li>
+              </ul>
+              <h2 class="pt-5">Box-shadow</h2>
+              <ul class="f1rem nav text-left">
+                <li class="nav-item"><label><input type='radio' class='btn' name='right' data-cls='{
+				"box-shadow": "inset 0 -2px 3px rgba(145, 161, 181, .5), inset -1px -6px 4px rgba(253, 255, 255, .9)"
+				}'>bSd_light</label></li>
+                <li class="nav-item"><label><input type='radio' class='btn' name='right' data-cls='{
+				"box-shadow": "inset 1px -4px 6px rgba(145, 161, 181, .3)"
+				}'>bSd_small</label></li>
+                <li class="nav-item"><label><input type='radio' class='btn' name='right' data-cls='{
+				"box-shadow": "inset 6px -6px 15px rgba(145, 160, 180, .45), -30px 30px 40px rgba(118, 146, 180, .18)"
+				}'>bSd_big</label></li>
+                <li class="nav-item"><label><input type='radio' class='btn' name='right' data-cls='{
+				"box-shadow": "inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173, 186, 204, .25), 0 2px 6px rgba(0, 21, 64, .14), 0 10px 20px rgba(0, 21, 64, .05)"
+				}'>bSd_classic</label></li>
+                <li class="nav-item"><label class="bold text-danger"><input type='radio' class='btn' name='right' data-cls='{
+				"box-shadow": "none"
+				}'>bSd_none</label></li>
+              </ul>
+            </div>
+            <div class="col-md-12 py-3 text-center">
+              <button type="button" class="gen bShadow-9 bShadow-2h" data-toggle="modal" data-target="#ModalCenter">to get the code</button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer itemscope itemtype="http://schema.org/WPFooter" id="footer" role="contentinfo" class="pt-5 px-5 pb-2">
+        <div class="d-flex justify-content-around">
+          <p class='copy f1rem'>&copy; <span itemprop="copyrightYear">2018</span> Box-shadows Device</p>
+          <p class='f1rem'>Created by <a class="text-dark bg-white py-1 px-2 bShadow-7" href="https://twitter.com/andrejsharapov" itemprop="url" title="twitter/@andrejsharapov" style="border-radius:.3rem"><span itemprop="name">@andrejsharapov</span></a></p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/box-shadows/js/bootstrap.min.js"></script>
+    <script src="//buttons.github.io/buttons.js"></script>
+    <script>
+      $(function() {
+        var b = $('.btn'),
+          cls = {},
+          str = '';
+        b.click(function() {
+          cls = $(this).data("cls");
+          $('#bSm').css(cls);
+        });
+      });
+
+      $(function() {
+        var b = $('.btn_cls');
+        b.click(function() {
+          var cls = $(this).data("cls");
+          $('#bSm').toggleClass(cls);
+        });
+      });
+
+      var button = document.querySelector('.copy_code');
+      button.addEventListener('click', function(event) {
+        var text = document.querySelector('#form_code');
+        text.select();
+        document.execCommand('copy');
+      });
+
+      document.getElementById('bg_choose').onchange = e => {
+        document.getElementById('choose').textContent = e.target.value;
+        document.getElementById('bSm').style.backgroundColor = e.target.value;
+      }
+
+      var textarea = document.querySelector('.custom-textarea');
+      textarea.addEventListener('keydown', autosize);
+
+      function autosize() {
+        var el = this;
+        setTimeout(function() {
+          el.style.cssText = 'height:' + el.scrollHeight + 'px';
+        }, 0);
+      }
+
+    </script>
+
+    <script type='application/ld+json'>
+      {
+        "@context": "http://www.schema.org",
+        "@type": "WebSite",
+        "name": "Box-shadows Device (BSD)",
+        "headline": "Box-shadows Device",
+        "description": "Box-shadows Device (BSD) is a tool for creating simple and beautiful devices on your website",
+        "alternateName": "Box-shadows Device (BSD)",
+        "url": ""
+      }
+
+    </script>
+  </body>
+
+</html>
