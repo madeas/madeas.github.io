@@ -571,14 +571,13 @@
     <script src="/box-shadows/js/bootstrap.min.js"></script>
     <script src="//buttons.github.io/buttons.js"></script>
     <script>
-      $(function() {
-        var b = $('.btn'),
-          cls = {},
-          str = '';
-        b.click(function() {
-          cls = $(this).data("cls");
-          $('#bSm').css(cls);
-        });
+      $('.btn').click(function() {
+        $('#bSm').css($(this).data('cls'));
+
+        var newStyles = $('#bSm').attr('style').replace(/; /g, ';\n');
+        var val = $('#form_code').val();
+
+        $('#form_code').val(val.replace(/#bSd \{([\s\S]*?)\}/, `#bSd {\n${newStyles}\n}`));
       });
 
       $(function() {
