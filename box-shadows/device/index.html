@@ -333,21 +333,13 @@
         color: #1F2667;
       }
 
-      #choiseFuncOne+span:after,
-      #choiseFuncTwo+span:after,
-      #choiseFuncThree+span:after,
-      #choiseFuncFore+span:after,
-      #choiseFuncFive+span:after {
+      .choiseButton+span:after {
         margin-left: 8px;
         content: '+ button';
         font-weight: bold;
       }
 
-      #choiseFuncOne:checked+span:after,
-      #choiseFuncTwo:checked+span:after,
-      #choiseFuncThree:checked+span:after,
-      #choiseFuncFore:checked+span:after,
-      #choiseFuncFive:checked+span:after {
+      .choiseButton:checked+span:after {
         content: "- button";
 	color: #15a51a;
       }
@@ -509,23 +501,23 @@
     "padding": "35px 15px 40px",
     "border-radius": "28px"
     }'>tablet-portrait</label></li>
-                <li class="nav-item mt-4"><label><input type='checkbox' class='btn_cls' name='left' data-cls='utilOne' id='choiseFuncOne'><span></span></label></li>
-                <li class="nav-item"><label><input type='checkbox' class='btn_cls' name='left' data-cls='utilFore' id='choiseFuncFore'><span></span></label></li>
-                <li class="nav-item"><label><input type='checkbox' class='btn_cls' name='left' data-cls='utilFive' id='choiseFuncFive'><span></span></label></li>
+                <li class="nav-item mt-4"><label><input type='checkbox' class='btn_cls choiseButton' name='left' data-cls='utilOne'><span></span></label></li>
+                <li class="nav-item"><label><input type='checkbox' class='btn_cls choiseButton' name='left' data-cls='utilFore'><span></span></label></li>
+                <li class="nav-item"><label><input type='checkbox' class='btn_cls choiseButton' name='left' data-cls='utilFive'><span></span></label></li>
                 <li class="nav-item mt-4"><label class="text-left"><input type='radio' class='btn' name='left' data-cls='{
     "width": "512px",
     "height": "352px",
     "padding": "11px 35px 11px 35px",
     "border-radius": "38px"
     }'>tablet-landscape</label></li>
-                <li class="nav-item"><label><input type='checkbox' class='btn_cls' name='left' data-cls='utilTwo' id='choiseFuncTwo'><span></span></label></li>
+                <li class="nav-item"><label><input type='checkbox' class='btn_cls choiseButton' name='left' data-cls='utilTwo'><span></span></label></li>
                 <li class="nav-item mt-4"><label class="text-left"><input type='radio' class='btn' name='left' data-cls='{
     "width": "200px",
     "height": "200px",
     "padding": "15px",
     "border-radius": "8px"
     }'>ipod</label></li>
-                <li class="nav-item"><label><input type='checkbox' class='btn_cls' name='left' data-cls='utilThree' id='choiseFuncThree'><span></span></label></li>
+                <li class="nav-item"><label><input type='checkbox' class='btn_cls choiseButton' name='left' data-cls='utilThree'><span></span></label></li>
               </ul>
             </div>
             <div class="col-md-12 col-lg-6 pb-5 text-center d-flex flex-column align-items-center">
