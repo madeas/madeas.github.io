@@ -344,6 +344,14 @@
 	color: #15a51a;
       }
 
+      .choiseButton+span:after {
+        content: "add display";
+      }
+
+      .choiseButton:checked+span:after {
+        content: "remove";
+      }
+
       button.gen {
         color: #fff;
         cursor: pointer;
@@ -521,7 +529,7 @@
               </ul>
               <h2 class="pt-5">Display</h2>
               <ul class="f1rem nav">
-                <li class="nav-item"><label><input type='checkbox' class='btn_dis_cls choiseButton' name='left' data-cls='display' checked><span></span></label></li>
+                <li class="nav-item"><label><input type='checkbox' class='btn_dis_cls choiseButton dis' name='left' data-cls='display' checked><span></span></label></li>
 	      </ul>
             </div>
             <div class="col-md-12 col-lg-6 pb-5 text-center d-flex flex-column align-items-center">
