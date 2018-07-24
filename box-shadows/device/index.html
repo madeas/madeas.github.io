@@ -340,18 +340,33 @@
       }
 
       .choiseButton:checked+span:after {
-        content: "- button";
+        content: '- button';
         color: #a51515;
       }
 
+      .choiseButton.pos+span:after,
       .choiseButton.dis+span:after {
-        content: "add display";
+        content: 'add display';
         color: #15a51a;
       }
 
+      .choiseButton.pos:checked+span:after,
       .choiseButton.dis:checked+span:after {
-        content: "remove";
+        content: 'remove';
         color: #a51515;
+      }
+
+      .choiseButton.pos+span:after,
+      .choiseButton.pos:checked+span:after {
+        content: '';
+      }
+
+      .choiseButton.pos+span {
+        font-weight: bold;
+      }
+
+      .choiseButton.pos:checked+span {
+        color: #15a51a;
       }
 
       button.gen {
@@ -582,6 +597,15 @@
               <h2 class="pt-5">Display</h2>
               <ul class="f1rem nav">
                 <li class="nav-item"><label><input type='checkbox' class='btn_dis_cls choiseButton dis' name='left' data-cls='display' checked><span></span></label></li>
+              </ul>
+              <h2 class="pt-5">Position</h2>
+              <ul class="f1rem nav">
+                <li class="nav-item"><label class="text-left"><input type='radio' class='btn choiseButton pos' name='pos' data-cls='{
+    "position": "absolute"
+					}'><span>absolute</span></label></li>
+                <li class="nav-item"><label class="text-left"><input type='radio' class='btn choiseButton pos' name='pos' data-cls='{
+    "position": "relative"
+					}'><span>relative</span></label></li>
               </ul>
             </div>
             <div class="col-md-12 col-lg-6 pb-5 text-center d-flex flex-column align-items-center">
