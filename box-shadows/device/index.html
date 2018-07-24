@@ -326,6 +326,75 @@
         display: none;
       }
 
+      .bsdisplay {
+        -webkit-perspective: 1500px;
+        perspective: 1500px;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        cursor: pointer;
+      }
+
+      .bsdisplay input {
+        display: none;
+      }
+
+      .bSd {
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transition: all 600ms;
+        transition: all 600ms;
+      }
+
+      .bSd div {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .bSd .back {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+      }
+
+      .bsdisplay:hover .bSd {
+        -webkit-transform: rotateY(20deg);
+        transform: rotateY(20deg);
+        box-shadow: 0 20px 20px rgba(50, 50, 50, .2);
+      }
+
+      .bsdisplay :checked+.bSd {
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+      }
+
+      .bsdisplay:hover :checked+.bSd {
+        transform: rotateY(160deg);
+        -webkit-transform: rotateY(160deg);
+        box-shadow: 0 20px 20px rgba(255, 255, 255, .2);
+      }
+
+      .back {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        border-radius: inherit;
+        background-color: inherit !important;
+      }
+
+      .back:before {
+        position: absolute;
+        content: '';
+        margin: 0;
+        width: 12%;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-61%);
+        height: 50px;
+        background: linear-gradient(45deg, #e5ebf2, #f2f6fa);
+        border-radius: 10px;
+      }
+
       footer {
         position: relative;
         bottom: 0;
@@ -635,9 +704,13 @@
                   </div>
                 </div>
               </div>
-              <div id="bSm" class="bSd">
-                <div class="display" id="display"></div>
-              </div>
+              <label class="bsdisplay">
+		<input type="checkbox" />
+		<div id="bSm" class="bSd">
+			<div class="display" id="display"></div>
+			<div class="back"></div>
+			</div>
+		</label>
             </div>
             <div class="sidebar sidebar-right col-md-12 col-lg-3">
               <h2>Background</h2>
