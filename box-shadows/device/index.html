@@ -13,28 +13,28 @@
     <link rel="image_src" href="/box-shadows/device/img/vk_image1200х534.png" />
 
     <!-- Google Web fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800|Roboto:400,500,700">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Nunito:400,600,700,800|Roboto:400,500,700">
 
     <!-- General Style -->
-    <link rel="stylesheet" href="/box-shadows/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/box-shadows.min.css">
+    <link rel="stylesheet" href="//madeas.github.io/box-shadows/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//madeas.github.io/box-shadows.min.css">
 
     <!-- Social meta tegs -->
     <meta property="og:title" content="Box-shadows Device (BSD)">
     <meta property="og:description" content="Box-shadows Device (BSD) is a tool for creating simple and beautiful devices on your website">
     <meta property="og:image" content="/box-shadows/device/img/og_image1200х630.png">
-    <meta property="og:image:secure_url" content="https://madeas.github.io/box-shadows/device/img/og_image1200х630.png">
+    <meta property="og:image:secure_url" content="//madeas.github.io/box-shadows/device/img/og_image1200х630.png">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:url" content="https://madeas.github.io/box-shadows/device/">
+    <meta property="og:url" content="//madeas.github.io/box-shadows/device/">
     <meta property="og:site_name" content="Box-shadows Device (BSD)">
     <meta property="og:locale" content="en_EN">
     <meta property="og:type" content="website">
 
     <meta name="twitter:site" content="@andrejsharapov">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://madeas.github.io/box-shadows/device/">
+    <meta name="twitter:url" content="//madeas.github.io/box-shadows/device/">
     <meta name="twitter:title" content="Box-shadows Device (BSD)">
     <meta name="twitter:description" content="Box-shadows Device (BSD) is a tool for creating simple and beautiful devices on your website">
     <meta name="twitter:image" content="/box-shadows/device/img/tw_image500х500.jpg">
@@ -226,7 +226,8 @@
       }
 
       #bSm.utilOne:before,
-      #bSm.utilFore:before {
+      #bSm.utilFore:before,
+      #bSm.utilFive:before {
         position: absolute;
         content: '';
         left: 50%;
@@ -255,6 +256,23 @@
         height: 20px;
         background: linear-gradient(45deg, #e5ebf2, #f2f6fa);
         border-radius: var(--primary-radius);
+        box-shadow: inset 2px 1px 0 rgba(51, 51, 51, 0.1);
+      }
+
+      #bSm.utilFive {
+        padding: 35px 15px 60px !important;
+      }
+
+      #bSm.utilFive:after {
+        position: absolute;
+        content: '';
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 18px;
+        width: 30px;
+        height: 30px;
+        background: linear-gradient(45deg, #e5ebf2, #f2f6fa);
+        border-radius: 50%;
         box-shadow: inset 2px 1px 0 rgba(51, 51, 51, 0.1);
       }
 
@@ -318,7 +336,8 @@
       #choiseFuncOne+span:after,
       #choiseFuncTwo+span:after,
       #choiseFuncThree+span:after,
-      #choiseFuncFore+span:after {
+      #choiseFuncFore+span:after,
+      #choiseFuncFive+span:after {
         margin-left: 8px;
         content: '+ button';
         font-weight: bold;
@@ -327,7 +346,8 @@
       #choiseFuncOne:checked+span:after,
       #choiseFuncTwo:checked+span:after,
       #choiseFuncThree:checked+span:after,
-      #choiseFuncFore:checked+span:after {
+      #choiseFuncFore:checked+span:after,
+      #choiseFuncFive:checked+span:after {
         content: "- button";
       }
 
@@ -355,7 +375,7 @@
 
       .choose {
         font-weight: bold;
-        cursor: default !important;
+        cursor: text !important;
       }
 
       #form_code {
@@ -367,6 +387,10 @@
         overflow: hidden;
         color: #5d5d5d;
         width: 100%;
+      }
+
+      #choose,
+      #form_code {
         -webkit-user-select: all;
         -moz-user-select: all;
         -ms-user-select: all;
@@ -390,8 +414,8 @@
       }
 
       #bg_choose:focus {
-		 outline: none; 
-	  }
+        outline: none;
+      }
 
       #bg_choose:before {
         position: absolute;
@@ -409,8 +433,22 @@
       }
 
       .custom-textarea {
-        min-height: 170px;
+        min-height: 500px;
         height: auto;
+        overflow-y: scroll;
+        padding: 5px;
+        resize: none;
+      }
+
+      #add_issue {
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        fill: #ddd;
+      }
+
+      #add_issue:hover {
+        fill: #777;
       }
 
     </style>
@@ -440,7 +478,7 @@
           </nav>
         </div>
       </header>
-      <main itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/WebPageElement" role="main" class="px-3 py-5 bShadow-7 main">
+      <main itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/WebPageElement" role="main" class="px-3 pt-5 pb-2 bShadow-7 main">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -472,6 +510,7 @@
     "border-radius": "28px"
     }'>tablet-portrait</label></li>
                 <li class="nav-item"><label><input type='checkbox' class='btn_cls' name='left' data-cls='utilFore' id='choiseFuncFore'><span></span></label></li>
+                <li class="nav-item"><label><input type='checkbox' class='btn_cls' name='left' data-cls='utilFive' id='choiseFuncFive'><span></span></label></li>
                 <li class="nav-item mt-4"><label class="text-left"><input type='radio' class='btn' name='left' data-cls='{
     "width": "512px",
     "height": "352px",
@@ -516,7 +555,7 @@
                 </div>
               </div>
               <div id="bSm" class="bSd">
-                <div class="display"></div>
+                <div class="display" id="display"></div>
               </div>
             </div>
             <div class="sidebar sidebar-right col-md-12 col-lg-3">
@@ -528,11 +567,11 @@
                 <li class="nav-item"><label><input type='radio' class='btn' name='bg' data-cls='{
 				"background-color": "white"
 				}'>bg_white</label></li>
-                <li class="nav-item"><input type="color" id="bg_choose" name='bg' value="#fe9216"><label id="choose" class="choose">← Choose</label></li>
                 <li class="nav-item"><label class="bold text-danger"><input type='radio' class='btn' name='bg' data-cls='{
 				"background-color": "transparent",
 				"color": "inherit"
 				}'>bg_none</label></li>
+                <li class="mt-4 nav-item"><input type="color" id="bg_choose" class='btn' name='bg' value="#fe9216"><label id="choose" title="Click and 'Ctrl + C'" class="choose">← Choose</label></li>
               </ul>
               <h2 class="pt-5">Box-shadow</h2>
               <ul class="f1rem nav text-left">
@@ -553,8 +592,15 @@
 				}'>bSd_none</label></li>
               </ul>
             </div>
-            <div class="col-md-12 py-3 text-center">
+            <div class="col-md-12 pt-3 text-center">
               <button type="button" class="gen bShadow-9 bShadow-2h" data-toggle="modal" data-target="#ModalCenter">Get code</button>
+              <p class='text-left mt-5 text-muted' style='font-size:1.25rem'>Have a question or idea? Contact Us <a href="https://github.com/madeas/box-shadows.css/issues" target="_blank" title="add issue">
+		    <svg id="add_issue" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1">
+			    <g>
+				    <path d="M 16 3 C 8.832031 3 3 8.832031 3 16 C 3 23.167969 8.832031 29 16 29 C 23.167969 29 29 23.167969 29 16 C 29 8.832031 23.167969 3 16 3 Z M 16 5 C 22.085938 5 27 9.914063 27 16 C 27 22.085938 22.085938 27 16 27 C 9.914063 27 5 22.085938 5 16 C 5 9.914063 9.914063 5 16 5 Z M 15 10 L 15 15 L 10 15 L 10 17 L 15 17 L 15 22 L 17 22 L 17 17 L 22 17 L 22 15 L 17 15 L 17 10 Z "></path>
+			    </g>
+		    </svg>
+		    </a></p>
             </div>
           </div>
         </div>
@@ -568,11 +614,17 @@
     </div>
 
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/box-shadows/js/bootstrap.min.js"></script>
+    <script src="//madeas.github.io/box-shadows/js/bootstrap.min.js"></script>
     <script src="//buttons.github.io/buttons.js"></script>
     <script>
+      document.getElementById('bg_choose').onchange = e => {
+        document.getElementById('choose').textContent = e.target.value;
+        document.getElementById('bSm').style.backgroundColor = e.target.value;
+        let ecls = document.querySelector('#bg_choose');
+        ecls.dataset.cls = e.target.value;
+      }
+
       $('.btn').click(function() {
-        $('#bSm').val();
         $('#bSm').css($(this).data('cls'));
 
         var newStyles = $('#bSm').attr('style').replace(/; /g, ';\n');
@@ -595,11 +647,6 @@
         text.select();
         document.execCommand('copy');
       });
-
-      document.getElementById('bg_choose').onchange = e => {
-        document.getElementById('choose').textContent = e.target.value;
-        document.getElementById('bSm').style.backgroundColor = e.target.value;
-      }
 
       var textarea = document.querySelector('.custom-textarea');
       textarea.addEventListener('keydown', autosize);
@@ -625,7 +672,7 @@
       }
 
     </script>
-	  
+
     <script>
       (function(d, w, c) {
         (w[c] = w[c] || []).push(function() {
