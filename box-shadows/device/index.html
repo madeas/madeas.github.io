@@ -519,6 +519,10 @@
     }'>ipod</label></li>
                 <li class="nav-item"><label><input type='checkbox' class='btn_cls choiseButton' name='left' data-cls='utilThree'><span></span></label></li>
               </ul>
+              <h2 class="pt-5>Display</h2>
+              <ul class="f1rem nav">
+                <li class="nav-item"><label><input type='checkbox' class='btn_dis_cls choiseButton' name='left' data-cls='display' checked><span></span></label></li>
+	      </ul>
             </div>
             <div class="col-md-12 col-lg-6 pb-5 text-center d-flex flex-column align-items-center">
               <div class="mb-5 gen_code">
@@ -633,6 +637,14 @@
         b.click(function() {
           var cls = $(this).data("cls");
           $('#bSm').toggleClass(cls);
+        });
+      });
+
+      $(function() {
+        var b = $('.btn_dis_cls');
+        b.click(function() {
+          var cls = $(this).data("cls");
+          $('#display').toggleClass(cls);
         });
       });
 
