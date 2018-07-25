@@ -399,6 +399,18 @@
         box-shadow: inset 2px 1px 0 rgba(51, 51, 51, 0.1);
       }
 
+      .back:after {
+        position: absolute;
+        content: 'MADEAS';
+        width: 100%;
+        text-align: center;
+        font-size: 3vw;
+        font-weight: bold;
+        top: 35%;
+        left: 0;
+        color: #fff6c9;
+      }
+
       footer {
         position: relative;
         bottom: 0;
@@ -609,7 +621,7 @@
         top: calc(100% + 30px);
         left: 50%;
         transform: translateX(-50%);
-        font-size: 1rem;
+        font-size: 0.825rem;
         padding: 0.75rem 1rem;
         background: #fff;
         border-radius: var(--primary-radius);
@@ -630,7 +642,7 @@
         -webkit-transform: translate(-50%, -15px);
         transform: translate(-50%, -15px);
       }
-	    
+
       @media (max-width:768px) {
         .masthead-brand {
           display: -webkit-box;
@@ -766,12 +778,13 @@
 			</div>
 		</label>
               <div class="py-5 w-100 text-center">
-		<h4>Create your own style</h4>
-		<label class='lab_adstl'><input type='text' class='btn adstl' placeholder='width:' value='' name='left' data-cls='' id='adstl'><span>Enter any attribute and its contents. <br />You can enter multiple attributes via a semicolon.</span></label></div>
+		<h3>Create your own style</h3>
+		<p class='f1rem'>Enter any attribute and its contents. <br /> You can enter several attributes via a semicolon.</p>
+		<label class='lab_adstl'><input type='text' class='btn adstl' placeholder='width: 300px; height: 500px; background-color: lightblue;' value='' name='edit_style' data-cls='' id='adstl'><span>Editing this field will <strong class="text-danger">reset</strong> all your previously created settings!</span></label></div>
             </div>
             <div class="sidebar sidebar-right col-md-12 col-lg-3">
               <h2 class='text-right'>Background</h2>
-              <ul class="f1rem nav justify-content-end">
+              <ul class="f1rem nav justify-content-end pb-5">
                 <li class="nav-item"><label><input type='radio' class='btn' name='bg' data-cls='{
 				"background-color": "black"
 				}'>bg_black</label></li>
@@ -782,7 +795,7 @@
 				"background-color": "transparent",
 				"color": "inherit"
 				}'>bg_none</label></li>
-                <li class="mt-4 nav-item"><input type="color" id="bg_choose" class='btn' name='bg' value="#fe9216"><label id="choose" title="Click and 'Ctrl + C'" class="choose">← Choose</label></li>
+                <li class="mt-4 nav-item lab_adstl w-auto"><span>If the result does not change the color in the 'Get code', try again to change it.</span><input type="color" id="bg_choose" class='btn' name='bg' value="#fe9216"><label id="choose" title="Click and 'Ctrl + C'" class="choose">← Choose</label></li>
               </ul>
               <h2 class="pt-5 text-right">Display</h2>
               <ul class="f1rem nav justify-content-end">
@@ -805,7 +818,7 @@
                 <li class="nav-item"><label class="bold text-danger"><input type='radio' class='btn' name='right' data-cls='{
 				"box-shadow": "none"
 				}'>bSd_none</label></li>
-                <li class="mt-4 nav-item"><label class="text-right"><button type="button" class="disabled">← Choose</button></label>
+                <li class="mt-4 nav-item d-none"><label class="text-right"><button type="button" class="disabled">← Choose</button></label>
                   <div style="position:absolute;left:-50px;top:40%;pointer-events: none;"><img width="150" src="//madeas.ru/images/soon.png" alt=""></div>
                 </li>
               </ul>
