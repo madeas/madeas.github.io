@@ -448,6 +448,16 @@
         content: '';
       }
 
+      .choiseButton.typstop+span:after {
+        content: 'Stop text';
+        color: #a51515;
+      }
+
+      .choiseButton.typstop:checked+span:after {
+        content: 'Play text';
+        color: #15a51a;
+      }
+
       .choiseButton.pos+span {
         font-weight: bold;
       }
@@ -930,6 +940,7 @@
               <h2 class="pt-5 text-right">Display</h2>
               <ul class="f1rem nav justify-content-end">
                 <li class="nav-item"><label><input type='checkbox' class='btn_dis_cls choiseButton dis' name='left' data-cls='display' checked><span></span></label></li>
+                <li class="nav-item"><label><input type='checkbox' class='choiseButton typstop' id='typstop' name='display'><span></span></label></li>
               </ul>
               <h2 class="pt-5 text-right">Box-shadow</h2>
               <ul class="f1rem nav text-left justify-content-end">
@@ -1015,6 +1026,23 @@
           'Responsive design,',
           'and much more...',		  
         ],
+        onStop: (arrayPos, self) => {
+          console.log('onStop', arrayPos, self);
+        },
+        onStart: (arrayPos, self) => {
+          console.log('onStart', arrayPos, self)
+        }
+      });
+      var checkbox = document.querySelector("input[id=typstop]");
+
+      checkbox.addEventListener('change', function() {
+        if (this.checked) {
+          // Checkbox is checked..
+          typed.stop();
+        } else {
+          // Checkbox is not checked..
+          typed.start();
+        }
       });
 
       document.getElementById('adstl').onchange = e => {
