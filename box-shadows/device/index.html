@@ -140,9 +140,14 @@
 
       .main {
         background: linear-gradient(to top, #f2f6fc 0, #fefeff 100%);
-        border-radius: 2em;
-        max-width: 1280px;
+        border-radius: var(--primary-radius);
         margin: auto;
+      }
+
+      @media (max-width:575px) {
+        .main {
+          border-radius: none;
+        }
       }
 
       .sidebar {
@@ -687,8 +692,7 @@
           </nav>
         </div>
       </header>
-      <main itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/WebPageElement" role="main" class="px-3 pt-5 pb-2 bShadow-7 main">
-        <div class="container">
+      <main itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/WebPageElement" role="main" class="container px-3 pt-5 pb-2 bShadow-7 main">
           <div class="row">
             <div class="col-md-12">
               <p class="text-right"><a class="github-button" href="https://github.com/madeas/box-shadows.css" data-show-count="true" aria-label="Star madeas/box-shadows.css on GitHub">Star</a> <a class="github-button" href="https://github.com/madeas/box-shadows.css/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork madeas/box-shadows.css on GitHub">Fork</a></p>
@@ -836,7 +840,6 @@
 		</a></p>
             </div>
           </div>
-        </div>
       </main>
       <footer itemscope itemtype="http://schema.org/WPFooter" id="footer" role="contentinfo" class="pt-5 px-5 pb-2">
         <div class="d-flex justify-content-around">
