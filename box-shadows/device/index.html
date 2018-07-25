@@ -578,6 +578,58 @@
       button.disabled:focus {
         outline: none;
       }
+
+      .adstl {
+        cursor: text !important;
+        text-align: left;
+        background-color: rgba(0, 0, 0, 0.06);
+        border: 1px solid #f7f7f7;
+        border-radius: var(--primary-radius);
+        box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.07), 0 1px rgba(255, 255, 255, 0.06) !important;
+      }
+
+      .adstl,
+      .lab_adstl {
+        width: 100%;
+      }
+
+      .lab_adstl {
+        position: relative;
+      }
+
+      .lab_adstl span {
+        position: absolute;
+        will-change: transform, opacity;
+        pointer-events: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        width: 100%;
+        top: calc(100% + 30px);
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+        background: #fff;
+        border-radius: var(--primary-radius);
+        box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
+        opacity: 0;
+        -webkit-transition-property: opacity, -webkit-transform;
+        transition-property: opacity, -webkit-transform;
+        transition-property: opacity, transform;
+        transition-property: opacity, transform, -webkit-transform;
+        -webkit-transition-duration: .25s;
+        transition-duration: .25s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+      }
+
+      .lab_adstl:hover span {
+        opacity: .9;
+        -webkit-transform: translate(-50%, -15px);
+        transform: translate(-50%, -15px);
+      }
 	    
       @media (max-width:768px) {
         .masthead-brand {
@@ -681,7 +733,7 @@
 					}'><span>relative</span></label></li>
               </ul>
             </div>
-            <div class="col-md-12 col-lg-6 pb-5 text-center d-flex flex-column align-items-center">
+            <div class="col-md-12 col-lg-6 pb-5 text-center d-flex flex-column justify-content-between align-items-center">
               <div class="mb-5 gen_code">
                 <div class="modal fade bd-example-modal-lg" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
                   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
@@ -715,6 +767,7 @@
 			<div class="back"></div>
 			</div>
 		</label>
+              <div class="py-5 w-100"><label class='lab_adstl'><input type='text' class='btn adstl' placeholder='width:' value='' name='left' data-cls='' id='adstl'><span>Enter any attribute and its contents. <br />You can enter multiple attributes via a semicolon.</span></label></div>
             </div>
             <div class="sidebar sidebar-right col-md-12 col-lg-3">
               <h2 class='text-right'>Background</h2>
@@ -786,13 +839,6 @@
     <script async src="https://usocial.pro/usocial/usocial.js?v=6.1.4" data-script="usocial" charset="utf-8"></script>
     <div class="uSocial-Share" data-lang="en" data-pid="17e61107c3b1940ce0b85d355f95b474" data-type="share" data-options="round-rect,style1,default,right,slide-down,size32,eachCounter0,counter1,counter-after,nomobile" data-social="fb,gPlus,lin,telegram,twi,lj,vk"></div>
     <script>
-      document.getElementById('bg_choose').onchange = e => {
-        document.getElementById('choose').textContent = e.target.value;
-        document.getElementById('bSm').style.backgroundColor = e.target.value;
-        let ecls = document.querySelector('#bg_choose');
-        ecls.dataset.cls = e.target.value;
-      }
-
       $('.btn').click(function() {
         $('#bSm').css($(this).data('cls'));
 
@@ -802,6 +848,13 @@
         $('#form_code').val(val.replace(/#bSd \{([\s\S]*?)\}/, `#bSd {\n${newStyles}\n}`));
       });
 
+      document.getElementById('bg_choose').onchange = e => {
+        document.getElementById('choose').textContent = e.target.value;
+        document.getElementById('bSm').style.backgroundColor = e.target.value;
+        let ecls = document.querySelector('#bg_choose');
+        ecls.dataset.cls = e.target.value;
+      }
+
       $(function() {
         var b = $('.btn_cls');
         b.click(function() {
@@ -809,6 +862,12 @@
           $('#bSm').toggleClass(cls);
         });
       });
+
+      document.getElementById('adstl').onchange = e => {
+        let ecls = document.querySelector('#adstl');
+        ecls.dataset.cls = e.target.value;
+        document.getElementById('bSm').style = e.target.value;
+      }
 
       $(function() {
         var b = $('.btn_dis_cls');
