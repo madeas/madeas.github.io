@@ -453,7 +453,7 @@
 
       .choiseButton.pos:checked+span:after,
       .choiseButton.dis:checked+span:after {
-        content: 'remove';
+        content: 'remove display';
         color: #a51515;
       }
 
@@ -463,13 +463,23 @@
       }
 
       .choiseButton.typstop+span:after {
-        content: 'Stop text';
+        content: 'stop text';
         color: #a51515;
       }
 
       .choiseButton.typstop:checked+span:after {
-        content: 'Play text';
+        content: 'play text';
         color: #15a51a;
+      }
+
+      .choiseButton.typdest:checked+span:after {
+        content: 'add text';
+        color: #15a51a;
+      }
+
+      .choiseButton.typdest+span:after {
+        content: 'remove text';
+        color: #a51515;
       }
 
       .choiseButton.pos+span {
@@ -953,8 +963,9 @@
               </ul>
               <h2 class="pt-5 text-right">Display</h2>
               <ul class="f1rem nav justify-content-end">
-                <li class="nav-item"><label><input type='checkbox' class='btn_dis_cls choiseButton dis' name='left' data-cls='display' checked><span></span></label></li>
+                <li class="nav-item"><label><input type='checkbox' class='choiseButton typdest' id='typdest' name='display'><span></span></label></li>
                 <li class="nav-item"><label><input type='checkbox' class='choiseButton typstop' id='typstop' name='display'><span></span></label></li>
+                <li class="nav-item"><label><input type='checkbox' class='btn_dis_cls choiseButton dis' name='display' data-cls='display' checked><span></span></label></li>
               </ul>
               <h2 class="pt-5 text-right">Box-shadow</h2>
               <ul class="f1rem nav text-left justify-content-end">
@@ -1045,10 +1056,16 @@
         },
         onStart: (arrayPos, self) => {
           console.log('onStart', arrayPos, self)
+        },
+        onDestroy: (arrayPos, self) => {
+          console.log('onDestroy', arrayPos, self)
+        },
+        onReset: (arrayPos, self) => {
+          console.log('onReset', arrayPos, self)
         }
       });
-      var checkbox = document.querySelector("input[id=typstop]");
 
+      var checkbox = document.querySelector("input[id=typstop]");
       checkbox.addEventListener('change', function() {
         if (this.checked) {
           // Checkbox is checked..
@@ -1056,6 +1073,17 @@
         } else {
           // Checkbox is not checked..
           typed.start();
+        }
+      });
+
+      var checkbox = document.querySelector("input[id=typdest]");
+      checkbox.addEventListener('change', function() {
+        if (this.checked) {
+          // Checkbox is checked..
+          typed.destroy();
+        } else {
+          // Checkbox is not checked..
+          typed.reset();
         }
       });
 
