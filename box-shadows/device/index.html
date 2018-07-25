@@ -139,6 +139,7 @@
       }
 
       .main {
+        position: relative;
         background: linear-gradient(to top, #f2f6fc 0, #fefeff 100%);
         border-radius: 2em;
         margin: auto;
@@ -415,11 +416,12 @@
         content: 'MADEAS';
         width: 100%;
         text-align: center;
-        font-size: 3vw;
-        font-weight: bold;
-        top: 35%;
+        top: 5em;
         left: 0;
+        font-size: 1.4rem;
+        font-weight: bold;
         color: #fff6c9;
+        text-shadow: 0 1px 2px rgba(62,57,107,0.18);
       }
 
       footer {
@@ -654,6 +656,61 @@
         transform: translate(-50%, -15px);
       }
 
+     .default-hovered {
+         background-color: #f2f6fc;
+         width: 100%;
+         position: relative;
+         top:0;
+         left:0;
+         right:0;
+         -webkit-transition: all .2s ease-in-out;
+         transition: all .2s ease-in-out;
+     }
+
+     .main-top {
+         padding: 20px 0;
+         border-radius: 2em 2em 0 0;
+         height: 70px;
+         border-bottom: 2px dashed #fefeff;
+      }
+
+     .animated-text h4 {
+         left:0;
+         right:0;
+         position: absolute;
+         -webkit-transition: all .2s ease-in-out;
+         transition: all .2s ease-in-out;
+      }
+
+     .animated-text h4+h4 {
+         opacity: 0;
+         filter: alpha(opacity=0);
+         -webkit-transform: scale(1.15);
+         -moz-transform: scale(1.15);
+         -o-transform: scale(1.15);
+         transform: scale(1.15);
+      }
+
+     .animated-text:hover h4 {
+         opacity:0;
+         filter:alpha(opacity=0);
+         -webkit-transform:scale(.85);-moz-transform:scale(.85);
+         transform:scale(.85);
+      }
+
+     .animated-text:hover h4+h4 {
+         opacity:1;
+         filter:alpha(opacity=100);
+         -webkit-transform:scale(1);
+         -moz-transform:scale(1);
+         -o-transform:scale(1);
+         transform:scale(1);
+      }
+
+     .default-hovered:hover {
+         background-color: var(--primary-color);
+     }
+
       @media (max-width:768px) {
         .masthead-brand {
           display: -webkit-box;
@@ -698,11 +755,16 @@
           </nav>
         </div>
       </header>
-      <main itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/WebPageElement" role="main" class="container px-3 pt-5 pb-2 bShadow-7 main">
+      <main itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/WebPageElement" role="main" class="bShadow-7 main">
+	<div class="default-hovered main-top animated-text text-center">
+		<h4>Create your device</h4>
+		<h4 class="text-white">It's simple</h4>
+	</div>    
+	<div class="container py-3">
           <div class="row">
             <div class="col-md-12">
-              <p class="text-right"><a class="github-button" href="https://github.com/madeas/box-shadows.css" data-show-count="true" aria-label="Star madeas/box-shadows.css on GitHub">Star</a> <a class="github-button" href="https://github.com/madeas/box-shadows.css/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork madeas/box-shadows.css on GitHub">Fork</a></p>
               <p class="lead mb-3" itemprop="description">Box-shadows Device (BSD) is a tool for creating simple and beautiful devices on your website. Created your device, edit the colors, background and add to it buttons. You can use the created devices to demonstrate your code, templates, pictures, adaptive design and much more.</p>
+              <p class="text-right"><a class="github-button" href="https://github.com/madeas/box-shadows.css" data-show-count="true" aria-label="Star madeas/box-shadows.css on GitHub">Star</a> <a class="github-button" href="https://github.com/madeas/box-shadows.css/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork madeas/box-shadows.css on GitHub">Fork</a></p>
             </div>
             <div class="sidebar sidebar-left col-md-12 col-lg-3">
               <h2>Device</h2>
@@ -852,6 +914,7 @@
 		</a></p>
             </div>
           </div>
+        </div>
       </main>
       <footer itemscope itemtype="http://schema.org/WPFooter" id="footer" role="contentinfo" class="pt-5 px-5 pb-2">
         <div class="d-flex justify-content-around">
