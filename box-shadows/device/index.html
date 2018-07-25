@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Nunito:400,600,700,800|Roboto:400,500,700">
 
     <!-- General Style -->
-    <link rel="stylesheet" href="//madeas.github.io/box-shadows/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//madeas.github.io/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//madeas.github.io/css/git-colors.css">
     <link rel="stylesheet" href="//madeas.github.io/box-shadows.min.css">
 
     <!-- Social meta tegs -->
@@ -206,8 +207,8 @@
         position: relative !important;
         display: block;
         margin: 0 auto;
-        min-width: 200px;
-        min-height: 200px;
+        min-width: 300px;
+        min-height: 250px;
         background-color: #fff;
         border-radius: 8px;
         padding: 25px 7px;
@@ -216,9 +217,10 @@
       .display {
         background: linear-gradient(45deg, #e5ebf2, #f2f6fa);
         border-radius: 8px;
-        min-height: 135px;
+        min-height: 185px;
         height: 100%;
         padding: 15px;
+        text-align: left;
       }
 
       #bSm.utilOne:before,
@@ -693,6 +695,47 @@
          background-color: var(--primary-color);
      }
 
+      #typed {
+        white-space: pre;
+        font-size: 1rem;
+        color: inherit;
+      }
+
+      #typed {
+        font-size: 0.825rem;
+      }
+
+      .typed-cursor {
+        opacity: 1;
+        -webkit-animation: typedjsBlink 0.7s infinite;
+        animation: typedjsBlink 0.7s infinite;
+      }
+
+      @keyframes typedjsBlink {
+        50% {
+          opacity: 0.0;
+        }
+      }
+
+      @-webkit-keyframes typedjsBlink {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .typed-fade-out {
+        opacity: 0;
+        transition: opacity .25s;
+        -webkit-animation: 0;
+        animation: 0;
+      }
+
       @media (max-width:991px) {
         .sidebar-left ul {
           display: inline-block;
@@ -853,7 +896,9 @@
               <label class="bsdisplay">
 		<input type="checkbox" />
 		<div id="bSm" class="bSd">
-			<div class="display" id="display"></div>
+			<div class="display" id="display">
+				 <span id="typed"></span>
+			</div>
 			<div class="back"></div>
 			</div>
 		</label>
@@ -931,6 +976,7 @@
     <script src="//buttons.github.io/buttons.js"></script>
     <script async src="https://usocial.pro/usocial/usocial.js?v=6.1.4" data-script="usocial" charset="utf-8"></script>
     <div class="uSocial-Share" data-lang="en" data-pid="17e61107c3b1940ce0b85d355f95b474" data-type="share" data-options="round-rect,style1,default,right,slide-down,size32,eachCounter0,counter1,counter-after,nomobile" data-social="fb,gPlus,lin,telegram,twi,lj,vk"></div>
+    <script src="//madeas.github.io/box-shadows/js/typed.js"></script>
     <script>
       $('.btn').click(function() {
         $('#bSm').css($(this).data('cls'));
@@ -954,6 +1000,16 @@
           var cls = $(this).data("cls");
           $('#bSm').toggleClass(cls);
         });
+      });
+
+      var typed = new Typed("#typed", {
+        strings: [
+          'Can place here:',
+          'Your code <br /><pre><span class="pl-e">.display</span> {<br /><span class="pl-c1"><span class="pl-c1">  border-radius</span></span>: <span class="pl-c1">8<span class="pl-k">px</span></span>;<br /><span class="pl-c1"><span class="pl-c1">  min-height</span></span>: <span class="pl-c1">185<span class="pl-k">px</span></span>;<br /><span class="pl-c1"><span class="pl-c1">  padding</span></span>: <span class="pl-c1">15<span class="pl-k">px</span></span>;<br />}</pre>',
+          'Pictures,',
+          'Responsive design,',
+          'and much more...',		  
+        ],
       });
 
       document.getElementById('adstl').onchange = e => {
