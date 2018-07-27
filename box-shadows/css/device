@@ -223,6 +223,15 @@ h1 {
   display: none;
 }
 
+.display {
+  background: linear-gradient(45deg, #e5ebf2, #f2f6fa);
+  border-radius: 8px;
+  min-height: 185px;
+  height: 100%;
+  padding: 15px;
+  text-align: left;
+}
+
 #bSm {
   position: relative !important;
   display: block;
@@ -233,15 +242,6 @@ h1 {
   border-radius: 8px;
   padding: 25px 7px;
   will-change: transform, box-shadow;
-}
-
-.display {
-  background: linear-gradient(45deg, #e5ebf2, #f2f6fa);
-  border-radius: 8px;
-  min-height: 185px;
-  height: 100%;
-  padding: 15px;
-  text-align: left;
 }
 
 #bSm.iSmallCircle:before {
