@@ -219,6 +219,7 @@
         background-color: #fff;
         border-radius: 8px;
         padding: 25px 7px;
+        will-change: transform, box-shadow;
       }
 
       .display {
@@ -893,19 +894,19 @@
             <div class="sidebar sidebar-left col-md-12 col-lg-3">
               <h2>Device</h2>
               <ul class="f1rem nav">
-                <li class="nav-item"><label class="text-left"><input type='radio' class='btn' name='left' data-cls='{
+                <li class="nav-item"><label class="text-left"><input type='radio' class='btn' name='left' data-stl='{
     "width": "225px",
     "height": "467px",
     "padding": "30px 7px 38px",
     "border-radius": "18px"
     }'>phone-small</label></li>
-                <li class="nav-item"><label class="text-left"><input type='radio' class='btn' name='left' data-cls='{
+                <li class="nav-item"><label class="text-left"><input type='radio' class='btn' name='left' data-stl='{
     "width": "267px",
     "height": "553px",
     "padding": "30px 7px 38px",
     "border-radius": "18px"
     }'>phone-big</label></li>
-                <li class="nav-item"><label class="text-left"><input type='radio' class='btn' name='left' data-cls='{
+                <li class="nav-item"><label class="text-left"><input type='radio' class='btn' name='left' data-stl='{
     "width": "450px",
     "height": "675px",
     "padding": "35px 15px 40px",
@@ -918,7 +919,7 @@
                 <li class="nav-item"><label><input type='checkbox' class='btn_cls choiseButton' name='left' data-cls='utilFive'><span></span></label></li>
               </ul>
               <ul class="f1rem nav mt-4">
-                <li class="nav-item"><label class="text-left"><input type='radio' class='btn' name='left' data-cls='{
+                <li class="nav-item"><label class="text-left"><input type='radio' class='btn' name='left' data-stl='{
     "width": "512px",
     "height": "352px",
     "padding": "11px 35px 11px 35px",
@@ -927,7 +928,7 @@
                 <li class="nav-item"><label><input type='checkbox' class='btn_cls choiseButton' name='left' data-cls='utilTwo'><span></span></label></li>
               </ul>
               <ul class="f1rem nav mt-4">
-                <li class="nav-item"><label class="text-left"><input type='radio' class='btn' name='left' data-cls='{
+                <li class="nav-item"><label class="text-left"><input type='radio' class='btn' name='left' data-stl='{
     "width": "200px",
     "height": "200px",
     "padding": "15px",
@@ -937,12 +938,12 @@
               </ul>
               <h2 class="pt-5">Position</h2>
               <ul class="f1rem nav">
-                <li class="nav-item"><label class="text-left"><input type='radio' class='btn choiseButton pos' name='pos' data-cls='{
+                <li class="nav-item"><label class="text-left"><input type='radio' class='btn choiseButton pos' name='pos' data-stl='{
     "position": "absolute"
-					}'><span>absolute</span></label></li>
-                <li class="nav-item"><label class="text-left"><input type='radio' class='btn choiseButton pos' name='pos' data-cls='{
+	}'><span>absolute</span></label></li>
+                <li class="nav-item"><label class="text-left"><input type='radio' class='btn choiseButton pos' name='pos' data-stl='{
     "position": "relative"
-					}'><span>relative</span></label></li>
+	}'><span>relative</span></label></li>
               </ul>
             </div>
             <div class="col-md-12 col-lg-6 pb-5 text-center d-flex flex-column justify-content-between align-items-center">
@@ -960,10 +961,7 @@
                       </div>
                       <div class='modal-body'>
                         <textarea class='f1rem custom-textarea' id='form_code'></textarea>
-                        <script>
-                          form_code.innerHTML += '<div id="bSd">' + '\n' + '<div class="display">' + '</div>' + '\n' + '</div>' + '\n' + '<style>' + '\n' + '*{' + '\n' + 'box-sizing: border-box;' + '\n' + '}' + '\n' + '#bSd {' + '\n' + '}' + '\n' + '.display {' + '\n' + 'background: linear-gradient(45deg, #e5ebf2, #f2f6fa);' + '\n' + 'border-radius: 8px;' + '\n' + 'min-height: 200px;' + '\n' + 'height: 100%;' + '\n' + 'padding: 15px;' + '\n' + '}' + '\n' + '</style>';
-
-                        </script>
+                        <script>form_code.innerHTML += '<div id="bSd">' + '\n' + '<div class="display">' + '</div>' + '\n' + '</div>' + '\n' + '<style>' + '\n' + '*{' + '\n' + 'box-sizing: border-box;' + '\n' + '}' + '\n' + '#bSd {' + '\n' + '}' + '\n' + '.display {' + '\n' + 'background: linear-gradient(45deg, #e5ebf2, #f2f6fa);' + '\n' + 'border-radius: 8px;' + '\n' + 'min-height: 200px;' + '\n' + 'height: 100%;' + '\n' + 'padding: 15px;' + '\n' + '}' + '\n' + '</style>';</script>
                       </div>
                       <div class="modal-footer border-top-0 d-flex justify-content-center">
                         <button type="button" class="btn gen copy_code mx-2">Copy code</button>
@@ -984,18 +982,18 @@
               <div class="py-5 w-100 text-center">
 		<h3>Create your own style</h3>
 		<p class='f1rem'>Enter any attribute and its contents. <br /> You can enter several attributes via a semicolon.</p>
-		<label class='lab_adstl'><input type='text' class='btn adstl' placeholder='width: 300px; height: 500px; background-color: lightblue;' value='' name='edit_style' data-cls='' id='adstl'><span>Editing this field will <strong class="text-danger">reset</strong> all your previously created settings!</span></label></div>
+		<label class='lab_adstl'><input type='text' class='btn adstl' placeholder='width: 300px; height: 500px; background-color: lightblue;' value='' name='edit_style' data-stl='' id='adstl'><span>Editing this field will <strong class="text-danger">reset</strong> all your previously created settings!</span></label></div>
             </div>
             <div class="sidebar sidebar-right col-md-12 col-lg-3">
               <h2 class='text-right'>Background</h2>
               <ul class="f1rem nav justify-content-end pb-5">
-                <li class="nav-item"><label><input type='radio' class='btn' name='bg' data-cls='{
+                <li class="nav-item"><label><input type='radio' class='btn' name='bg' data-stl='{
 				"background-color": "black"
 				}'>bg_black</label></li>
-                <li class="nav-item"><label><input type='radio' class='btn' name='bg' data-cls='{
+                <li class="nav-item"><label><input type='radio' class='btn' name='bg' data-stl='{
 				"background-color": "white"
 				}'>bg_white</label></li>
-                <li class="nav-item"><label class="bold text-danger"><input type='radio' class='btn' name='bg' data-cls='{
+                <li class="nav-item"><label class="bold text-danger"><input type='radio' class='btn' name='bg' data-stl='{
 				"background-color": "transparent",
 				"color": "inherit"
 				}'>bg_none</label></li>
@@ -1009,19 +1007,22 @@
               </ul>
               <h2 class="pt-5 text-right">Box-shadow</h2>
               <ul class="f1rem nav text-left justify-content-end">
-                <li class="nav-item"><label><input type='radio' class='btn' name='right' data-cls='{
+                <li class="nav-item"><label><input type='radio' class='btn' name='right' data-stl='{
 				"box-shadow": "inset 0 -2px 3px rgba(145, 161, 181, .5), inset -1px -6px 4px rgba(253, 255, 255, .9)"
 				}'>bSd_light</label></li>
-                <li class="nav-item"><label><input type='radio' class='btn' name='right' data-cls='{
+                <li class="nav-item"><label><input type='radio' class='btn' name='right' data-stl='{
 				"box-shadow": "inset 1px -4px 6px rgba(145, 161, 181, .3)"
 				}'>bSd_small</label></li>
-                <li class="nav-item"><label><input type='radio' class='btn' name='right' data-cls='{
-				"box-shadow": "inset 6px -6px 15px rgba(145, 160, 180, .45), -30px 30px 40px rgba(118, 146, 180, .18)"
-				}'>bSd_big</label></li>
-                <li class="nav-item"><label><input type='radio' class='btn' name='right' data-cls='{
+                <li class="nav-item"><label><input type='radio' class='btn' name='right' data-stl='{
 				"box-shadow": "inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173, 186, 204, .25), 0 2px 6px rgba(0, 21, 64, .14), 0 10px 20px rgba(0, 21, 64, .05)"
 				}'>bSd_classic</label></li>
-                <li class="nav-item"><label class="bold text-danger"><input type='radio' class='btn' name='right' data-cls='{
+                <li class="nav-item"><label><input type='radio' class='btn' name='right' data-stl='{
+				"box-shadow": "rgba(145, 160, 180, 0.45) 0px -3px 15px inset, rgba(118, 146, 180, 0.18) 1px 1px 20px"
+				}'>bSd_around</label></li>
+                <li class="nav-item"><label><input type='radio' class='btn' name='right' data-stl='{
+				"box-shadow": "inset 6px -6px 15px rgba(145, 160, 180, .45), -30px 30px 40px rgba(118, 146, 180, .18)"
+				}'>bSd_big</label></li>
+                <li class="nav-item"><label class="bold text-danger"><input type='radio' class='btn' name='right' data-stl='{
 				"box-shadow": "none"
 				}'>bSd_none</label></li>
                 <li class="mt-4 nav-item d-none"><label class="text-right"><button type="button" class="disabled">← Choose</button></label>
@@ -1063,8 +1064,16 @@
     <div class="uSocial-Share" data-lang="en" data-pid="17e61107c3b1940ce0b85d355f95b474" data-type="share" data-options="round-rect,style1,default,right,slide-down,size32,eachCounter0,counter1,counter-after,nomobile" data-social="fb,gPlus,lin,telegram,twi,lj,vk"></div>
     <script src="//madeas.github.io/box-shadows/js/typed.js"></script>
     <script>
+      $(function() {
+        var b = $('.btn_cls');
+        b.click(function() {
+          var cls = $(this).data("cls");
+          $('#bSm').toggleClass(cls);
+        });
+      });
+
       $('.btn').click(function() {
-        $('#bSm').css($(this).data('cls'));
+        $('#bSm').css($(this).data('stl'));
 
         var newStyles = $('#bSm').attr('style').replace(/; /g, ';\n');
         var val = $('#form_code').val();
@@ -1078,14 +1087,6 @@
         let ecls = document.querySelector('#bg_choose');
         ecls.dataset.cls = e.target.value;
       }
-
-      $(function() {
-        var b = $('.btn_cls');
-        b.click(function() {
-          var cls = $(this).data("cls");
-          $('#bSm').toggleClass(cls);
-        });
-      });
 
       var typed = new Typed("#typed", {
         strings: [
