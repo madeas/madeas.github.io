@@ -704,23 +704,23 @@ button.gen:focus {
 }
 
 .uSocial-Share .uscl-bar.uscl-right .uscl-slide-open {
-  bottom: 25px;
-  right: 2px;
+  bottom: 25px !important;
+  right: 2px !important;
 }
 
 .uSocial-Share .uscl-slide-open,
 .uSocial-Share .uscl-slide-open:hover {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 .uSocial-Share .uscl-slide-open {
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg) !important;
+  transform: rotate(-90deg) !important;
 }
 
 .ico_uscl-like:before {
-  content: "\e900";
-  color: #bcc3c7;
+  content: "\e900" !important;
+  color: #bcc3c7 !important;
   font-size: 22px !important;
 }
 
