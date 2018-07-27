@@ -857,7 +857,7 @@ footer a {
 }
 
  @media (min-width:991px) {
-  .sidebar ul li label.mw768 {
+  .sidebar ul li label.mw991 {
     width: auto;
   }
 }
