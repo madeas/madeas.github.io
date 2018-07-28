@@ -832,6 +832,20 @@ footer a {
   color: #1F2667;
 }
 
+.ui-widget-content {
+  position: realtive;
+  cursor: move;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+.ui-widget-content:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
 @media (max-width:991px) {
   .sidebar-left ul {
     display: inline-block;
