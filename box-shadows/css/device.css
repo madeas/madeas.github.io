@@ -243,7 +243,7 @@ h1 {
 }
 
 .sidebar ul li label input.brotate:checked+span {
-  background: linear-gradient(25deg, rgba(51, 105, 231, 1) 0%, rgba(0, 188, 212, 1) 100%);
+  background: linear-gradient(45deg, rgba(25, 226, 115, 1) 0%, rgba(73, 221, 216, 1) 100%);
 }
 
 .display {
