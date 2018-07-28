@@ -404,6 +404,7 @@ h1 {
   transform-style: preserve-3d;
   cursor: pointer;
   text-align: left;
+  z-index: 9;
 }
 
 .bsdisplay input {
