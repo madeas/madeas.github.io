@@ -207,12 +207,12 @@ h1 {
   cursor: pointer;
   font-size: 1rem;
   white-space: nowrap;
-  padding: 0.75em 1em;
   border-radius: var(--primary-radius);
   box-shadow: rgba(0, 0, 0, 0.05) 0 8px 16px 0;
   background-color: white;
   width: 170px;
   text-align: right;
+  font-weight: bold;
 }
 
 .sidebar ul.text-left li label {
@@ -221,6 +221,28 @@ h1 {
 
 .sidebar ul li label input {
   display: none;
+}
+
+.sidebar ul li label span {
+  display: block;
+  padding: 0.75em 1em;
+}
+
+.sidebar ul li label input:checked+span,
+.sidebar ul.but li label input:checked+span,
+.sidebar ul li.check label input:checked+span {
+  background: #00BCD4;
+  border-radius: inherit;
+  color: white;
+}
+
+.sidebar ul.but li label input:checked+span,
+.sidebar ul li.check label input:checked+span {
+  background: #15a51a;
+}
+
+.sidebar ul li label input.brotate:checked+span {
+  background: #3369E7;
 }
 
 .display {
@@ -524,7 +546,6 @@ h1 {
 
 .choiseButton+span {
   color: #15a51a;
-  font-weight: bold;
 }
 
 .choiseButton:checked+span {
@@ -535,29 +556,18 @@ h1 {
   margin-right: 8px;
 }
 
-.choiseButton.pos+span:before,
 .choiseButton.dis+span:before {
   content: 'add display';
-  color: #15a51a;
 }
 
 .choiseButton.pos:checked+span:before,
 .choiseButton.dis:checked+span:before {
   content: 'remove display';
-  color: #a51515;
 }
 
 .choiseButton.pos+span:before,
 .choiseButton.pos:checked+span:before {
   content: '';
-}
-
-.choiseButton.pos+span {
-  color: #a51515;
-}
-
-.choiseButton.pos:checked+span {
-  color: #15a51a;
 }
 
 .choiseButton.typstop+span:before {
@@ -576,34 +586,13 @@ h1 {
   content: 'remove text';
 }
 
-.choiseButton.typstop+span:before,
-.choiseButton.typdest+span:before {
-  color: #a51515;
-}
-
-.choiseButton.typstop:checked+span:before,
-.choiseButton.typdest:checked+span:before {
-  color: #15a51a;
-}
-
-.choiseButton.addb+span:after {
-  margin-left: 8px;
-  content: '+ button';
-  font-weight: bold;
-}
-
-.choiseButton.addb:checked+span:after {
-  content: '- button';
-  color: #a51515;
-}
-
-.brotate+svg {
-  fill: #15a51a;
+.brotate+span svg {
+  fill: #3369E7;
   transform: rotate(45deg);
 }
 
-.brotate:checked+svg {
-  fill: #3760d6;
+.brotate:checked+span svg {
+  fill: #ffffff;
   transform: rotate(-45deg);
 }
 
@@ -754,7 +743,7 @@ button.disabled:focus {
   position: relative;
 }
 
-.lab_adstl span {
+.lab_adstl i {
   position: absolute;
   will-change: transform, opacity;
   pointer-events: none;
@@ -780,9 +769,10 @@ button.disabled:focus {
   transition-duration: .25s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
+  font-style: normal;
 }
 
-.lab_adstl:hover span {
+.lab_adstl:hover i {
   opacity: .9;
   -webkit-transform: translate(-50%, -15px);
   transform: translate(-50%, -15px);
