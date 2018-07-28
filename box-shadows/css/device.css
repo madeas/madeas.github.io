@@ -213,6 +213,7 @@ h1 {
   width: 170px;
   text-align: right;
   font-weight: bold;
+  overflow: hidden;
 }
 
 .sidebar ul.text-left li label {
