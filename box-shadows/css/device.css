@@ -469,7 +469,7 @@ h1 {
   margin: 0;
   background: linear-gradient(45deg, #e5ebf2, #f2f6fa);
   border-radius: 10px;
-  box-shadow: rgb(255, 255, 255) -2px 4px 10px 1px inset, rgba(173, 186, 204, 0.25) 1px -3px 10px 4px inset, rgba(0, 21, 64, 0.04) 0px 1px 3px, rgba(0, 21, 64, 0.05) 0px 0px 5px;
+  box-shadow: rgb(255, 255, 255) -2px -2px 10px 1px inset, rgba(173, 186, 204, 0.25) 2px -3px 1px 1px inset, rgba(0, 21, 64, 0.5) 0px 1px 4px 1px inset;
 }
 
 .back:after {
