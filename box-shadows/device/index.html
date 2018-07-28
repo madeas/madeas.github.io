@@ -126,6 +126,7 @@
     }'><span>iPod</span></label></li>
                 <li class="nav-item check"><label class='text-center mw991'><input type='checkbox' class='btn_cls choiseButton' name='left' data-cls='utilThree'><span>Circle</span></label></li>
               </ul>
+              <div id="dragposition" class="ui-widget-content">
               <h2 class="pt-5">Position</h2>
               <ul class="f1rem nav">
                 <li class="nav-item"><label class='text-left'><input type='radio' class='btn choiseButton pos' name='pos' data-stl='{
@@ -135,6 +136,7 @@
     "position": "relative"
 	}'><span>relative</span></label></li>
               </ul>
+              </div>
             </div>
             <div class="col-md-12 col-lg-6 pb-5 text-center d-flex flex-column justify-content-between align-items-center">
               <div class="mb-5 gen_code">
@@ -195,6 +197,7 @@
                 <li class="nav-item check"><label><input type='checkbox' class='choiseButton typstop' id='typstop' name='display'><span></span></label></li>
                 <li class="nav-item check"><label><input type='checkbox' class='btn_dis_cls choiseButton dis' name='display' data-cls='display' checked><span></span></label></li>
               </ul>
+              <div id="dragshadow" class="ui-widget-content">
               <h2 class="pt-5 text-right">Box-shadow</h2>
               <ul class="f1rem nav text-left justify-content-end">
                 <li class="nav-item"><label><input type='radio' class='btn' name='right' data-stl='{
@@ -222,6 +225,7 @@
                   <div style="position:absolute;left:-50px;top:40%;pointer-events: none;"><img width="150" src="//madeas.ru/images/soon.png" alt=""></div>
                 </li>
               </ul>
+              </div>
             </div>
             <div class="col-md-12 pt-3 text-center">
               <button type="button" id='reset' class="gen bShadow-9 bShadow-2h mx-3 my-1">Reset styles</button>
@@ -250,12 +254,13 @@
       </footer>
     </div>
 
-    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="//madeas.github.io/box-shadows/js/bootstrap.min.js"></script>
     <script src="//buttons.github.io/buttons.js"></script>
-    <script async src="https://usocial.pro/usocial/usocial.js?v=6.1.4" data-script="usocial" charset="utf-8"></script>
-    <div class="uSocial-Share" data-lang="en" data-pid="17e61107c3b1940ce0b85d355f95b474" data-type="share" data-options="round-rect,style1,default,right,slide-down,size32,eachCounter0,counter1,counter-after,nomobile" data-social="fb,gPlus,telegram,twi,vk"></div>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="//madeas.github.io/box-shadows/js/typed.js"></script>
+    <script src="//madeas.github.io/box-shadows/js/bootstrap.min.js"></script>
+    <script src="//usocial.pro/usocial/usocial.js?v=6.1.4" async data-script="usocial"></script>
+    <div class="uSocial-Share" data-lang="en" data-pid="17e61107c3b1940ce0b85d355f95b474" data-type="share" data-options="round-rect,style1,default,right,slide-down,size32,eachCounter0,counter1,counter-after,nomobile" data-social="fb,gPlus,telegram,twi,vk"></div>
     <script>
       $(function() {
         var b = $('.btn_cls');
@@ -263,6 +268,11 @@
           var cls = $(this).data("cls");
           $('#bSm').toggleClass(cls);
         });
+      });
+
+      $(function() {
+          $("#dragshadow").draggable();
+          $("#dragposition).draggable();
       });
 
       $('.btn').click(function() {
