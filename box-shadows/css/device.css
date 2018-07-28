@@ -398,8 +398,8 @@ h1 {
 }
 
 .bsdisplay {
-  -webkit-perspective: 1500px;
-  perspective: 1500px;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   cursor: pointer;
