@@ -463,9 +463,9 @@ h1 {
   content: '';
   width: 12%;
   height: 50px;
-  top: 20px;
+  top: 40px;
   left: 50%;
-  transform: translateX(-61%);
+  transform: translateX(-50%);
   margin: 0;
   background: linear-gradient(45deg, #e5ebf2, #f2f6fa);
   border-radius: 10px;
@@ -491,7 +491,7 @@ h1 {
   top: 50%;
   right: 40px;
   left: auto;
-  transform: translateY(-61%);
+  transform: translateY(-50%);
 }
 
 #bSm.ilandscape .back:after,
