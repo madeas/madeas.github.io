@@ -231,18 +231,18 @@ h1 {
 .sidebar ul li label input:checked+span,
 .sidebar ul.but li label input:checked+span,
 .sidebar ul li.check label input:checked+span {
-  background: #00BCD4;
+  background: linear-gradient(25deg, rgba(0, 188, 212, 1) 0%, rgba(51, 105, 231, 1) 100%);
   border-radius: inherit;
   color: white;
 }
 
 .sidebar ul.but li label input:checked+span,
 .sidebar ul li.check label input:checked+span {
-  background: #15a51a;
+  background: linear-gradient(25deg, rgba(73, 221, 216, 1) 0%, rgba(25, 226, 115, 1) 100%);
 }
 
 .sidebar ul li label input.brotate:checked+span {
-  background: #3369E7;
+  background: linear-gradient(25deg, rgba(51, 105, 231, 1) 0%, rgba(0, 188, 212, 1) 100%);
 }
 
 .display {
