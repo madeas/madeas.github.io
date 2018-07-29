@@ -766,11 +766,11 @@ button.disabled:focus {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
   font-style: normal;
-  z-index: 3;
+  z-index: 10;
 }
 
 .lab_adstl:hover i {
-  opacity: .9;
+  opacity: 1;
   -webkit-transform: translate(-50%, -15px);
   transform: translate(-50%, -15px);
 }
