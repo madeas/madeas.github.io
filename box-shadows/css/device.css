@@ -562,14 +562,8 @@ h1 {
   content: 'add display';
 }
 
-.choiseButton.pos:checked+span:before,
 .choiseButton.dis:checked+span:before {
   content: 'remove display';
-}
-
-.choiseButton.pos+span:before,
-.choiseButton.pos:checked+span:before {
-  content: '';
 }
 
 .choiseButton.typstop+span:before {
