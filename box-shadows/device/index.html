@@ -197,12 +197,14 @@
 				}'><span>bg_none</span></label></li>
                 <li class="nav-item lab_adstl w-auto"><i>If the result does not change the color in the 'Get code', try again to change it.</i><input type="color" id="bg_choose" class='btn' name='bg' value="#fe9216"><label title="Click and 'Ctrl + C'" class="choose"><span id="choose">← Choose</span></label></li>
               </ul>
-              <h2 class="pt-5 text-right">Display</h2>
+              <div id='dragdisplay' class='ui-widget-content'>
+              <h2 class="text-right">Display</h2>
               <ul class="f1rem nav justify-content-end">
                 <li class="nav-item check"><label><input type='checkbox' class='choiseButton typdest' id='typdest' name='display'><span></span></label></li>
                 <li class="nav-item check"><label><input type='checkbox' class='choiseButton typstop' id='typstop' name='display'><span></span></label></li>
                 <li class="nav-item check"><label><input type='checkbox' class='btn_dis_cls choiseButton dis' name='display' data-cls='display' checked><span></span></label></li>
               </ul>
+              </div>
               <div id='dragshadow' class='ui-widget-content'>
               <h2 class="text-right">Box-shadow</h2>
               <ul class="f1rem nav text-left justify-content-end">
@@ -284,8 +286,9 @@
       });
 
       $(function() {
-        $("#dragshadow").draggable();
-        $("#dragposition").draggable();
+        $('#dragshadow').draggable();
+        $('#dragposition').draggable();
+        $('#dragdisplay').draggable();
       });
 
       $('.btn').click(function() {
