@@ -839,6 +839,7 @@ footer a {
   cursor: -moz-grab;
   cursor: -webkit-grab;
   transition: none;
+  z-index: 8;
 }
 
 .ui-widget-content:active {
