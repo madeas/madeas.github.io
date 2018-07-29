@@ -766,6 +766,7 @@ button.disabled:focus {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
   font-style: normal;
+  z-index: 3;
 }
 
 .lab_adstl:hover i {
