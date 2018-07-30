@@ -135,12 +135,22 @@
               <div id='dragposition' class='ui-widget-content'>
               <h2>Position</h2>
               <ul class="f1rem nav">
-                <li class="nav-item"><label class='text-left'><input type='radio' class='btn pos' name='pos' data-stl='{
+                <li class="nav-item"><label class='text-left'><input type='radio' class='btn' name='pos' data-stl='{
     "position": "absolute"
 	}'><span>absolute</span></label></li>
-                <li class="nav-item"><label class='text-left'><input type='radio' class='btn pos' name='pos' data-stl='{
+                <li class="nav-item"><label class='text-left'><input type='radio' class='btn' name='pos' data-stl='{
     "position": "relative"
 	}'><span>relative</span></label></li>
+              </ul>
+              <div id='dragblock' class='ui-widget-content'>
+              <h2>Block flex</h2>
+              <ul class="f1rem nav">
+                <li class="nav-item"><label class='text-left'><input type='radio' class='btn' name='block' data-stl='{
+    "display": "block"
+	}'><span>block</span></label></li>
+                <li class="nav-item"><label class='text-left'><input type='radio' class='btn' name='block' data-stl='{
+    "display": "flex"
+	}'><span>flex</span></label></li>
               </ul>
               </div>
             </div>
@@ -177,7 +187,7 @@
 			<div class="back"><span>create your device</span></div>
 			</div>
 		</label>
-              <div class="py-5 w-100 text-center">
+              <div class="pt-5 w-100 text-center">
 		<h3>Create your own style</h3>
 		<p class='f1rem'>Enter any attribute and its contents. <br /> You can enter several attributes via a semicolon.</p>
 		<label class='lab_adstl'><input type='text' class='btn adstl' placeholder='width: 300px; height: 500px; background-color: lightblue;' value='' name='edit_style' data-stl='' id='adstl'><i>Editing this field will <strong class="text-danger">reset</strong> all your previously created settings!</i></label></div>
@@ -235,7 +245,7 @@
               </ul>
               </div>
             </div>
-            <div class="col-md-12 pt-3 text-center">
+            <div class="col-md-12 pt-5 text-center">
               <button type="button" id='reset' class="gen bShadow-9 bShadow-2h mx-3 my-1">Reset styles</button>
               <script>reset.onclick=()=>bSm.style=''</script>
               <button type="button" class="gen bShadow-9 bShadow-2h mx-3 my-1" data-toggle="modal" data-target="#ModalCenter">Get code</button>
@@ -287,8 +297,9 @@
 
       $(function() {
         $('#dragshadow').draggable();
-        $('#dragposition').draggable();
-        $('#dragdisplay').draggable();
+        $('#dragdisplay').draggable()
+        $('#dragposition').draggable();;
+        $('#dragblock').draggable();
       });
 
       $('.btn').click(function() {
