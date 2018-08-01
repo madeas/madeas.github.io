@@ -198,8 +198,8 @@ h1 {
 }
 
 .sidebar ul.nav li {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .sidebar ul li label {
