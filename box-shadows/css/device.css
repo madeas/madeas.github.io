@@ -939,7 +939,7 @@ footer a {
 }
 
 .back_style .bradio>li>label:after,
-.back_style.cover>label:after {
+.back_style .cover>label:after {
   content: '';
   margin: 0;
   border: 2px solid #cfcfd0;
@@ -948,6 +948,13 @@ footer a {
   border-radius: 50%;
   -webkit-transition: border .2s ease;
   transition: border .2s ease;
+}
+
+.back_style .cover>label:before,
+.back_style .cover>label:after {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 
 .back_style .bradio>li>input:checked+label:before,
@@ -960,7 +967,6 @@ footer a {
 .back_style .cover>input:checked+label:after {
   border-color: rgb(71, 201, 229);
 }
-
 
 @media (max-width:991px) {
   .sidebar-left ul {
