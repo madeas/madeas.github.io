@@ -849,6 +849,112 @@ footer a {
   cursor: -webkit-grabbing;
 }
 
+.get_collapse {
+  background-color: white;
+  border: 0;
+  border-radius: var(--primary-radius);
+  box-shadow: rgba(0, 0, 0, 0.05) 0 8px 16px 0;
+  color: #1F2667;
+  cursor: pointer;
+  font-weight: bold;
+  overflow: hidden;
+  padding: 0.75em 1em;
+  width: 170px;
+}
+
+.back_style .card {
+  border: 0;
+  border-radius: var(--primary-radius);
+}
+
+.back_style .sticker {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.back_style:hover .sticker {
+  opacity: 1;
+  visibility: visible;
+  background-color: white;
+  border-radius: var(--primary-radius);
+  box-shadow: rgba(0, 0, 0, 0.05) 0 8px 16px 0;
+  padding: .375rem .75rem;
+  margin-left: 2rem;
+}
+
+.back_style input {
+  padding: .375rem .75rem;
+}
+
+.back_style .get_collapse,
+.back_style input:focus {
+  outline: none;
+}
+
+.back_style .bsize {
+  width: 85px;
+}
+
+.back_style .bradio>li>input {
+  display: none;
+}
+
+.back_style .bradio>li>label {
+  position: relative;
+  padding: 0 0 0 34px;
+  cursor: pointer;
+}
+
+.back_style .bradio>li>label:after,
+.back_style .bradio>li>label:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.back_style .bradio>li>label:before {
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  color: rgb(71, 201, 229);
+  content: '';
+  background-color: rgb(71, 201, 229);
+  border: 6px solid white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: transform .15s ease;
+  transition: transform .15s ease;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+}
+
+.back_style .bradio>li>label:after {
+  content: '';
+  margin: 0;
+  border: 2px solid #cfcfd0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: border .2s ease;
+  transition: border .2s ease;
+}
+
+.back_style .bradio>li>input:checked+label:before {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+}
+
+.back_style .bradio>li>input:checked+label:after {
+  border-color: rgb(71, 201, 229);
+}
+
+
 @media (max-width:991px) {
   .sidebar-left ul {
     display: inline-block;
