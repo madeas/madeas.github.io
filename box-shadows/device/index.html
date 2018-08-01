@@ -256,7 +256,7 @@
               <p class='px-2'><button class="get_collapse" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Add a sticker</button><span class='sticker'>Click to add a sticker to the back cover</span></p>
               <div class="collapse" id="collapseExample">
                 <div class="card card-body d-flex flex-column">
-                  <h5>background-image: url(<input type='text' id='url' placeholder='https://images.png' value='' class='adstl w-auto'>);</h5>
+                  <h5>background-image: url(<input type='text' id='bgImage' placeholder='https://images.png' value='' class='adstl w-auto'>);</h5>
 
                   <div class='d-flex'>
                     <div class='mr-2'>
@@ -438,11 +438,11 @@
       var back = document.querySelector("#back"),
         x = document.querySelector("#posX"),
         y = document.querySelector('#posY'),
-        size = document.querySelector('#size'),
-        size2 = document.querySelector('#size2');
+        sO = document.querySelector('#sizeOne'),
+        sC = document.querySelector('#sizeCheck');
       (style = () => {
-        back.style.background = `url(${document.querySelector("#url").value}) black ${document.querySelector('[name="repeat"]:checked').parentNode.textContent} ${x.value}% ${y.value}%`;
-        back.style.backgroundSize = sizeCheck.checked ? 'cover' : sizeOne.value + 'px';
+        back.style.backgroundImage = `url(${document.querySelector("#bgImage").value}) black ${document.querySelector('[name="repeat"]:checked').parentNode.textContent} ${x.value}% ${y.value}%`;
+        back.style.backgroundSize = sC.checked ? 'cover' : sO.value + 'px';
       })();
       document.querySelectorAll('input').forEach(el => el.oninput = style);
 
