@@ -441,7 +441,7 @@
         sO = document.querySelector('#sizeOne'),
         sC = document.querySelector('#sizeCheck');
       (style = () => {
-        back.style.backgroundImage = `url(${document.querySelector("#bgImage").value}) black ${document.querySelector('[name="repeat"]:checked').parentNode.textContent} ${x.value}% ${y.value}%`;
+        back.style.background = `url(${document.querySelector("#bgImage").value}) black ${document.querySelector('[name="repeat"]:checked').parentNode.textContent} ${x.value}% ${y.value}%`;
         back.style.backgroundSize = sC.checked ? 'cover' : sO.value + 'px';
       })();
       document.querySelectorAll('input').forEach(el => el.oninput = style);
