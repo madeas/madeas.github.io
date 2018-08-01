@@ -1010,6 +1010,9 @@ footer a {
   .masthead-brand h1 {
     padding-top: 15px;
   }
+  .back_style:hover .sticker {
+    display: none;
+  }
 }
 
 @media (max-width:575px) {
