@@ -959,6 +959,11 @@ footer a {
   border-color: rgb(71, 201, 229);
 }
 
+.back_style .cover>label#bnoradio:before,
+.back_style .cover>label#bnoradio:after {
+  display: none;
+}
+
 @media (max-width:991px) {
   .sidebar-left ul {
     display: inline-block;
