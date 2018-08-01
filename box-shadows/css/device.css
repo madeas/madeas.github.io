@@ -962,6 +962,13 @@ footer a {
   display: none;
 }
 
+.back_style .bradio > li.bsckeck > label:before,
+.back_style .bradio > li.bsckeck > label:after {  
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
 .back_style input#bgImage {
   max-width: 245px;
 }
