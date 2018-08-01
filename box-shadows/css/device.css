@@ -898,6 +898,7 @@ footer a {
 
 .back_style .bradio>li>input,
 .back_style .cover>input {
+  display: none;
 }
 
 .back_style .bradio>li>label,
