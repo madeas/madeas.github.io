@@ -251,7 +251,43 @@
               </ul>
               </div>
             </div>
-            <div class="col-md-12 pt-5 text-center">
+
+            <div class='col-md-12 py-3 f1rem back_style'>
+              <p class='px-2'><button class="get_collapse" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Add a sticker</button><span class='sticker'>Click to add a sticker to the back cover</span></p>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body d-flex flex-column">
+                  <h5>background-image: url(<input type='text' id='url' placeholder='https://images.png' value='' class='adstl w-auto'>);</h5>
+
+                  <div class='d-flex'>
+                    <div class='mr-2'>
+                      <h5>background-repeat:</h5>
+                      <ul class='list-inline bradio'>
+                        <li><input type='radio' name='repeat' id='norep' checked><label for='norep'>no-repeat</label></li>
+                        <li><input type='radio' name='repeat' id='repXY'><label for='repXY'>repeat</label></li>
+                        <li><input type='radio' name='repeat' id='repX'><label for='repX'>repeat-x</label></li>
+                        <li><input type='radio' name='repeat' id='repY'><label for='repY'>repeat-y</label></li>
+                      </ul>
+                    </div>
+                    <div class='mx-2'>
+                      <h5>background-position:</h5>
+                      <ul class='list-inline'>
+                        <li>Left: <label><input id='posX' type='number' min='0' max='100' value='50' class='adstl w-auto'> %</label></li>
+                        <li>Top: <label><input id='posY' type='number' min='0' max='100' value='50' class='adstl w-auto'> %</label></li>
+                      </ul>
+                    </div>
+                    <div class='ml-2'>
+                      <h5>background-size:</h5>
+                      <ul class='list-inline'>
+                        <li><label><input type='number' id='size' value='' class='adstl bsize'> px</label></li>
+                        <li class='cover'><input type='checkbox' id='size2' name='size'><label for='size2'>cover</label></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12 pt-3 text-center">
               <button type="button" id='reset' class="gen bShadow-9 bShadow-2h mx-3 my-1">Reset styles</button>
               <script>reset.onclick=()=>bSm.style=''</script>
               <button type="button" class="gen bShadow-9 bShadow-2h mx-3 my-1" data-toggle="modal" data-target="#ModalCenter">Get code</button>
@@ -398,6 +434,17 @@
           el.style.cssText = 'height:' + el.scrollHeight + 'px';
         }, 0);
       }
+
+      var back = document.querySelector("#back"),
+        x = document.querySelector("#posX"),
+        y = document.querySelector('#posY'),
+        size = document.querySelector('#size'),
+        size2 = document.querySelector('#size2');
+      (style = () => {
+        back.style.background = `url(${document.querySelector("#url").value}) black ${document.querySelector('[name="repeat"]:checked').parentNode.textContent} ${x.value}% ${y.value}%`;
+        back.style.backgroundSize = size2.checked ? 'cover' : size.value + 'px';
+      })();
+      document.querySelectorAll('input').forEach(el => el.oninput = style);
 
     </script>
 
