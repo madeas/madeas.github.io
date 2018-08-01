@@ -953,8 +953,8 @@ footer a {
   border-color: rgb(71, 201, 229);
 }
 
-.back_style .bradio > label#bnoradio:before,
-.back_style .bradio > label#bnoradio:after {
+.back_style .bradio > li > label#bnoradio:before,
+.back_style .bradio > li > label#bnoradio:after {
   display: none;
 }
 
