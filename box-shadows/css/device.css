@@ -953,9 +953,17 @@ footer a {
   border-color: rgb(71, 201, 229);
 }
 
+.back_style .bradio > li > label#bnoradio {
+  padding:0;
+}
+
 .back_style .bradio > li > label#bnoradio:before,
 .back_style .bradio > li > label#bnoradio:after {
   display: none;
+}
+
+.back_style input#bgImage {
+  max-width: 250px;
 }
 
 @media (max-width:991px) {
