@@ -460,9 +460,7 @@ h1 {
   bottom: 0;
   right: 0;
   border-radius: inherit;
-  background: inherit !important;
   background-color: inherit !important;
-  background-image: inherit !important;
   box-shadow: inherit;
 }
 
