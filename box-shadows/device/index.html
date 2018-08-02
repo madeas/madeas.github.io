@@ -457,8 +457,7 @@
         st = document.querySelector('#sizeTwo'),
         si = document.querySelector('#sizeIn');
       (style = () => {
-        back.style.background = 'url(' + document.querySelector("#bgImage").value + ') white' + document.querySelector('[name="repeat"]:checked').parentNode.textContent + ' ' + x.value + '% ' + y.value + '%';
-        // back.style.background = `url(${document.querySelector("#bgImage").value}) black ${document.querySelector('[name="repeat"]:checked').parentNode.textContent} ${x.value}% ${y.value}%`;
+        back.style.background = `url(${document.querySelector("#bgImage").value}) black ${document.querySelector('[name="repeat"]:checked').parentNode.textContent} ${x.value}% ${y.value}%`;
         back.style.backgroundSize = so.checked ? 'cover' : st.checked ? 'contain' : si.value + 'px';
       })();
       document.querySelectorAll('input').forEach(el => el.oninput = style);
