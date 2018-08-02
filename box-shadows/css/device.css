@@ -410,7 +410,7 @@ h1 {
   perspective: 1000px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  cursor: pointer;
+  cursor: url('//madeas.github.io/box-shadows/device/img/rotate_cursor.png'), auto;
   text-align: left;
   z-index: 9;
 }
