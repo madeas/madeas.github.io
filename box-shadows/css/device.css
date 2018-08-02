@@ -995,6 +995,27 @@ footer a {
   flex-direction: column;
 }
 
+#menu_button,
+#back_button {
+  fill: #e5ebf2;
+  opacity: 0.6;
+  position: absolute;
+}
+
+#menu_button {
+  left: 15%;
+  bottom: 3px;
+  width: 36px;
+  height: 36px;
+}
+
+#back_button {
+  right: 15%;
+  bottom: 18px;
+  width: 26px;
+  height: 26px;
+}
+
 @media (max-width:991px) {
   .sidebar-left ul {
     display: inline-block;
@@ -1010,8 +1031,8 @@ footer a {
     display: none;
   }
   .dfrowcol {
-		flex-direction: row;
-	}
+  flex-direction: row;
+  }
 }
 
  @media (min-width:991px) {
