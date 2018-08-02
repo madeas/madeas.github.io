@@ -564,27 +564,27 @@ h1 {
 }
 
 .choiseButton.dis+span:before {
-  content: 'add display';
+  content: 'Add Display';
 }
 
 .choiseButton.dis:checked+span:before {
-  content: 'remove display';
+  content: 'Remove Display';
 }
 
 .choiseButton.typstop+span:before {
-  content: 'stop text';
+  content: 'Stop Text';
 }
 
 .choiseButton.typstop:checked+span:before {
-  content: 'play text';
+  content: 'Play Text';
 }
 
 .choiseButton.typdest:checked+span:before {
-  content: 'reset text';
+  content: 'Reset Text';
 }
 
 .choiseButton.typdest+span:before {
-  content: 'remove text';
+  content: 'Remove Text';
 }
 
 .brotate+span svg {
