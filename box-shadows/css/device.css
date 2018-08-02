@@ -976,6 +976,11 @@ footer a {
   max-width: 245px;
 }
 
+.dfrowcol {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width:991px) {
   .sidebar-left ul {
     display: inline-block;
@@ -990,6 +995,9 @@ footer a {
   .w991n {
     display: none;
   }
+  .dfrowcol {
+		flex-direction: row;
+	}
 }
 
  @media (min-width:991px) {
