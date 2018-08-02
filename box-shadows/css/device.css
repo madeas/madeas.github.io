@@ -588,9 +588,17 @@ h1 {
   content: 'remove text';
 }
 
+.sidebar ul li label input+span svg,
 .brotate+span svg {
-  fill: #3369E7;
+  fill: #49ddd8;
+}
+
+.brotate+span svg {
   transform: rotate(45deg);
+}
+
+.sidebar ul li label input:checked+span svg {
+  fill: #ffffff;
 }
 
 .brotate:checked+span svg {
