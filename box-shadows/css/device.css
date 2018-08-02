@@ -985,11 +985,11 @@ footer a {
   .lab_adstl {
     width: 92%;
   }
-}
-
-@media (max-width:991px) {
   .sidebar ul li label {
     width: 140px;
+  }
+  .w991n {
+    display: none;
   }
 }
 
