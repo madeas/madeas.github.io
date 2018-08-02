@@ -1004,16 +1004,14 @@ footer a {
 
 #menu_button {
   left: 15%;
-  bottom: 3px;
-  width: 36px;
-  height: 36px;
+  bottom: 0;
+  width: 13%;
 }
 
 #back_button {
   right: 15%;
-  bottom: 18px;
-  width: 26px;
-  height: 26px;
+  bottom: 10px;
+  width: 9%;
 }
 
 @media (max-width:991px) {
