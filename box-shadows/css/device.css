@@ -253,6 +253,7 @@ h1 {
   min-width: 225px;
   min-height: 250px;
   border-radius: 8px;
+  background-color: white;
   padding: 25px 7px;
   will-change: transform, box-shadow;
 }
