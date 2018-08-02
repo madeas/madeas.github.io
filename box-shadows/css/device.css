@@ -226,7 +226,7 @@ h1 {
 
 .sidebar ul li label span {
   display: block;
-  padding: 0.75em 1em;
+  padding: 0.75em;
 }
 
 .sidebar ul li label input:checked+span,
