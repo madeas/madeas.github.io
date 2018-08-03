@@ -1024,7 +1024,7 @@ footer a {
 
 #bSm.iBigCircle .btn_bottom #menu_button,
 #bSm.iBigCircle .btn_bottom #back_button {
-  bottom: 22px;
+  bottom: 25px;
 }
 
 @media (max-width:991px) {
