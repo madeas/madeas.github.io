@@ -417,8 +417,6 @@ h1 {
 }
 
 .bsdisplay {
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   cursor: url('//madeas.github.io/box-shadows/device/img/rotate_cursor.png'), auto;
@@ -460,7 +458,7 @@ h1 {
 .bsdisplay:hover .bSd {
   -webkit-transform: rotateY(20deg);
   transform: rotateY(20deg);
-  box-shadow: 0 20px 20px rgba(50, 50, 50, .2);
+  /*box-shadow: 0 20px 20px rgba(50, 50, 50, .2);*/
 }
 
 .bsdisplay :checked+.bSd {
