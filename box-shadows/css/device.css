@@ -1081,6 +1081,9 @@ footer a {
   .back_style:hover .sticker {
     display: none;
   }
+  .text-center-768 {
+    text-align: center;
+  }
 }
 
 @media (max-width:575px) {
