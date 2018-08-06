@@ -423,7 +423,14 @@ h1 {
   transform-style: preserve-3d;
   cursor: url('//madeas.github.io/box-shadows/device/img/rotate_cursor.png'), auto;
   text-align: left;
-  z-index: 9;
+  z-index: 9;  
+  animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+  100% {
+    transform: rotateY(360deg);
+  }
 }
 
 .bsdisplay input {
