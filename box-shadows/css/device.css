@@ -424,7 +424,10 @@ h1 {
   cursor: url('//madeas.github.io/box-shadows/device/img/rotate_cursor.png'), auto;
   text-align: left;
   z-index: 9;  
+  -webkit-animation: rotation 10s infinite linear;
   animation: rotation 10s infinite linear;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 @keyframes rotation {
