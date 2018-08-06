@@ -1038,7 +1038,8 @@ footer a {
 }
 
 @media (max-width:991px) {
-  .sidebar-left ul {
+  .sidebar-left ul,
+  .drag-dib {
     display: inline-block;
   }
   .adstl,
@@ -1095,5 +1096,8 @@ footer a {
   }
   h4 {
     font-size: 1.25rem;
+  }
+  #dragdisplay ul li {
+    display: inline-block;
   }
 }
