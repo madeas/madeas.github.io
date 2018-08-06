@@ -9,7 +9,6 @@
   margin: 0;
 }
 
-*,
 *:before,
 *:after {
   -webkit-transition: all .2s ease-in-out;
