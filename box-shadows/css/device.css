@@ -432,7 +432,7 @@ h1 {
 
 @keyframes rotation {
   100% {
-    transform: rotateY(360deg);
+    transform: rotateX(360deg) rotateZ(360deg);
   }
 }
 
@@ -448,8 +448,8 @@ h1 {
 }
 
 .bSd .back {
-  -webkit-transform: rotateY(180deg) translateZ(16px);
-           transform: rotateY(180deg) translateZ(16px);
+  -webkit-transform: rotateY(180deg) translateZ(0);
+           transform: rotateY(180deg) translateZ(0); /* translateZ(16px) */
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
