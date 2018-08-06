@@ -417,8 +417,10 @@ h1 {
 }
 
 .bsdisplay {
-  -webkit-perspective: 1000px;	
-          perspective: 1000px;
+  -webkit-perspective: 500px;	
+          perspective: 500px;
+  -webkit-perspective-origin: center center;
+  perspective-origin: center center;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   cursor: url('//madeas.github.io/box-shadows/device/img/rotate_cursor.png'), auto;
