@@ -423,9 +423,9 @@ h1 {
   text-align: left;
   z-index: 9;  
   -webkit-animation: rotation 10s infinite linear;
-  animation: rotation 10s infinite linear;
+          animation: rotation 10s infinite linear;
   -webkit-animation-play-state: paused;
-  animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 @keyframes rotation {
@@ -440,36 +440,33 @@ h1 {
 
 .bSd {
   -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
+           transform-style: preserve-3d;
   -webkit-transition: all 600ms;
-  transition: all 600ms;
-}
-
-.bSd div {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+          transition: all 600ms;
 }
 
 .bSd .back {
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg) translateZ(16px);
+					transform: rotateY(180deg) translateZ(16px);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .bsdisplay:hover .bSd {
   -webkit-transform: rotateY(20deg);
-  transform: rotateY(20deg);
+          transform: rotateY(20deg);
   /*box-shadow: 0 20px 20px rgba(50, 50, 50, .2);*/
 }
 
 .bsdisplay :checked+.bSd {
-  transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .bsdisplay:hover :checked+.bSd {
-  transform: rotateY(160deg);
   -webkit-transform: rotateY(160deg);
-  box-shadow: 0 20px 20px rgba(255, 255, 255, .2);
+          transform: rotateY(160deg);
+  /*box-shadow: 0 20px 20px rgba(255, 255, 255, .2);*/
 }
 
 .back {
