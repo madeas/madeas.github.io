@@ -576,7 +576,7 @@ h1 {
   color: #15a51a;
 }
 
-.text-royalblue {
+.choiseButton+span.text-royalblue {
   color: rgb(51, 105, 231);
 }
 
