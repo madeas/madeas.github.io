@@ -61,6 +61,9 @@ h1 {
   font-weight: bold;
 }
 
+.text-royalblue {
+  color: rgb(51, 105, 231);
+}
 .github-logo:hover .arm {
   animation: octocat-wave 560ms ease-in-out
 }
@@ -231,7 +234,8 @@ h1 {
 
 .sidebar ul li label input:checked+span,
 .sidebar ul.but li label input:checked+span,
-.sidebar ul li.check label input:checked+span {
+.sidebar ul li.check label input:checked+span,
+.sidebar ul li.check label input:checked+span.text-royalblue {
   background: linear-gradient(25deg, rgba(0, 188, 212, 1) 0%, rgba(51, 105, 231, 1) 100%);
   border-radius: inherit;
   color: white;
