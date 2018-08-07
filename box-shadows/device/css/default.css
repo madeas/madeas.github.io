@@ -488,6 +488,7 @@ h1 {
   left: 0;
   overflow: hidden;
   border-radius: inherit;
+  box-shadow: inherit;
 }
 
 .back .back_pattern {
