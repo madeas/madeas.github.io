@@ -500,7 +500,7 @@
         back.style.backgroundImage = 'url(' + document.querySelector('#bgImage').value + ')';
         back.style.backgroundSize = so.checked ? 'cover' : st.checked ? 'contain' : si.value + 'px';
         back.style.backgroundRepeat = document.querySelector('[name="repeat"]:checked').parentNode.textContent;
-        back.style.backgroundPosition = y.value + '%' + x.value + '%';
+        back.style.backgroundPosition = x.value + '%' + y.value + '%';
       })();
       document.querySelectorAll('input').forEach(el => el.oninput = style);
 
