@@ -253,7 +253,7 @@ h1 {
   min-width: 225px;
   min-height: 250px;
   border-radius: 8px;
-  padding: 25px 7px;
+  padding: 25px 7px 38px;
   will-change: transform, box-shadow;
 }
 
@@ -425,7 +425,6 @@ h1 {
   fill: #e5ebf2;
   opacity: 0.4;
   position: absolute;
-  bottom: 5px;
   height: 15px;
 }
 
@@ -442,6 +441,8 @@ h1 {
   opacity: 0.9;
 }
 
+#menu_button,
+#back_button,
 #bSm.iSmallLine .btn_bottom #menu_button,
 #bSm.iSmallLine .btn_bottom #back_button,
 #bSm.iBigLine .btn_bottom #menu_button,
