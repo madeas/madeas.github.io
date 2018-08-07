@@ -458,13 +458,27 @@ h1 {
 #bSm.ilandscape #back_button  {
   top: 75%;
   transform: rotate(90deg);
-  right: 14px;
+}
+
+#bSm.ilandscape #menu_button,
+#bSm.ilandscape #back_button,
+#bSm.ilandscape.iSmallLine .btn_bottom #menu_button, 
+#bSm.ilandscape.iSmallLine .btn_bottom #back_button,
+#bSm.ilandscape.iBigLine .btn_bottom #menu_button, 
+#bSm.ilandscape.iBigLine .btn_bottom #back_button {
+  right: 14px;  
 }
 
 #bSm.ilandscape #back_button {
   top: auto;
   left: auto;
   transform: rotate(-90deg);
+}
+
+#bSm.ilandscape #back_button,
+#bSm.ilandscape.iSmallLine .btn_bottom #back_button,
+#bSm.ilandscape.iBigLine .btn_bottom #back_button, 
+#bSm.ilandscape.iBigCircle .btn_bottom #back_button {
   bottom: 75%;
 }
 
