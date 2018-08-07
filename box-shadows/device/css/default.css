@@ -408,16 +408,67 @@ h1 {
 
 #bSm.ilandscape.iSmallCircle,
 #bSm.ilandscape.iTopLine {
-  padding-left: 38px !important;
+  padding-left: 42px !important;
 }
 
 #bSm.ilandscape.iSmallLine,
 #bSm.ilandscape.iBigLine {
-  padding-right: 38px !important;
+  padding-right: 42px !important;
 }
 
 #bSm.ilandscape.iBigCircle {
   padding-right: 55px !important;
+}
+
+#menu_button,
+#back_button {
+  fill: #e5ebf2;
+  opacity: 0.4;
+  position: absolute;
+  bottom: 5px;
+  height: 15px;
+}
+
+#menu_button {
+  right: 75%;
+}
+
+#back_button {
+  left: 75%;
+}
+
+#menu_button:hover,
+#back_button:hover {
+  opacity: 0.9;
+}
+
+#bSm.iSmallLine .btn_bottom #menu_button,
+#bSm.iSmallLine .btn_bottom #back_button,
+#bSm.iBigLine .btn_bottom #menu_button,
+#bSm.iBigLine .btn_bottom #back_button {
+  bottom: 14px;
+}
+
+#bSm.iBigCircle .btn_bottom #menu_button,
+#bSm.iBigCircle .btn_bottom #back_button {
+  bottom: 25px;
+}
+
+#bSm.ilandscape #menu_button,
+#bSm.ilandscape #back_button  {
+  top: 75%;
+  transform: rotate(90deg);
+  right: 14px;
+}
+
+#bSm.ilandscape #back_button {
+  top: auto;
+  bottom: 75%;
+}
+
+#bSm.ilandscape.iBigCircle .btn_bottom #menu_button,
+#bSm.ilandscape.iBigCircle .btn_bottom #back_button {
+  right: 25px;
 }
 
 .bsdisplay {
@@ -1029,40 +1080,6 @@ footer a {
 .dfrowcol {
   display: flex;
   flex-direction: column;
-}
-
-#menu_button,
-#back_button {
-  fill: #e5ebf2;
-  opacity: 0.4;
-  position: absolute;
-  bottom: 5px;
-  height: 15px;
-}
-
-#menu_button {
-  right: 75%;
-}
-
-#back_button {
-  left: 75%;
-}
-
-#menu_button:hover,
-#back_button:hover {
-  opacity: 0.9;
-}
-
-#bSm.iSmallLine .btn_bottom #menu_button,
-#bSm.iSmallLine .btn_bottom #back_button,
-#bSm.iBigLine .btn_bottom #menu_button,
-#bSm.iBigLine .btn_bottom #back_button {
-  bottom: 14px;
-}
-
-#bSm.iBigCircle .btn_bottom #menu_button,
-#bSm.iBigCircle .btn_bottom #back_button {
-  bottom: 25px;
 }
 
 @media (max-width:991px) {
