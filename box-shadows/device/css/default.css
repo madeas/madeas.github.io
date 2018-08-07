@@ -432,14 +432,14 @@ h1 {
           animation-play-state: paused;
 }
 
+.bsdisplay input {
+  display: none;
+}
+
 @keyframes rotation {
   100% {
     transform: rotateX(360deg) rotateZ(360deg);
   }
-}
-
-.bsdisplay input {
-  display: none;
 }
 
 .bSd {
@@ -452,7 +452,6 @@ h1 {
 .bsdisplay:hover .bSd {
   -webkit-transform: rotateY(20deg);
           transform: rotateY(20deg);
-  /*box-shadow: 0 20px 20px rgba(50, 50, 50, .2);*/
 }
 
 .bsdisplay :checked+.bSd {
@@ -463,7 +462,6 @@ h1 {
 .bsdisplay:hover :checked+.bSd {
   -webkit-transform: rotateY(160deg);
           transform: rotateY(160deg);
-  /*box-shadow: 0 20px 20px rgba(255, 255, 255, .2);*/
 }
 
 .back {
@@ -482,9 +480,27 @@ h1 {
           backface-visibility: hidden;
 }
 
-.back:before {
+.back .back_cover {
   position: absolute;
-  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  border-radius: inherit;
+}
+
+.back .back_pattern {
+  background-image: url(/box-shadows/device/img/noise.png);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.back .back_cam {
+  position: absolute;
   width: 12%;
   height: 50px;
   top: 40px;
@@ -496,9 +512,8 @@ h1 {
   box-shadow: rgb(255, 255, 255) -2px -2px 10px 1px inset, rgba(173, 186, 204, 0.25) 2px -3px 1px 1px inset, rgba(0, 21, 64, 0.5) 0px 1px 4px 1px inset;
 }
 
-.back:after {
+.back .back_text {
   position: absolute;
-  content: 'MADEAS';
   width: 100%;
   text-align: center;
   top: 5em;
@@ -509,41 +524,7 @@ h1 {
   text-shadow: 0 1px 2px rgba(62, 57, 107, 0.18);
 }
 
-.back_cover {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  border-radius: inherit;
-}
-
-#bSm.ilandscape .back:before {
-  width: 50px;
-  height: 12%;
-  top: 50%;
-  right: 40px;
-  left: auto;
-  transform: translateY(-50%);
-}
-
-#bSm.ilandscape .back:after,
-#bSm.ilandscape .back span {
-  transform: translateY(-50%) rotate(90deg);
-  width: auto;
-  top: 50%;
-  left: auto;
-  right: 5em;
-}
-
-#bSm.ilandscape .back span {
-  right: auto;
-  bottom: auto;
-  left: 30px;
-}
-
-.back span {
+.back .back_bottom_text {
   position: absolute;
   bottom: 30px;
   left: 50%;
@@ -555,6 +536,36 @@ h1 {
   font-weight: bold;
   text-shadow: 2px 2px 3px rgba(255, 246, 201, 0.18);
   font-size: 0.825rem;
+}
+
+.back .back_cam,
+.back .back_text,
+.back .back_bottom_text {
+  transition: .2s ease;
+}
+
+#bSm.ilandscape .back .back_cam {
+  width: 50px;
+  height: 12%;
+  top: 50%;
+  right: 40px;
+  left: auto;
+  transform: translateY(-50%);
+}
+
+#bSm.ilandscape .back .back_text,
+#bSm.ilandscape .back .back_bottom_text {
+  transform: translateY(-50%) rotate(90deg);
+  width: auto;
+  top: 50%;
+  left: auto;
+  right: 5em;
+}
+
+#bSm.ilandscape .back .back_bottom_text {
+  right: auto;
+  bottom: auto;
+  left: 30px;
 }
 
 #bSm.utilThree .display {
