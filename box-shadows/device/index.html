@@ -82,15 +82,17 @@
 
         <div class="container py-3">
           <div class="row">
+
             <div class="col-md-12">
               <p class="lead mb-3" itemprop="description">Box-shadows Device (BSD) is a tool for creating simple and beautiful devices on your website. Created your device, edit the colors, background and add to it buttons. You can use the created devices to demonstrate your code, templates, pictures,
                 adaptive design and much more.</p>
               <p class="text-right"><a class="github-button" href="https://github.com/madeas/device" data-show-count="true" aria-label="Star madeas/device on GitHub">Star</a> <a class="github-button" href="https://github.com/madeas/device/fork" data-icon="octicon-repo-forked"
                   data-show-count="true" aria-label="Fork madeas/device on GitHub">Fork</a></p>
             </div>
-            <div class='sidebar sidebar-left col-md-12 col-lg-3' id='sidebar-left'>
+
+            <div class='sidebar sidebar-left col-md-12 col-lg-3 text-center' id='sidebar-left'>
               <div class='drag-dib'>
-                <h2 class='px-2'>Device</h2>
+                <h2 class='px-2 text-left'>Device</h2>
                 <ul class="f1rem nav">
                   <li class="nav-item"><label class="text-left"><input type='radio' class='btn' name='left' data-stl='{
     "width": "225px",
@@ -130,7 +132,7 @@
 
               <div class='drag-dib'>
                 <div id='dragdisplay' class='ui-widget-content'>
-                  <h2 class='px-2'>Display</h2>
+                  <h2 class='px-2 text-left'>Display</h2>
                   <ul class='f1rem nav text-left'>
                     <li class="nav-item check"><label><input type='checkbox' class='choiseButton anistop'><span class='text-royalblue'>Rotation</span></label></li>
                     <li class="nav-item check"><label><input type='checkbox' class='choiseButton typdest' id='typdest' name='display'><span></span></label></li>
@@ -141,7 +143,7 @@
               </div><!--/ drag-dib -->
             </div><!--/ sidebar-left -->
 
-            <div class="col-md-12 col-lg-6 pb-5 text-center d-flex flex-column justify-content-between align-items-center">
+            <div class="col-md-12 col-lg-6 pb-5 text-center d-flex flex-column justify-content-start align-items-center">
               <div class="mb-5 gen_code">
                 <div class="modal fade bd-example-modal-lg" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
                   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
@@ -169,7 +171,13 @@
                 </div>
               </div>
 
-              <label class='bsdisplay'>
+              <div class='pb-5 w-100 text-center'>
+                <h3>Create your own style</h3>
+                <p class='f1rem'>Enter any attribute and its contents. <br /> You can enter several attributes via a semicolon.</p>
+                <label class='lab_adstl'><input type='text' class='btn adstl' placeholder='width: 300px; height: 500px; background-color: lightblue;' value='' name='edit_style' data-stl='' id='adstl'><i>Editing this field will <strong class="text-danger">reset</strong> all your previously created settings!</i></label>
+              </div>
+
+              <label class='bsdisplay pt-3'>
 		<input type='checkbox' />
 		<div id="bSm" class='bSd'>
 			<div class='btn_top'></div>
@@ -191,11 +199,35 @@
 			</div>
 		</label>
 
-              <div class='pt-5 w-100 text-center'>
-                <h3>Create your own style</h3>
-                <p class='f1rem'>Enter any attribute and its contents. <br /> You can enter several attributes via a semicolon.</p>
-                <label class='lab_adstl'><input type='text' class='btn adstl' placeholder='width: 300px; height: 500px; background-color: lightblue;' value='' name='edit_style' data-stl='' id='adstl'><i>Editing this field will <strong class="text-danger">reset</strong> all your previously created settings!</i></label></div>
-            </div>
+              <div class='dfrowcol flex-row justify-content-end'>
+                <div id='dragblock' class='ui-widget-content sidebar'>
+                  <h2 class='px-2'>Display</h2>
+                  <ul class='f1rem nav justify-content-center'>
+                    <li class="nav-item"><label class='text-left'><input type='radio' class='btn' name='block' data-stl='{
+    "display": "block"
+	}'><span>block</span></label></li>
+                    <li class="nav-item"><label class='text-left'><input type='radio' class='btn' name='block' data-stl='{
+    "display": "-webkit-box",
+    "display": "-ms-flexbox",
+    "display": "flex"
+	}'><span>flex</span></label></li>
+                  </ul>
+                </div>
+
+                <div id='dragposition' class='ui-widget-content sidebar'>
+                  <h2 class='px-2'>Position</h2>
+                  <ul class='f1rem nav justify-content-center'>
+                    <li class="nav-item"><label class='text-left'><input type='radio' class='btn' name='pos' data-stl='{
+    "position": "absolute"
+	}'><span>absolute</span></label></li>
+                    <li class="nav-item"><label class='text-left'><input type='radio' class='btn' name='pos' data-stl='{
+    "position": "relative"
+	}'><span>relative</span></label></li>
+                  </ul>
+                </div>
+              </div><!--/ dfrowcol -->
+
+            </div><!--/ col-md-12 -->
 
             <div class='sidebar sidebar-right col-md-12 col-lg-3' id='sidebar-right'>
               <h2 class='text-right px-2'>Background</h2>
@@ -256,36 +288,6 @@
                   </li>
                 </ul>
               </div><!--/ dragshadow -->
-
-              <div class='dfrowcol justify-content-end'>
-
-                <div id='dragblock' class='ui-widget-content'>
-                  <h2 class='text-right px-2'>Display</h2>
-                  <ul class='f1rem nav justify-content-end'>
-                    <li class="nav-item"><label class='text-left'><input type='radio' class='btn' name='block' data-stl='{
-    "display": "block"
-	}'><span>block</span></label></li>
-                    <li class="nav-item"><label class='text-left'><input type='radio' class='btn' name='block' data-stl='{
-    "display": "-webkit-box",
-    "display": "-ms-flexbox",
-    "display": "flex"
-	}'><span>flex</span></label></li>
-                  </ul>
-                </div>
-
-                <div id='dragposition' class='ui-widget-content'>
-                  <h2 class='text-right px-2'>Position</h2>
-                  <ul class='f1rem nav justify-content-end'>
-                    <li class="nav-item"><label class='text-left'><input type='radio' class='btn' name='pos' data-stl='{
-    "position": "absolute"
-	}'><span>absolute</span></label></li>
-                    <li class="nav-item"><label class='text-left'><input type='radio' class='btn' name='pos' data-stl='{
-    "position": "relative"
-	}'><span>relative</span></label></li>
-                  </ul>
-                </div>
-
-              </div><!--/ dfrowcol -->
 
             </div><!--/ sidebar-right -->
 
