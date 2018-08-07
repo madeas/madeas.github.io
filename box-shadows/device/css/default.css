@@ -259,7 +259,7 @@ h1 {
 
 .display {
   background: linear-gradient(45deg, #e5ebf2, #f2f6fa);
-  border-radius: 8px;
+  border-radius: 4px;
   min-height: 185px;
   width: 100%;
   padding: 15px;
