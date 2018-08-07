@@ -463,6 +463,8 @@ h1 {
 
 #bSm.ilandscape #back_button {
   top: auto;
+  left: auto;
+  transform: rotate(-90deg);
   bottom: 75%;
 }
 
