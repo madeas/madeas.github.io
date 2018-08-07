@@ -133,7 +133,7 @@
               <div class='drag-dib'>
                 <div id='dragdisplay' class='ui-widget-content'>
                   <h2 class='px-2 text-left'>Display</h2>
-                  <ul class='f1rem nav text-left'>
+                  <ul class='f1rem nav'>
                     <li class="nav-item check"><label><input type='checkbox' class='choiseButton anistop'><span class='text-royalblue'>Rotation</span></label></li>
                     <li class="nav-item check"><label><input type='checkbox' class='choiseButton typdest' id='typdest' name='display'><span></span></label></li>
                     <li class="nav-item check"><label><input type='checkbox' class='choiseButton typstop' id='typstop' name='display'><span></span></label></li>
@@ -199,7 +199,7 @@
 			</div>
 		</label>
 
-              <div class='dfrowcol flex-row justify-content-end'>
+              <div class='dfrowcol flex-row justify-content-end devbutton'>
                 <div id='dragblock' class='ui-widget-content sidebar'>
                   <h2 class='px-2'>Display</h2>
                   <ul class='f1rem nav justify-content-center'>
@@ -330,7 +330,8 @@
 
             <div class="col-md-12 pt-2 text-center">
               <button type="button" id='reset' class="gen bShadow-9 bShadow-2h mx-3 my-1">Reset styles</button>
-              <button type="button" class="gen bShadow-9 bShadow-2h mx-3 my-1" data-toggle="modal" data-target="#ModalCenter">Get code</button>
+              <button type="button" class="gen bShadow-9 bShadow-2h mx-3 my-1 devbutton" data-toggle="modal" data-target="#ModalCenter">Get code</button>
+              <span><button type="button" class="gen bShadow-9 bShadow-2h mx-3 my-1 opendev" title='Add Developer Buttons'>I'm a Developer</button></span>
             </div>
           </div><!--/ row -->
 
@@ -533,6 +534,15 @@
           mb.style.display = 'none';
         }
       });
+
+      // открыть кнопки разработчика
+      var odb = document.querySelector('.opendev');
+      odb.onclick = e => {
+        e.target.parentNode.style.display = 'none';
+        var devb = document.querySelectorAll('.devbutton');
+        document.querySelectorAll('.devbutton').forEach(n => n.classList.remove('devbutton'));
+      };
+      if (localStorage.getItem('an') == 1) opb.click();
 
       // вращение устройства
       var state = true;
