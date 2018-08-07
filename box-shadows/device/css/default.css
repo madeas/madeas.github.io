@@ -449,13 +449,6 @@ h1 {
           transition: all 600ms;
 }
 
-.bSd .back {
-  -webkit-transform: rotateY(180deg) translateZ(0);
-           transform: rotateY(180deg) translateZ(0); /* translateZ(16px) */
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-
 .bsdisplay:hover .bSd {
   -webkit-transform: rotateY(20deg);
           transform: rotateY(20deg);
@@ -483,6 +476,10 @@ h1 {
   background-color: inherit !important;
   background: inherit !important;
   box-shadow: inherit;
+  -webkit-transform: rotateY(180deg) translateZ(0);
+           transform: rotateY(180deg) translateZ(0); /* translateZ(16px) */
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .back:before {
@@ -510,6 +507,16 @@ h1 {
   font-weight: bold;
   color: #fff6c9;
   text-shadow: 0 1px 2px rgba(62, 57, 107, 0.18);
+}
+
+.back_cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  border-radius: inherit;
 }
 
 #bSm.ilandscape .back:before {
