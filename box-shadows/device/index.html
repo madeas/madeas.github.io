@@ -184,7 +184,7 @@
               </div>
 
               <label class='bsdisplay pt-3'>
-		<input type='checkbox' />
+		<input type='checkbox' id='device_play' />
 		<div id="bSm" class='bSd'>
 			<div class='border_front'></div>
 			<div class='btn_top'></div>
@@ -579,6 +579,19 @@
         document.querySelector('.bsdisplay').style.animationPlayState = state ? 'running' : 'paused';
         state = !state;
       };
+
+      // настройка камеры iSight
+      function toggle() {
+        var block = document.getElementById('drag_back_set');
+        if (play.checked)
+          block.style.opacity = '1';
+        else
+          block.style.opacity = '0'
+      }
+      var play = document.getElementById('device_play');
+      play.addEventListener('change', function() {
+        toggle();
+      });
 
     </script>
 
