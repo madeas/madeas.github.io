@@ -411,7 +411,7 @@
       // type='color'
       document.getElementById('bg_choose').onchange = e => {
         document.getElementById('choose').textContent = e.target.value;
-        document.getElementById('bSm').style.backgroundColor = e.target.value;
+        document.getElementById('bSm').style.background = e.target.value;
         let ecls = document.querySelector('#bg_choose');
         ecls.dataset.cls = e.target.value;
       }
