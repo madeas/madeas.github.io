@@ -100,13 +100,13 @@
     "padding": "42px 7px",
     "border-radius": "23px"
     }'><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 2c0-1.104-.896-2-2-2h-10c-1.104 0-2 .896-2 2v20c0 1.104.896 2 2 2h10c1.104 0 2-.896 2-2v-20zm-8.5 0h3c.276 0 .5.224.5.5s-.224.5-.5.5h-3c-.276 0-.5-.224-.5-.5s.224-.5.5-.5zm1.5 20c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm5-3h-10v-14.024h10v14.024z"/></svg> Small Phone</span></label></li>
-                  <li class='nav-item'><label class="text-left"><input type='radio' class='btn' name='left' data-stl='{
+                  <li class='nav-item'><label class="text-left"><input type='radio' class='btn btn_back_cls' name='left' data-cls='cam_rotate' data-stl='{
     "width": "267px",
     "height": "553px",
     "padding": "42px 9px",
     "border-radius": "18px"
     }'><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17.5 2c.276 0 .5.224.5.5v19c0 .276-.224.5-.5.5h-11c-.276 0-.5-.224-.5-.5v-19c0-.276.224-.5.5-.5h11zm2.5 0c0-1.104-.896-2-2-2h-12c-1.104 0-2 .896-2 2v20c0 1.104.896 2 2 2h12c1.104 0 2-.896 2-2v-20zm-9.5 1h3c.276 0 .5.224.5.501 0 .275-.224.499-.5.499h-3c-.275 0-.5-.224-.5-.499 0-.277.225-.501.5-.501zm1.5 18c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm5-3h-10v-13h10v13z"/></svg> Big Phone</span></label></li>
-                  <li class='nav-item'><label class="text-left"><input type='radio' class='btn' name='left' data-stl='{
+                  <li class='nav-item'><label class="text-left"><input type='radio' class='btn btn_back_cls' name='left' data-cls='tablet' data-stl='{
     "width": "450px",
     "height": "675px",
     "padding": "42px 15px",
@@ -476,6 +476,15 @@
         b.click(function() {
           var cls = $(this).data("cls");
           $('#display').toggleClass(cls);
+        });
+      });
+
+      // добавление классов в id='back'
+      $(function() {
+        var b = $('.btn_back_cls');
+        b.click(function() {
+          var cls = $(this).data("cls");
+          $('#back').toggleClass(cls);
         });
       });
 
