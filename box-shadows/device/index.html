@@ -177,7 +177,7 @@
                 </div>
               </div>
 
-              <div class='pb-5 w-100 text-center'>
+              <div class='pb-5 w-100 text-center' id='dragcreate'>
                 <h3>Create your own style</h3>
                 <p class='f1rem'>Enter any attribute and its contents. <br /> You can enter several attributes via a semicolon.</p>
                 <label class='lab_adstl'><input type='text' class='btn adstl' placeholder='width: 300px; height: 500px; background-color: lightblue;' value='' name='edit_style' data-stl='' id='adstl'><i>Editing this field will <strong class="text-danger">reset</strong> all your previously created settings!</i></label>
@@ -396,6 +396,7 @@
         $('#dragposition').draggable();
         $('#dragblock').draggable();
         $('#dragbuttons').draggable();
+        $('#dragcreate').draggable();
       });
 
       //добавление стилей из data-stl и выведение в поле #form_code
