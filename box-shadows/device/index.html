@@ -582,14 +582,14 @@
 
       // настройка камеры iSight
       function toggle() {
-        var block = document.getElementById('drag_back_set');
-        if (play.checked)
-          block.style.display = 'block';
+        var dbblock = document.getElementById('drag_back_set');
+        if (devplay.checked)
+          dbblock.style.display = 'block';
         else
-          block.style.display = 'none'
+          dbblock.style.display = 'none'
       }
-      var play = document.getElementById('device_play');
-      play.addEventListener('change', function() {
+      var devplay = document.getElementById('device_play');
+      devplay.addEventListener('change', function() {
         toggle();
       });
 
