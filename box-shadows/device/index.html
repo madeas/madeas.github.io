@@ -584,9 +584,9 @@
       function toggle() {
         var block = document.getElementById('drag_back_set');
         if (play.checked)
-          block.style.opacity = '1';
+          block.style.display = 'block';
         else
-          block.style.opacity = '0'
+          block.style.display = 'none'
       }
       var play = document.getElementById('device_play');
       play.addEventListener('change', function() {
