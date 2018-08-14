@@ -472,6 +472,13 @@
 
     </script>
     <script>
+      // генератор стилей
+      document.getElementById('adstl').onchange = e => {
+        let ecls = document.querySelector('#adstl');
+        ecls.dataset.cls = e.target.value;
+        document.getElementById('bSm').style = e.target.value;
+      }
+
       // функция drag-and-drop
       $(function() {
         $('#dragshadow').draggable();
