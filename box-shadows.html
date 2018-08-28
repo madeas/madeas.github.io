@@ -794,6 +794,7 @@
         $(function () {
             $('#dragbutton').draggable();
         });
+
         // переключение языка
         (function () {
             var langSave = localStorage.getItem('lang') || 'en',
@@ -809,7 +810,7 @@
                 });
                 langSave == lang && elem.click()
             })
-        }));
+        })();
 
     </script>
     <script>
