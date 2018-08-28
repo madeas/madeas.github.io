@@ -60,7 +60,7 @@ body {
 .bg_svg {
     position: absolute;
     background: url(/box-shadows/img/bg-features.svg) 0 0 / 100% no-repeat;
-    background-posiiton: -400px -200px;
+    background-position: -400px -200px;
     width: 100%;
     height: 100%
 }
