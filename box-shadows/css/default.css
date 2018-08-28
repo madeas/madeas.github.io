@@ -58,11 +58,8 @@ body,
 }
 
 .bg_svg {
-  background-color: transparent;
-  background-image: url(/img/bg-svg.svg), url(/img/bg-right.svg), url(/img/bg-left.svg);
-  background-position: 0 0, 100% 80%, 0% 98%;
-  background-repeat: no-repeat;
-  background-size: 120%, 25%, 25%;
+  background: url(/box-shadows/img/bg-features.svg) 0 0 no-repeat / 100%;
+  background-position: -400px -200px;
 }
 
 .human {
@@ -436,16 +433,17 @@ textarea.result {
   border-radius: 2em;
   margin: 0 15px 10px;
   color: #fff;
-  background: linear-gradient(73deg, #8ec5fc, var(--primary-color));
+  background: linear-gradient(15deg, rgb(0, 174, 255), rgb(166, 142, 255));
   font-size: 1.5em;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
+  transform: scale(.8);
   transition: all .3s ease-out;
 }
 
 .btn-download:hover {
-  transform: scale(1.2);
+  transform: scale(1);
 }
 
 .logos {
