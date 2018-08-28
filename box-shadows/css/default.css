@@ -23,7 +23,6 @@ body {
     cursor: pointer
 }
 
-.drag_obj,
 .flex .block {
     cursor: move;
     cursor: grab;
@@ -554,29 +553,20 @@ textarea#g_result {
     user-select: all
 }
 
-.drag_obj {
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    border: 2px dashed transparent;
-    padding: 10px 15px
+.ui-widget-content {
+  position: relative;
+  cursor: move;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  transition: none;
+  z-index: 8
 }
 
-.ScrollUp,
-.ScrollUp.button--show {
-    left: 30px
-}
-
-.drag_obj:hover {
-    border: 2px dashed gray
-}
-
-.drag_obj:active {
-    cursor: grabbing;
-    cursor: -moz-grabbing;
-    cursor: -webkit-grabbing
+.ui-widget-content:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing
 }
 
 .gen_container input[type=range] {
