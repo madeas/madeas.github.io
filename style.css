@@ -44,20 +44,17 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 6px;
+    width: 14px;
     height: 6px
 }
 
 ::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, .1)
+    border-left: 10px dashed var(--primary-color);
+    background: #ffffff
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #47c9e5
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #00aeff
+    background: #fff url/img/scroll-center-icon.svg) no-repeat 50% 50% / 8px;
 }
 
 a {
