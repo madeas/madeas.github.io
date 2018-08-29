@@ -250,6 +250,10 @@ summary {
     border-color: transparent
 }
 
+.save {
+    margin-top: 2rem
+}
+
 .dclose {
     position: relative;
     padding-left: 20px
@@ -307,14 +311,14 @@ input.filename {
 
 .result-des::before {
     display: block;
-    content: "CSS";
+    content: 'CSS';
     position: absolute;
-    background-color: #eee;
+    background-color: #e8eef2;
     left: 0;
     top: 0;
-    right: 0;
+    right: 18px;
     color: #032f62;
-    font: 700 12px/23px Nunito, sans-serif;
+    font: 700 12px/22px Nunito, sans-serif;
     padding: 0 10px;
     z-index: 10
 }
@@ -330,7 +334,8 @@ textarea.result {
     min-height: 210px;
     padding: 25px 5px 5px;
     height: auto;
-    resize: vertical
+    resize: vertical;
+    overflow-y: scroll
 }
 
 .add__content {
@@ -603,6 +608,7 @@ textarea#g_result {
     -webkit-border-radius: .25rem;
     -moz-border-radius: .25rem;
     border-radius: .25rem;
+    resize: vertical;
     -ms-user-select: all;
     -moz-user-select: all;
     -webkit-user-select: all;
