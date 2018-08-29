@@ -44,19 +44,18 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 14px;
-    height: 6px
+    width: 14px
 }
 
 ::-webkit-scrollbar-track {
     background: #f3f5f6;
-    box-shadow: 0px 0px 5px #ccc inset;
+    box-shadow: 0px 0px 5px #ccc inset
 }
 
 ::-webkit-scrollbar-thumb {
     border: 2px solid #eee;
     border-radius: var(--primary-radius);
-    background: #fff url(/img/scroll-center-icon.svg) no-repeat 50% 50% / 7px;
+    background: #fff url(/img/scroll-center-icon.svg) no-repeat 50% 50% / 7px
 }
 
 a {
