@@ -772,7 +772,8 @@ textarea#g_result {
         display: inline-block;
         width: 30px;
         height: 8px;
-        background-color: var(--primary-color);
+        background-color: #00aeff;
+        border-radius: 3px;
         content: "";
         color: transparent;
         vertical-align: middle;
