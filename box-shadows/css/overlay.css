@@ -37,12 +37,12 @@ body.overlay #overlay {
 }
 
 body {
-    overflow-y: auto
+    overflow-y: auto;
+    height: auto
 }
 
 body.overlay {
-    overflow: hidden;
-    height: auto
+    overflow: hidden
 }
 
 .over_img {
