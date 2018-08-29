@@ -127,11 +127,22 @@ summary {
 .slider {
     width: 100%;
     overflow: hidden;
-    position: relative;
+    position: relative
+}
+
+.slider,
+.ui-widget-content {
     cursor: move;
     cursor: grab;
     cursor: -moz-grab;
     cursor: -webkit-grab
+}
+
+.slider:active,
+.ui-widget-content:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing
 }
 
 .carousel {
@@ -602,18 +613,8 @@ textarea#g_result {
 
 .ui-widget-content {
     position: relative;
-    cursor: move;
-    cursor: grab;
-    cursor: -moz-grab;
-    cursor: -webkit-grab;
     transition: none;
     z-index: 8
-}
-
-.ui-widget-content:active {
-    cursor: grabbing;
-    cursor: -moz-grabbing;
-    cursor: -webkit-grabbing
 }
 
 .gen_container input[type=range] {
