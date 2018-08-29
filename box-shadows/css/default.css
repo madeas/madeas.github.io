@@ -301,26 +301,11 @@ input.filename {
     position: relative;
     padding: 0;
     width: 96%;
-    display: block;
     -webkit-border-radius: var(--primary-radius);
     -moz-border-radius: var(--primary-radius);
     border-radius: var(--primary-radius);
     border: 1px solid #dedede;
     overflow-x: hidden
-}
-
-.result-des::before {
-    display: block;
-    content: 'CSS';
-    position: absolute;
-    background-color: #e8eef2;
-    left: 0;
-    top: 0;
-    right: 18px;
-    color: #032f62;
-    font: 700 12px/22px Nunito, sans-serif;
-    padding: 0 10px;
-    z-index: 10
 }
 
 textarea.result {
