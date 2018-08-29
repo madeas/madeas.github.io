@@ -43,8 +43,7 @@ body {
 .card__content,
 .changes button,
 .changes input,
-.save,
-.vnavbar .dot {
+.save {
     -webkit-border-radius: var(--primary-radius);
     -moz-border-radius: var(--primary-radius);
     border-radius: var(--primary-radius)
@@ -785,7 +784,7 @@ textarea#g_result {
         transition: all .3s ease-in-out
     }
     .vnavbar .dot:hover {
-        background-color: #1395ba;
+        background-color: #a68eff;
         width: 35px
     }
     .vnavbar .dot.active {
@@ -850,7 +849,8 @@ textarea#g_result {
 
 @media (max-width:800px) {
     .block-select,
-    .m800n {
+    .m800n,
+    .hide-mobile {
         display: none
     }
 }
