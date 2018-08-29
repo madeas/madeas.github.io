@@ -54,7 +54,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #fff url/img/scroll-center-icon.svg) no-repeat 50% 50% / 8px;
+    background: #fff url(/img/scroll-center-icon.svg) no-repeat 50% 50% / 8px;
 }
 
 a {
