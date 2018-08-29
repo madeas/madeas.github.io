@@ -44,18 +44,17 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 14px
+    width: 18px
 }
 
 ::-webkit-scrollbar-track {
-    background: #f3f5f6;
-    box-shadow: 0px 0px 5px #ccc inset
+    background: #e8eef2;
 }
 
 ::-webkit-scrollbar-thumb {
-    border: 2px solid #eee;
+    border: 2px solid #e8eef2;
     border-radius: var(--primary-radius);
-    background: #fff url(/img/scroll-center-icon.svg) no-repeat 50% 50% / 7px
+    background: #fff url(/img/scroll-center-icon.svg) no-repeat 50% 50% / 4px
 }
 
 a {
@@ -151,10 +150,10 @@ pre[rel]:before {
     left: 0;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
-    background-color: #eee;
+    background-color: #e8eef2;
     content: attr(rel);
     color: #032f62;
-    font: 700 12px/22px Raleway, sans-serif;
+    font: 700 12px/22px Nunito, sans-serif;
     padding: 0 10px
 }
 
