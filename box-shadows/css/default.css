@@ -889,7 +889,8 @@ textarea#g_result {
         -webkit-flex-direction: column
     }
     .slider {
-        overflow: auto
+        overflow: auto;
+        cursor: default
     }
     .slider div {
         min-width: 1em !important
