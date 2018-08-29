@@ -49,6 +49,11 @@ body {
     border-radius: var(--primary-radius)
 }
 
+h3 {
+    font-size: 2rem;
+    text-transform: capitalize
+}
+
 .bg_svg {
     position: absolute;
     background: url(/box-shadows/img/bg-features.svg) no-repeat;
