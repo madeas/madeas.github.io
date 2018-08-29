@@ -888,6 +888,21 @@ textarea#g_result {
         flex-direction: column;
         -webkit-flex-direction: column
     }
+    .slider {
+        overflow: auto
+    }
+    .slider div {
+        min-width: 1em !important
+    }
+    .carousel {
+        padding:0;
+        height: auto !important;
+        display: flex;
+        flex-flow: row wrap
+    }
+    .carousel div {
+        display: block
+    }
 }
 
 @media (max-width:480px) {
