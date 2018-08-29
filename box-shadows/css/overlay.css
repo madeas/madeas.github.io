@@ -42,7 +42,8 @@ body {
 }
 
 body.overlay {
-    overflow: hidden
+    overflow: hidden;
+    height: auto
 }
 
 .over_img {
