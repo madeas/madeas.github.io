@@ -28,7 +28,8 @@ summary {
 .changes input:focus,
 .dclose:focusб input.filename:focus,
 .gen_container input[type=range]:focus,
-summary:focus {
+ input[type="submit"],
+ summary:focus {
     outline: 0
 }
 
