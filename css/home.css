@@ -97,11 +97,13 @@ a {
 }
 
 .item .icon {
-  text-align: left;
-  cursor: pointer;
+  background-color: white;
+  background-size: 48px;
+  background-position: center center;
+  background-repeat: no-repeat;
   border-radius: 50%;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08), 0 5px 20px rgba(0, 0, 0, 0.08);
-  background-size: 48px
+  cursor: pointer
 }
 
 .item.bsha {
@@ -110,7 +112,7 @@ a {
 }
 
 .item.bsha .icon {
-  background: url(/img/logo-bs.png) 70% 100% no-repeat white
+  background-image: url(/img/logo-bss.png)
 }
 
 .item.jslay {
@@ -119,7 +121,7 @@ a {
 }
 
 .item.jslay .icon {
-  background: url(/img/logo-jsfl.png) 50% 0 no-repeat white
+  background-image: url(/img/logo-jsfl.png)
 }
 
 .item.device {
@@ -128,7 +130,7 @@ a {
 }
 
 .item.device .icon {
-  background: url(/favicon.ico) center center no-repeat white
+  background-image: url(/favicon.ico)
 }
 /*
 .item.none {
