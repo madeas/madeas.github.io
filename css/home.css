@@ -195,12 +195,7 @@ h1 {
   right: 10px;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  transition: .3s ease-in-out;
-  opacity: .3
-}
-
-.git_octo:hover {
-  opacity: 1
+  transition: .3s ease-in-out
 }
 
 .bg_svg circle {
