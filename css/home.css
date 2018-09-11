@@ -1,169 +1,188 @@
-.masthead {
-	text-align: center;
-	min-height: 30rem;
-	position: relative;
-	width: 100%;
-	min-height: 100vh;
-  	height: auto;
-	padding-top: 8rem;
-	padding-bottom: 8rem;
-	margin: 0;
-	font-family: 'Raleway', sans-serif;
-	background: url(/img/bg_home.png);
-	background-position: top left;
-	background-repeat: no-repeat;
-	overflow: hidden;
-}
-.masthead .title {
-	position: absolute;
-	top: 40%;
-	left: 150px;
-	margin: 0;
-	padding: 0;
-	text-align: left;
-	color: #fff;
-}
-.title h1 {
-	font: bold 6vw/1em 'Raleray', sans-serif;
-	letter-spacing: 1.2px;
-	padding-bottom: .5rem;
-	text-shadow: -1px 4px 10px rgba(0,0,0,0.1);
-}
-.title .quote {
-	color: #7f8080;
-	font: italic normal 2vw/1em 'Raleray', sans-serif;
-}
-.title .quote span {
-	font-family: inherit;
-	display: block;
-	padding-top: .25rem;
-	font-size: 1rem;
-}
-.navigation {
-	margin: 0 auto;
-	font-family: "Raleway", sans-serif;
-	font-size: 1.2rem;
-	font-style: normal;
-	font-weight: bold;
-}
-.navigation .item {
-	position:absolute;
-}
-/* navigation items */
-.item.bsha {
-	top:140px;
-	left:110px;
-}
-.item.jslay {
-	top:30px;
-	left:360px;
-}
-.item.auth {
-	top:85px;
-	left:625px;
-}
-.item.none {
-	top:230px;
-	left:835px;
-}
-.item.none {
-	top:420px;
-	left:950px;
-}
-.item .circle {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 52px;
-	height: 52px;
-	opacity: 0;
-}
-.item .icon {
-	width: 52px;
-	height: 52px;
-	position:absolute;
-	top: 0;
-	left: 0;
-	text-align: left;
-	cursor: pointer;
-	border-radius: 50%;
-}
-.item:first-child .icon {
-	background: #fff url(/img/logo-bs.png) no-repeat 70% 100%;
-	background-size: 48px;
-}
-.item:nth-child(2) .icon {
-	background: #fff url(/img/logo-jsfl.png) no-repeat 50% 0;
-	background-size: 48px;
-}
-.item:nth-child(3) .icon {
-	background: #fff url(/img/logo-ru.png) no-repeat center center;
-	background-size: 48px;
-}
-.item h5 {
-	position: absolute;
-	white-space: nowrap;
-	color: #7f8080;
-	font-size: 1rem;
-	font-weight: 600;
-	top: -10px;
-	left: 60px;
-	text-transform: uppercase;
-}
-.item h5.active {
-	color: #F2F2F2;
-	text-shadow: -1px 15px 29px rgba(0,0,0,0.07);
-}
-.item ul {
-	list-style: none;
-	position: absolute;
-	top: 60px;
-	left: 27px;
-	display: none;
-	text-align: left;
-}
+.item h5,
 .item ul li a {
-	font-size: 0.825em;
-	text-transform: uppercase;
-	color: #fafafa;
-	padding: 3px;
+    text-transform: uppercase
 }
+
+.masthead {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    margin: 0;
+    font-family: Raleway, sans-serif
+}
+
+.masthead .title,
+.navigation .item {
+    position: absolute
+}
+
+.masthead .title {
+    top: 40%;
+    left: 150px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: #fff
+}
+
+.title h1 {
+    font: 700 6vw/1em Raleway, sans-serif;
+    letter-spacing: 1.2px;
+    padding-bottom: .5rem;
+    text-shadow: -1px 4px 10px rgba(0, 0, 0, .1)
+}
+
+.title .quote {
+    color: #7f8080;
+    font: italic 400 2vw/1em Raleray, sans-serif
+}
+
+.title .quote span {
+    font-family: inherit;
+    display: block;
+    padding-top: .25rem;
+    font-size: 1rem
+}
+
+.navigation {
+    margin: 0 auto;
+    font-family: Raleway, sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700
+}
+
+.item.bsha {
+    top: 140px;
+    left: 110px
+}
+
+.item.jslay {
+    top: 30px;
+    left: 360px
+}
+
+.item.auth {
+    top: 85px;
+    left: 625px
+}
+
+.item.none {
+    top: 420px;
+    left: 950px
+}
+
+.item .circle,
+.item .icon {
+    width: 52px;
+    height: 52px;
+    top: 0;
+    left: 0;
+    position: absolute
+}
+
+.item .circle {
+    opacity: 0
+}
+
+.item .icon {
+    text-align: left;
+    cursor: pointer;
+    border-radius: 50%
+}
+
+.item:first-child .icon {
+    background: url(/img/logo-bs.png) 70% 100% no-repeat #fff;
+    background-size: 48px
+}
+
+.item:nth-child(2) .icon {
+    background: url(/img/logo-jsfl.png) 50% 0 no-repeat #fff;
+    background-size: 48px
+}
+
+.item:nth-child(3) .icon {
+    background: url(/img/logo-ru.png) center center no-repeat #fff;
+    background-size: 48px
+}
+
+.item h5 {
+    position: absolute;
+    white-space: nowrap;
+    color: #7f8080;
+    font-size: 1rem;
+    font-weight: 600;
+    top: -10px;
+    left: 60px
+}
+
+.item h5.active {
+    color: #F2F2F2;
+    text-shadow: -1px 15px 29px rgba(0, 0, 0, .07)
+}
+
+.item ul {
+    list-style: none;
+    position: absolute;
+    top: 60px;
+    left: 27px;
+    display: none;
+    text-align: left
+}
+
+.item ul li a {
+    font-size: .825em;
+    color: #fafafa;
+    padding: 3px
+}
+
 .item ul li a:hover {
-	color: #fff;
+    color: #fff
 }
+
 .copy {
-	position: absolute;
-	bottom: 5px;
-	right: 110px;
-	text-align: right;
-	color: #7f8080;
+    position: absolute;
+    bottom: 5px;
+    right: 110px;
+    text-align: right;
+    color: #7f8080
 }
+
 .git_octo {
-	position: absolute;
-	bottom: 5px;
-	right: 20px;
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
-	opacity: .5;
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    opacity: .5
 }
+
 .git_octo:hover {
-	opacity: 1;
+    opacity: 1
 }
-@media (max-width: 800px) {
-	.title h1 {
-		font-size: 3rem;
-	}
-	.title .quote {
-		font-size: 1rem;
-	}
+
+@media (max-width:800px) {
+    .title h1 {
+        font-size: 3rem
+    }
+
+    .title .quote {
+        font-size: 1rem
+    }
 }
-@media (max-width: 480px) {
-	.navigation .item {
-		left: 30px !important;
-	}
-	.masthead .title {
-		left:0 !important;
-		right: 0 !important;
-		margin: 0 2% !important;
-	}
+
+@media (max-width:480px) {
+    .navigation .item {
+        left: 30px !important
+    }
+
+    .masthead .title {
+        left: 0 !important;
+        right: 0 !important;
+        margin: 0 2% !important
+    }
 }
