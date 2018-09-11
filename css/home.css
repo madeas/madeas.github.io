@@ -1,3 +1,19 @@
+.item h5,
+.title .quote,
+.title h1 {
+  text-shadow: -1px 4px 10px rgba(0, 0, 0, .2)
+}
+
+.bg_svg,
+.copy,
+.git_octo,
+.item h5,
+.item ul,
+.masthead .title,
+.navigation .item {
+  position: absolute
+}
+
 * {
   -webkit-hyphens: manual;
   -moz-hyphens: manual;
@@ -22,10 +38,10 @@ html {
 
 body {
   background: #e5ebf2;
-  padding: 0;
-  margin: 0;
   font-family: Raleway, Arial, Helvetica Neue, sans-serif;
   font-size: 62.5%;
+  padding: 0;
+  margin: 0;
   overflow: hidden
 }
 
@@ -39,7 +55,6 @@ a {
 }
 
 .masthead {
-  text-align: center;
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -50,38 +65,27 @@ a {
   font-family: Raleway, sans-serif
 }
 
-.copy,
-.git_octo,
-.item h5,
-.item ul,
-.masthead .title,
-.navigation .item {
-  position: absolute
-}
-
 .masthead .title {
   top: 40%;
   left: 150px;
   margin: 0;
   padding: 0;
-  color: white;
+  color: #fff;
   text-align: left
 }
 
-.title h1 {
+h1 {
   font: 700 6vw/1em Verdana, Raleway, sans-serif;
   letter-spacing: 1.2px;
-  padding-bottom: .5rem;
-  text-shadow: -1px 4px 10px rgba(0, 0, 0, .2)
+  padding-bottom: .5rem
 }
 
-.title .quote {
-  color: white;
-  font: italic 400 2vw/1em Raleray, sans-serif;
-  text-shadow: -1px 4px 10px rgba(0, 0, 0, .2)
+.quote {
+  color: #fff;
+  font: italic 400 2vw/1em Raleray, sans-serif
 }
 
-.title .quote span {
+.quote span {
   font-family: inherit;
   display: block;
   padding-top: .25rem;
@@ -97,12 +101,12 @@ a {
 }
 
 .item .icon {
-  background-color: white;
+  background-color: #fff;
   background-size: 48px;
   background-position: center center;
   background-repeat: no-repeat;
   border-radius: 50%;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08), 0 5px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .08), 0 5px 20px rgba(0, 0, 0, .08);
   cursor: pointer
 }
 
@@ -132,12 +136,7 @@ a {
 .item.device .icon {
   background-image: url(/favicon.ico)
 }
-/*
-.item.none {
-  top: 420px;
-  left: 950px
-}
-*/
+
 .item .circle,
 .item .icon {
   width: 48px;
@@ -153,13 +152,11 @@ a {
 
 .item h5 {
   white-space: nowrap;
-  color: white;
+  color: #fff;
   font-size: 1rem;
   font-weight: 600;
   top: -10px;
-  left: 60px;
-  ;
-  text-shadow: -1px 4px 10px rgba(0, 0, 0, .2)
+  left: 60px
 }
 
 .item h5.active {
@@ -182,7 +179,7 @@ a {
 }
 
 .item ul li a:hover {
-  color: white
+  color: #fff
 }
 
 .copy {
@@ -206,31 +203,27 @@ a {
   opacity: 1
 }
 
-.bg_svg {
-  position: absolute
-}
-
 .bg_svg circle {
   fill: none;
   stroke: url(#gradient1);
   stroke-width: 70;
   animation: rotation 10s linear infinite;
-  transform-origin: 250px 600px;
+  transform-origin: 250px 600px
 }
 
 @keyframes rotation {
   100% {
     -webkit-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
+    transform: rotate(360deg)
   }
 }
 
 @media (max-width:800px) {
-  .title h1 {
+  h1 {
     font-size: 3rem
   }
-  .title .quote {
+  .quote {
     font-size: 1rem
   }
 }
@@ -239,7 +232,7 @@ a {
   .navigation .item {
     left: 30px !important
   }
-  .masthead .title {
+  .title {
     left: 0 !important;
     right: 0 !important;
     margin: 0 2% !important;
