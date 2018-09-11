@@ -1,188 +1,257 @@
+* {
+  -webkit-hyphens: manual;
+  -moz-hyphens: manual;
+  -ms-hyphens: manual;
+  hyphens: manual
+}
+
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%
+}
+
+body {
+  background: #e5ebf2;
+  padding: 0;
+  margin: 0;
+  font-family: Raleway, Arial, Helvetica Neue, sans-serif;
+  font-size: 62.5%;
+  overflow: hidden
+}
+
+a {
+  text-decoration: none
+}
+
 .item h5,
 .item ul li a {
-    text-transform: uppercase
+  text-transform: uppercase
 }
 
 .masthead {
-    text-align: center;
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    height: auto;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    margin: 0;
-    font-family: Raleway, sans-serif
+  text-align: center;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  margin: 0;
+  font-family: Raleway, sans-serif
 }
 
+.copy,
+.git_octo,
+.item h5,
+.item ul,
 .masthead .title,
 .navigation .item {
-    position: absolute
+  position: absolute
 }
 
 .masthead .title {
-    top: 40%;
-    left: 150px;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    color: #fff
+  top: 40%;
+  left: 150px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-align: left
 }
 
 .title h1 {
-    font: 700 6vw/1em Raleway, sans-serif;
-    letter-spacing: 1.2px;
-    padding-bottom: .5rem;
-    text-shadow: -1px 4px 10px rgba(0, 0, 0, .1)
+  font: 700 6vw/1em Verdana, Raleway, sans-serif;
+  letter-spacing: 1.2px;
+  padding-bottom: .5rem;
+  text-shadow: -1px 4px 10px rgba(0, 0, 0, .2)
 }
 
 .title .quote {
-    color: #7f8080;
-    font: italic 400 2vw/1em Raleray, sans-serif
+  color: white;
+  font: italic 400 2vw/1em Raleray, sans-serif;
+  text-shadow: -1px 4px 10px rgba(0, 0, 0, .2)
 }
 
 .title .quote span {
-    font-family: inherit;
-    display: block;
-    padding-top: .25rem;
-    font-size: 1rem
+  font-family: inherit;
+  display: block;
+  padding-top: .25rem;
+  font-size: 1rem
 }
 
 .navigation {
-    margin: 0 auto;
-    font-family: Raleway, sans-serif;
-    font-size: 1.2rem;
-    font-style: normal;
-    font-weight: 700
+  margin: 0 auto;
+  font-family: Raleway, sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700
+}
+
+.item .icon {
+  text-align: left;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08), 0 5px 20px rgba(0, 0, 0, 0.08);
 }
 
 .item.bsha {
-    top: 140px;
-    left: 110px
+  top: 190px;
+  left: 110px
+}
+
+.item:first-child .icon {
+  background: url(/img/logo-bs.png) 70% 100% no-repeat white;
+  background-size: 48px
 }
 
 .item.jslay {
-    top: 30px;
-    left: 360px
+  top: 80px;
+  left: 320px
+}
+
+.item:nth-child(2) .icon {
+  background: url(/img/logo-jsfl.png) 50% 0 no-repeat white;
+  background-size: 48px
 }
 
 .item.auth {
-    top: 85px;
-    left: 625px
+  top: 85px;
+  left: 570px
+}
+
+.item:nth-child(3) .icon {
+  background: url(/img/logo-ru.png) center center no-repeat white;
+  background-size: 48px
 }
 
 .item.none {
-    top: 420px;
-    left: 950px
+  top: 420px;
+  left: 950px
 }
 
 .item .circle,
 .item .icon {
-    width: 52px;
-    height: 52px;
-    top: 0;
-    left: 0;
-    position: absolute
+  width: 52px;
+  height: 52px;
+  top: 0;
+  left: 0;
+  position: absolute
 }
 
 .item .circle {
-    opacity: 0
-}
-
-.item .icon {
-    text-align: left;
-    cursor: pointer;
-    border-radius: 50%
-}
-
-.item:first-child .icon {
-    background: url(/img/logo-bs.png) 70% 100% no-repeat #fff;
-    background-size: 48px
-}
-
-.item:nth-child(2) .icon {
-    background: url(/img/logo-jsfl.png) 50% 0 no-repeat #fff;
-    background-size: 48px
-}
-
-.item:nth-child(3) .icon {
-    background: url(/img/logo-ru.png) center center no-repeat #fff;
-    background-size: 48px
+  opacity: 0
 }
 
 .item h5 {
-    position: absolute;
-    white-space: nowrap;
-    color: #7f8080;
-    font-size: 1rem;
-    font-weight: 600;
-    top: -10px;
-    left: 60px
+  white-space: nowrap;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  top: -10px;
+  left: 60px;
+  ;
+  text-shadow: -1px 4px 10px rgba(0, 0, 0, .2)
 }
 
 .item h5.active {
-    color: #F2F2F2;
-    text-shadow: -1px 15px 29px rgba(0, 0, 0, .07)
+  color: #F2F2F2;
+  text-shadow: -1px 15px 29px rgba(0, 0, 0, .07)
 }
 
 .item ul {
-    list-style: none;
-    position: absolute;
-    top: 60px;
-    left: 27px;
-    display: none;
-    text-align: left
+  list-style: none;
+  top: 60px;
+  left: 27px;
+  display: none;
+  text-align: left
 }
 
 .item ul li a {
-    font-size: .825em;
-    color: #fafafa;
-    padding: 3px
+  font-size: .825em;
+  color: #fafafa;
+  padding: 3px
 }
 
 .item ul li a:hover {
-    color: #fff
+  color: white
 }
 
 .copy {
-    position: absolute;
-    bottom: 5px;
-    right: 110px;
-    text-align: right;
-    color: #7f8080
+  bottom: 5px;
+  right: 110px;
+  text-align: right;
+  color: #7f8080
 }
 
 .git_octo {
-    position: absolute;
-    bottom: 5px;
-    right: 20px;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    opacity: .5
+  height: 50px;
+  bottom: 5px;
+  right: 10px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  transition: .3s ease-in-out;
+  opacity: .3
 }
 
 .git_octo:hover {
-    opacity: 1
+  opacity: 1
+}
+
+.bg_svg {
+  position: absolute
+}
+
+.bg_svg circle {
+  fill: none;
+  stroke: url(#gradient1);
+  stroke-width: 70;
+  animation: rotation 10s linear infinite;
+  transform-origin: 250px 600px;
+}
+
+@keyframes rotation {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 @media (max-width:800px) {
-    .title h1 {
-        font-size: 3rem
-    }
-
-    .title .quote {
-        font-size: 1rem
-    }
+  .title h1 {
+    font-size: 3rem
+  }
+  .title .quote {
+    font-size: 1rem
+  }
 }
 
-@media (max-width:480px) {
-    .navigation .item {
-        left: 30px !important
-    }
-
-    .masthead .title {
-        left: 0 !important;
-        right: 0 !important;
-        margin: 0 2% !important
-    }
+@media (max-width:768px) {
+  .navigation .item {
+    left: 30px !important
+  }
+  .masthead .title {
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 2% !important;
+    text-align: center
+  }
+  .item:hover {
+    z-index: 1
+  }
+  .item.jslay {
+    top: 10px
+  }
+  .item.auth {
+    top: 100px
+  }
 }
