@@ -10,7 +10,6 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="/css/home.css">
-    <link rel="stylesheet" href="/box-shadows/css/body_loader.css">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     <link rel="dns-prefetch" href="https://assets-cdn.github.com">
@@ -290,12 +289,6 @@
                     $this.find('a:first,h5').removeClass('active');
                 }
             );
-        });
-        $(window).on('load', function () {
-            var $preloader = $('#body_loader'),
-                pre_img = $preloader.find('.pre_loader');
-            pre_img.fadeOut();
-            $preloader.delay(350).fadeOut('slow');
         });
     </script>
 
