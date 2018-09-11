@@ -101,6 +101,7 @@ a {
   cursor: pointer;
   border-radius: 50%;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08), 0 5px 20px rgba(0, 0, 0, 0.08);
+  background-size: 48px
 }
 
 .item.bsha {
@@ -108,9 +109,8 @@ a {
   left: 110px
 }
 
-.item:first-child .icon {
-  background: url(/img/logo-bs.png) 70% 100% no-repeat white;
-  background-size: 48px
+.item.bsha .icon {
+  background: url(/img/logo-bs.png) 70% 100% no-repeat white
 }
 
 .item.jslay {
@@ -118,30 +118,28 @@ a {
   left: 320px
 }
 
-.item:nth-child(2) .icon {
-  background: url(/img/logo-jsfl.png) 50% 0 no-repeat white;
-  background-size: 48px
+.item.jslay .icon {
+  background: url(/img/logo-jsfl.png) 50% 0 no-repeat white
 }
 
-.item.auth {
+.item.device {
   top: 85px;
   left: 570px
 }
 
-.item:nth-child(3) .icon {
-  background: url(/img/logo-ru.png) center center no-repeat white;
-  background-size: 48px
+.item.device .icon {
+  background: url(/favicon.ico) center center no-repeat white
 }
-
+/*
 .item.none {
   top: 420px;
   left: 950px
 }
-
+*/
 .item .circle,
 .item .icon {
-  width: 52px;
-  height: 52px;
+  width: 48px;
+  height: 48px;
   top: 0;
   left: 0;
   position: absolute
