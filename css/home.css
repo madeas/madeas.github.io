@@ -199,6 +199,10 @@ h1 {
   transition: .3s ease-in-out
 }
 
+.bg_svg {
+  width:100%
+}
+
 .bg_svg circle {
   fill: none;
   stroke: url(#gradient1);
