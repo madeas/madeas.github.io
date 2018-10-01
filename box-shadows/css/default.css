@@ -258,7 +258,7 @@ summary {
 .btn-save,
 .dclose,
 .save {
-  border-color: transparent
+  border: 0
 }
 
 .save {
