@@ -48,7 +48,7 @@ $(function() {
           $windowObj = $this,
           $per = jQuery(".percent"),
           percentage = 0;
-        defaultScroll = $windowObj.scrollTop();
+        defaultScroll = Math.round($windowObj.scrollTop());
         percentage = parseInt((defaultScroll / docHeight) * 100);
         var backToTop = jQuery(".ScrollUp");
         if (backToTop.length > 0) {
