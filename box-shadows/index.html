@@ -314,7 +314,7 @@
                 </p>
                 <p>
                     <label for="#bg-card_content">Change Background</label>
-                    <input type="text" value="rgba(255,255,255,.3)" id="bg-card">
+                    <input type="text" value="rgba(255,255,255,.7)" id="bg-card">
                     <button id="ch_btn-one">◑</button>
                 </p>
                 <p class="text-center">
@@ -340,11 +340,69 @@
                     </g>
                 </svg></a>
         </p>
+        <style>
+            .popup {
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 100;
+                overflow: hidden;
+                display: none;
+                background: rgba(0, 0, 0, 0.8);
+                }
+            #pop_content {
+                position: relative;
+                top:50%;
+                left:50%;
+                transform: translate(-50%, -50%);
+                overflow: hidden;
+                width: 640px;
+                height: 500px;
+            }
+            .pop_close {
+                position:absolute;
+                top:10px;
+                right:10px;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                width:20px;
+                height:20px;
+                cursor:pointer;
+                color:#fff;
+                border-radius: .25rem;
+                background:#03a9f4;
+            }
+        </style>
+        <div class="popup">
+            <div id="pop_content">
+                <a class="pop_close" href="#" title="Закрыть" onclick="document.querySelector('.popup').style.display='none'; return false;">X</a>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSerV5caYf7spbBQjWkuFT1QY5RDmNh5xn76n47-QC_HrOGtCQ/viewform?embedded=true" width="640" height="517" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            </div>
+        </div>
         <script src='https://buttons.github.io/buttons.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js'></script>
         <script>
+            $(document).ready(function(){
+                $(".pop_close").click(function () {
+                    $.cookie("pop_content", "0", {expires: 0} );
+                    $(".popup").hide();
+                });
+                
+                if ( $.cookie("pop_content") == null )
+                {
+                    setTimeout(function(){
+                        $(".popup").show();
+                    }, 4000)
+                }
+                else { $(".popup").hide();
+                }
+            });
+
             anchors.add('h2');
 
             //- подключение навигации
