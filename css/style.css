@@ -44,7 +44,7 @@ footer {
 
 main,
 footer {
-  color: white;
+  color: #fff;
 }
 
 a {
@@ -84,7 +84,7 @@ header ul li {
 }
 
 header ul li a {
-  color: white;
+  color: #fff;
   font-size: 1rem;
   text-transform: uppercase;
 }
@@ -203,6 +203,6 @@ footer .copy {
 }
 
 footer .copy a {
-  color: white;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
