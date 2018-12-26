@@ -778,6 +778,13 @@ footer p.issue #add_issue {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         grid-template-areas: "head" "main" "foot";
+    background-image: linear-gradient(45deg, #4954de, #00aeff);
+  }
+  header {
+    padding: 1rem;
+  }
+  header .github-logo svg path:nth-child(n+2) {
+    fill: #00aeff;
   }
   header .heading {
     -webkit-box-align: start;
@@ -791,9 +798,10 @@ footer p.issue #add_issue {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-auto-rows: 1fr auto;
-        grid-template-areas: "art" "aside";
+        grid-template-areas: "aside" "art";
   }
   main article {
+    margin: 0;
     height: auto;
     border-radius: .35rem;
   }
@@ -810,6 +818,7 @@ footer p.issue #add_issue {
   }
   aside .changes h3 {
     width: 100%;
+    text-align: center;
   }
   aside .changes p {
     text-align: center;
