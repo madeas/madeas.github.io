@@ -695,14 +695,26 @@ footer {
         grid-template-areas: 'aside''art';
 
         article {
+            padding: 1rem;
             margin: 0;
             height: auto;
-            border-radius: .35rem;
+
+            .container {
+                padding: 0;
+            }
         }
+    }
+
+    .changes {
+        padding: 0;
     }
 
     .genshadow {
         margin: $rem 0;
+
+        textarea {
+            width: 70%;
+        }
     }
 
     .cards {
@@ -741,5 +753,21 @@ footer {
 
     .ribbon {
         display: none;
+    }
+}
+
+
+@media (max-width: 320px) {
+    header {
+        .heading {
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            margin: auto;
+            font-size: 1.75rem;
+        }
     }
 }
