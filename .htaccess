@@ -7,7 +7,6 @@ AddDefaultCharset utf-8
     RewriteEngine on
     RewriteBase /
     RewriteCond %{HTTP:X-HTTPS} !1
-  # RewriteCond %{REQUEST_URI} !^/robots.txt$
     RewriteCond %{HTTP_HOST} ^www.madeas.github\.io$ [NC]
     RewriteRule ^(.*)$ https://madeas.github.io/$1 [R=301,L]
 </IfModule>
@@ -25,13 +24,16 @@ AddDefaultCharset utf-8
     AddOutputFilterByType DEFLATE image/svg+xml
 </IfModule>
 
+Redirect 301 /box-shadows https://madeas.github.io/box-shadows/
+Redirect 301 /box-shadows/device/ https://madeas.github.io/device/
+
 <IfModule mod_expires.c>
     ExpiresActive on
     ExpiresDefault                                      "access plus 1 month"
   # CSS
-    ExpiresByType text/css                              "access plus 1 year"
+    ExpiresByType text/css                              "access plus 1 month"
   # JavaScript
-    ExpiresByType application/javascript                "access plus 1 year"
+    ExpiresByType application/javascript                "access plus 1 month"
   # Data interchange
     ExpiresByType text/xml                              "access plus 0 seconds"
   # HTML
