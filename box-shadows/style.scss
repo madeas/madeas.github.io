@@ -31,8 +31,8 @@ body {
     min-height: 100vh;
 
     display: grid;
-    grid-template-rows: 130px 1fr 50px;
     grid-template-columns: 1fr;
+    grid-template-rows: minmax(50px, auto);
     grid-template-areas: 'head''main''foot';
 
     font-size: 62.5%;
