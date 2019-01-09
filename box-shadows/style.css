@@ -26,10 +26,10 @@ body {
   min-height: 100vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 130px 1fr 50px;
-      grid-template-rows: 130px 1fr 50px;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  -ms-grid-rows: minmax(50px, auto);
+      grid-template-rows: minmax(50px, auto);
       grid-template-areas: "head" "main" "foot";
   font-size: 62.5%;
   color: #24292e;
