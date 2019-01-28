@@ -25,7 +25,6 @@ AddDefaultCharset utf-8
 </IfModule>
 
 Redirect 301 /box-shadows https://madeas.github.io/box-shadows/
-Redirect 301 /box-shadows/device https://madeas.github.io/device/
 
 <IfModule mod_expires.c>
     ExpiresActive on
