@@ -376,36 +376,27 @@
                     }
                 });
 
-            [].forEach.call(document.querySelectorAll('.block'), function (node) {
-                node.onmouseover = function () {
-                    document.querySelector('.card__content').style.boxShadow = getComputedStyle(node).boxShadow;
-                }
-                node.onmouseleave = function () {
-                    document.querySelector('.card__content').style.boxShadow = '';
-                }
+            $( '#ch_btn-one' ).click( () => {
+                $( '.container' ).css('background', $('#bg-card').val())
+            });
+            
+            $( '#ch_btn-two' ).click( () => {
+                $( '.container, a.lnk' ).css('color', $('#color').val())
+                $( 'a.lnk' ).css('border-bottom-color', $('#color').val())
+            });
+            
+            $( '#ch_btn-three' ).click( () => {
+                $( '.container' ).css({'color': '', 'background': ''})
+                $( 'a.lnk' ).css('border-bottom-color', '')
             });
 
-            document.getElementById('ch_btn-one').onclick = e => document.querySelector('.container').style.background =
-                document.getElementById('bg-card').value;
-            document.getElementById('ch_btn-two').onclick = e => {
-                document.querySelector('.container').style.color = document.getElementById('color').value;
+            $( '.block' ).on('mouseover', function() {
+                $('.card__content').css('box-shadow', $(this).css('box-shadow'))
+            }).on('mouseleave', () => {
+                $('.card__content').css('box-shadow', '');
+            });
 
-                let lnks = document.querySelectorAll('.container a.lnk');
-
-                [].slice.call(lnks).forEach(function (elem) {
-                    elem.style.color = document.getElementById('color').value;
-                    elem.style.borderBottomColor = document.getElementById('color').value;
-                });
-            }
-            document.getElementById('ch_btn-three').onclick = e => {
-                document.querySelector('.container').style.background = '';
-                document.querySelector('.container').style.color = '';
-                let lnks = document.querySelectorAll('a.lnk');
-                [].slice.call(lnks).forEach(function (elem) {
-                    elem.style.color = '';
-                    elem.style.borderBottomColor = '';
-                });
-            }
+            const doc = document;
 
             $('.btn-save').click(function () {
                 let text = $('.result').val();
