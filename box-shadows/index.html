@@ -386,8 +386,6 @@
                 $('.card__content').css('box-shadow', '');
             });
 
-            const doc = document;
-
             $('.btn-save').click(function () {
                 let text = $('.result').val();
                 let filename = $('.filename').val()
@@ -462,14 +460,12 @@
             });
 
             setTimeout(function () {
-
                 var i = 0,
                     innerOpts = [
                         '[ &nbsp; &nbsp; ]',
                         '+',
                         '•',
                     ];
-
 
                 var pointer = new cur_mouse({});
 
